@@ -87,6 +87,14 @@ print("PC Files: "+", ".join(ans))
 
 a = "asGG.gjenLJHljLJH"
 print(a.upper())
-"""
+
 a = "abcde"
 print(a[-2:])
+
+a = [3, 5, 6]
+a += [8, 6, 9]
+print(a+b)
+"""
+la = lb = 0
+lb += 3
+print(la)
