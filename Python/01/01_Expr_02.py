@@ -1,0 +1,7 @@
+a = float(input())
+b = float(input())
+c = float(input())
+ans1 = (-b-(b*b-4*a*c)**0.5)/(2*a)
+ans2 = (-b+(b*b-4*a*c)**0.5)/(2*a)
+print(round(ans1, 3))
+print(round(ans2, 3))
