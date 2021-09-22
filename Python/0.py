@@ -98,8 +98,12 @@ print(a+b)
 la = lb = 0
 lb += 3
 print(la)
-"""
+
 if 'j'.isupper():
     print("Yeahhhh yeehaaa")
 else:
     print("nooooooo:")
+"""
+key = "0123456789012"
+for i in range(0, len(key)-3):
+    print(key[i:i+4], key[i:i+4][::-1])
