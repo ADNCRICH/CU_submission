@@ -103,7 +103,20 @@ if 'j'.isupper():
     print("Yeahhhh yeehaaa")
 else:
     print("nooooooo:")
-"""
+
 key = "0123456789012"
 for i in range(0, len(key)-3):
     print(key[i:i+4], key[i:i+4][::-1])
+
+a = "e r"
+aa = a.strip().split()
+print('0') if len(aa) == 0 else print(" ".join(aa))
+"""
+
+
+def p(a, b):
+    return a+b, a < b, [a, b]
+
+
+a, b, c = p(2, 3)
+print(a, b, c)
