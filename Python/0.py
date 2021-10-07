@@ -179,7 +179,7 @@ df = pd.DataFrame({"A": ["foo", "foo", "foo", "foo", "foo",
                    "D": [1, 2, 2, 3, 3, 4, 5, 6, 7],
                    "E": [2, 4, 5, 5, 6, 6, 8, 9, 9]})
 df
-"""
+
 real = "efFF"
 fake = "zsrgzsrg"
 a = [[0 for i in range(len(real)+1)] for i in range(len(fake)+1)]
@@ -189,3 +189,12 @@ for j in range(len(real)+1):
     a[0][j] = j
 for i in a:
     print(i, end="\n")
+
+a = [2, 3, 5]
+b = ['a=', 'b=', 'c=']
+print(b.join(a))
+
+mp = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
+for i in mp.items():
+    print(i)
+"""
