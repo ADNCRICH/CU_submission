@@ -197,4 +197,31 @@ print(b.join(a))
 mp = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
 for i in mp.items():
     print(i)
+
+pre = input()
+cnt = 0
+mode = 1
+if pre == 'stop':
+    print(0)
+else:
+    while True:
+        i = input()
+#        print('m ' + str(mode) + ' p ' + str(pre) + ' ch ' + str(float(i) - float(pre) <= 3 and mode != 2))
+        if i == 'stop':
+            break
+        if float(i) - float(pre) <= 3 and mode != 2:
+            if mode == 0:
+                mode = 1
+            elif mode == 1:
+                cnt += 1
+                mode = 0
+        elif float(i) - float(pre) > 3 and mode != 2:
+            mode = 2
+        else:
+            mode = 1
+        pre = float(i)
+#        print('m '+str(mode)+'\n')
+    print(cnt)
 """
+a = {1: 100, 2: 90, 3: 70, 4: 60}
+print(sorted(a, key=lambda x: -x))
