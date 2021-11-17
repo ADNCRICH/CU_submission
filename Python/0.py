@@ -222,6 +222,105 @@ else:
         pre = float(i)
 #        print('m '+str(mode)+'\n')
     print(cnt)
-"""
+
 a = {1: 100, 2: 90, 3: 70, 4: 60}
 print(sorted(a, key=lambda x: -x))
+
+
+
+def uppercase_decorator(function, function2):
+    def wrapper():
+        func = function()
+        func2 = function2()
+        make_uppercase = func.upper()
+        make_uppercase2 = func2.upper()
+        return make_uppercase + make_uppercase2
+
+    return wrapper
+
+
+@uppercase_decorator
+def say_hi():
+    return 'hello there'
+
+
+@uppercase_decorator
+def say_hi2():
+    return 'kkk'
+
+
+print(say_hi())
+
+
+"""
+
+
+# def decorator_maker_with_arguments(decorator_arg1, decorator_arg2, decorator_arg3):
+#     def decorator(func):
+#         def wrapper(function_arg1, function_arg2, function_arg3):
+#             "This is the wrapper function"
+#             print("The wrapper can access all the variables\n"
+#                   "\t- from the decorator maker: {0} {1} {2}\n"
+#                   "\t- from the function call: {3} {4} {5}\n"
+#                   "and pass them to the decorated function"
+#                   .format(decorator_arg1, decorator_arg2, decorator_arg3,
+#                           function_arg1, function_arg2, function_arg3))
+#             return func(function_arg1, function_arg2, function_arg3)
+
+#         return wrapper
+
+#     return decorator
+
+
+# pandas = "Pandas"
+
+
+# @decorator_maker_with_arguments(pandas, "Numpy", "Scikit-learn")
+# def decorated_function_with_arguments(function_arg1, function_arg2, function_arg3):
+#     print("This is the decorated function and it only knows about its arguments: {0}"
+#           " {1}" " {2}".format(function_arg1, function_arg2, function_arg3))
+
+
+# decorated_function_with_arguments(pandas, "Science", "Tools")
+
+#################
+
+
+def decorator_with_arguments(a1, a2):
+    def hh(func):
+        def wrapper_accepting_arguments(arg1, arg2):
+            print("My arguments are: {0}, {1}".format(arg1, a2))
+            return func(a1, arg2)
+        return wrapper_accepting_arguments
+
+    def gg(fffff):
+        def wrapp(aa1, aa2):
+            print(a1, a2, aa1, aa2)
+        return wrapp
+
+    return gg
+
+
+@decorator_with_arguments("aa", "bb")
+def cities(city_one, city_two):
+    print("Cities I love are {0} anddddddd {1}".format(city_one, city_two))
+
+
+cities("Nairobi", "Accra")
+
+###########
+
+
+# def decorator_with_arguments(function):
+#     def wrapper_accepting_arguments(arg1, arg2):
+#         print("My arguments are: {0}, {1}".format(arg1, arg2))
+#         function(arg1, arg2)
+#     return wrapper_accepting_arguments
+
+
+# @decorator_with_arguments
+# def cities(city_one, city_two):
+#     print("Cities I love are {0} and {1}".format(city_one, city_two))
+
+
+# cities("Nairobi", "Accra")
