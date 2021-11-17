@@ -1,3 +1,3 @@
-import calendar
-for i in range(1, 13):
-    print(i, calendar.monthrange(3, i)[1])
+ord = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+n = 3
+print()
