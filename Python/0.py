@@ -286,27 +286,27 @@ print(say_hi())
 #################
 
 
-def decorator_with_arguments(a1, a2):
-    def hh(func):
-        def wrapper_accepting_arguments(arg1, arg2):
-            print("My arguments are: {0}, {1}".format(arg1, a2))
-            return func(a1, arg2)
-        return wrapper_accepting_arguments
+# def decorator_with_arguments(a1, a2):
+#     def hh(func):
+#         def wrapper_accepting_arguments(arg1, arg2):
+#             print("My arguments are: {0}, {1}".format(arg1, a2))
+#             return func(a1, arg2)
+#         return wrapper_accepting_arguments
 
-    def gg(fffff):
-        def wrapp(aa1, aa2):
-            print(a1, a2, aa1, aa2)
-        return wrapp
+#     def gg(fffff):
+#         def wrapp(aa1, aa2):
+#             print(a1, a2, aa1, aa2)
+#         return wrapp
 
-    return gg
-
-
-@decorator_with_arguments("aa", "bb")
-def cities(city_one, city_two):
-    print("Cities I love are {0} anddddddd {1}".format(city_one, city_two))
+#     return gg
 
 
-cities("Nairobi", "Accra")
+# @decorator_with_arguments("aa", "bb")
+# def cities(city_one, city_two):
+#     print("Cities I love are {0} anddddddd {1}".format(city_one, city_two))
+
+
+# cities("Nairobi", "Accra")
 
 ###########
 
@@ -324,3 +324,15 @@ cities("Nairobi", "Accra")
 
 
 # cities("Nairobi", "Accra")
+
+# mp = {}
+# mp["aa"] = (1, 1)
+# mp["zz"] = (0, 20)
+# mp["aa"] = (mp['aa'][0], mp['aa'][1]+3)
+# mp = sorted(mp.items(), key=lambda x: x[1][0])
+# print(mp)
+
+mp = {}
+mp[3] = {}
+mp[3]["ll"] = 9
+print(mp)
