@@ -29,17 +29,17 @@ pg.display.set_caption("BNK_BALL (Heavy Collision)")
 # TODO 6
 # Load sound [change your sound filepath according to your computer]
 pg.mixer.init()
-pg.mixer.music.load("Desktop\python\pygame\Workshop1-BNK_BALL_student\source\sound.mp3")
+pg.mixer.music.load("Desktop\CU_Submission\python\pygame\Workshop1-BNK_BALL_student\source\sound.mp3")
 pg.mixer.music.play(-1, 0.0)
 
 # ใช้คำสั่ง soundeffect.play() เพื่อเล่นเสียง effect ตอนลูกบอลชนกัน
-soundeffect = pg.mixer.Sound("Desktop\python\pygame\Workshop1-BNK_BALL_student\source\effect.wav")
+soundeffect = pg.mixer.Sound("Desktop\CU_Submission\python\pygame\Workshop1-BNK_BALL_student\source\effect.wav")
 
 # Choose 3 members from BNK48 and create pygame object from  get_rect
 # [ load , resize , get_rect ]
 
 # Member 1 [size : (150 , 150) , center : (500 , 250) ]
-ball1_img = pg.image.load("Desktop\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\Wee_cc.png").convert_alpha()
+ball1_img = pg.image.load("Desktop\CU_Submission\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\Wee_cc.png").convert_alpha()
 ball1_img = pg.transform.scale(ball1_img, (150, 150))
 ball1_rect = ball1_img.get_rect(center=(500, 250))
 ball1_mo = 2.25
@@ -47,14 +47,14 @@ ball1_r = 75
 
 # TODO 7 : create object with attribute in each comment
 # Member 2 [size : (100 , 100) , center : (250 , 120)]
-ball2_img = pg.image.load("Desktop\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\Mind_cc.png").convert_alpha()
+ball2_img = pg.image.load("Desktop\CU_Submission\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\Mind_cc.png").convert_alpha()
 ball2_img = pg.transform.scale(ball2_img, (100, 100))
 ball2_rect = ball2_img.get_rect(center=(250, 120))
 ball2_mo = 1
 ball2_r = 50
 
 # Member 3 [size : (120 , 120) , center : (800 , 400)]
-ball3_img = pg.image.load("Desktop\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\View_cc.png").convert_alpha()
+ball3_img = pg.image.load("Desktop\CU_Submission\python\pygame\Workshop1-BNK_BALL_student\source\BNK48\View_cc.png").convert_alpha()
 ball3_img = pg.transform.scale(ball3_img, (120, 120))
 ball3_rect = ball3_img.get_rect(center=(800, 400))
 ball3_mo = 1.44
