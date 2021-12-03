@@ -332,7 +332,211 @@ print(say_hi())
 # mp = sorted(mp.items(), key=lambda x: x[1][0])
 # print(mp)
 
-mp = {}
-mp[3] = {}
-mp[3]["ll"] = 9
-print(mp)
+# mp = {}
+# mp[3] = {}
+# mp[3]["ll"] = 9
+# print(mp)
+
+# a = 7.0
+# print(str(a) + '0'*(2-len(str(a).split('.')[1])))
+
+# def f(d):
+#     x = {}
+#     for k in d:
+#         for e in d[k]:
+#             x[k] = e
+#     return x
+
+
+# print(f({1: 'a', 2: 'b', 3: 'a'}))
+
+# def f(R, C):
+#     for i in range(R):
+#         out = ''
+#         for j in range(C):
+#             n = i*C+(j+1)
+#             out += ('   ' + str(n))[-4:]
+#         print(out)
+
+
+# f(5, 10)
+# ans = 0
+# for k in range(1, 6):
+#     for j in range(2, 7):
+#         ans += (k-j)**j * j**k
+# print(ans)
+
+# class A:
+#     def __init__(self, a, b):
+#         self.s = [a, b]
+
+#     def __str__(self):
+#         return ':'.join([(' '+str(e))[-2:] for e in self.s])
+
+#     def __lt__(self, a):
+#         return self.s[0]*self.s[1] < a.s[0]*a.s[1]
+
+
+# a1 = A(9, 0)
+# a2 = A(-9, -1)
+# a3 = A(3, 4)
+# a4 = A(-8, 5)
+# for a in sorted([a1, a2, a3, a4]):
+#     print(a)
+
+# n = int(input())
+# ans = {}
+# for k in range(n):
+#     a, b, c = input().split()
+#     a += " "+b
+#     if c not in ans:
+#         ans[c] = []
+#     ans[c] += [a]
+#     if a not in ans:
+#         ans[a] = []
+#     ans[a] += [c]
+
+# n = int(input())
+# for i in range(n):
+#     key = input().strip()
+#     if key not in ans:
+#         print(key + " --> Not found")
+#     else:
+#         print(key+" --> " + ", ".join(ans[key]))
+
+"""
+
+6
+Anthony Stark 02-111-1111
+Henry Pym 02-222-2222
+Anthony Stark 02-222-2222
+Robert Banner 02-333-3333
+Robert Banner 02-444-4444
+Steven Rogers 02-222-2222
+6
+02-222-2222
+Anthony Stark
+Steven Rogers
+911
+02-222-2222
+02-333-3333
+
+"""
+
+
+# def pattern1(N):
+#     r = [[0 for i in range(N)]for j in range(N)]
+#     for i in range(N):
+#         for j in range(N-i):
+#             r[i][j] = int((N-i)*(N-i-1)/2 + j + 1)
+
+#     return r
+
+
+# def pattern2(N):
+#     r = [[0 for i in range(N)]for j in range(N)]
+#     for j in range(N):
+#         for i in range(j, N):
+#             r[i][j] = int((N)*(N+1)/2-(N-j+1)*(N-j)/2 + i+1-j)
+#     return r
+
+
+# print(pattern2(6))
+
+
+# from typing import Union
+# from numpy.core.numeric import tensordot
+# class Tweet:
+#     def __init__(self, tweet):
+#         self.id = tweet['id']
+#         self.user = tweet['user']
+#         self.words = tweet['words']
+#         self.time = tweet['time']
+
+#     def __lt__(self, rhs):
+#         d = self.time.split()[0]
+#         h = self.time.split()[1]
+#         dd = rhs.time.split()[0]
+#         hh = rhs.time.split()[1]
+#         if(int(d.split('-')[0]) != int(dd.split('-')[0])):
+#             return int(d.split('-')[0]) < int(dd.split('-')[0])
+#         elif(int(d.split('-')[1]) != int(dd.split('-')[1])):
+#             return int(d.split('-')[1]) < int(dd.split('-')[1])
+#         elif(int(d.split('-')[2]) != int(dd.split('-')[2])):
+#             return int(d.split('-')[2]) < int(dd.split('-')[2])
+#         elif(int(h.split(':')[0]) != int(hh.split(':')[0])):
+#             return int(h.split(':')[0]) < int(hh.split(':')[0])
+#         elif(int(h.split(':')[1]) != int(hh.split(':')[1])):
+#             return int(h.split(':')[1]) < int(hh.split(':')[1])
+#         elif(len(self.words) > len(rhs.words)):
+#             return True
+#         else:
+#             return False
+
+#     def __str__(self):
+#         return self.time + ": [" + self.user + "] " + " ".join(self.words) + " (" + str(self.id) + ")"
+
+#     def similarity(self, other):
+#         return len(set(self.words) & set(other.words))/len(set(self.words) | set(other.words))
+
+
+# def find_similarity(tweets):
+#     r = []
+#     for i in range(len(tweets)):
+#         for j in range(i+1, len(tweets)):
+#             r.append((tweets[i].similarity(tweets[j]), (tweets[i].id, tweets[j].id)))
+#     return sorted(r, key=lambda x: (x[0], x[1][0], x[1][1]))
+
+
+# def show_tweets(tweets):
+#     a = sorted(tweets)
+#     for i in a:
+#         print(i)
+
+
+# tw1 = Tweet({'id': 1, 'user': 'abc', 'words': ['this', 'is', 'a', 'blockchain', 'made', 'from',
+#             'scratch', 'in', '~50', 'lines', 'of', 'python', 'code'], 'time': '2021-11-18 16:38'})
+# tw2 = Tweet({'id': 2, 'user': 'cdg', 'words': ['javascript', 'java', 'python', 'php',
+#             'and', 'their', 'learning', 'curves'], 'time': '2021-11-06 14:28'})
+# tw3 = Tweet({'id': 3, 'user': 'def123', 'words': ['python and javascript'], 'time': '2021-11-01 07:56'})
+# tw4 = Tweet({'id': 4, 'user': 'def123', 'words': ['only', 'python'], 'time': '2021-11-01 07:56'})
+# tweets = [tw1, tw2, tw3, tw4]
+# show_tweets(tweets)
+
+# def f1(x):
+#     c = []
+#     for i in range(len(x)):
+#         if x[i] in 'python':
+#             c.insert(len(c), i)
+#     return c
+
+
+# def f2(x):
+#     return [i for i in range(len(x)) if x[i] in "python"]
+
+
+# print(f1("sRGzhxjxykxdhxztjxyjdfds"))
+# print(f2("sRGzhxjxykxdhxztjxyjdfds"))
+
+
+# import numpy as np
+# def f1(z, c):
+#     # z เป็น 1-D numpy array of ints, c เป็น int
+#     n = z[0]
+#     for e in z[1:]:
+#         if e < n:
+#             n = e
+#     for i in range(len(z)):
+#         if z[i] == n:
+#             z[i] = c
+#     return z
+
+
+# def f2(z, c):
+#     z[min(z)] = c
+
+
+# print(f1(np.array([2, 3, 6, 5, 4, 6, 2, 6, 5, 7]), 5))
+# print(f1(np.array([2, 3, 6, 5, 4, 6, 2, 6, 5, 7]), 5))
+
+print(int(25.0) == 25.0)
