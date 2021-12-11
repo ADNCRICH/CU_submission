@@ -3,10 +3,10 @@ all = {}
 n = int(input())
 
 
-def pri(float m):
+def pri(m):
     if(m == int(m)):
-        return int(m)
-    return m
+        return str(int(m))
+    return str(m)
 
 
 for i in range(n):
@@ -32,11 +32,29 @@ while(n[0] != "exit"):
         if id not in all[name]:
             all[name][id] = 0
         all[name][id] += money
-        print()
-    if(mode ==)
+        print(name + " (" + id + ") " + pri(all[name][id]))
+
+    if(mode == "withdraw"):
+        money = float(data[0])
+        if (id not in idd) or (id in idd and name != idd[id]) or all[name][id] < money:
+            print("Transaction Failed")
+            n = input().split()
+            continue
+        all[name][id] -= money
+        print(name + " (" + id + ") " + pri(all[name][id]))
+
+    if(mode == "transfer"):
+        to, money = data[0], float(data[1])
+        if (id not in idd) or (to not in idd) or (id in idd and name != idd[id]) or all[name][id] < money:
+            print("Transaction Failed")
+            n = input().split()
+            continue
+        all[name][id] -= money
+        print(name + " (" + id + ") " + pri(all[name][id]))
+        all[idd[to]][to] += money
+        print(idd[to] + " (" + to + ") " + pri(all[idd[to]][to]))
     n = input().split()
 
-print(all)
 
 """
 

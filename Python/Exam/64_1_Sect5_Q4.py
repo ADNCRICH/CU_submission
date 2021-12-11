@@ -12,7 +12,6 @@ def play(i, j, st):
     if(i < 0 or j < 0 or i >= n or j >= m):
         return
     elif(a[i][j] == key[st]):
-        #print("do1", i, j, st)
         ans.append((i, j))
         play(i+1, j, st+1)
         play(i, j+1, st+1)
@@ -26,7 +25,6 @@ for i in range(n):
     for j in range(m):
         if key[0] == a[i][j]:
             ans = []
-            #print("do", i, j)
             play(i, j, 0)
 
 """
