@@ -1,3 +1,2 @@
-key = "qwertyuiop[]"
-
-print(key.find("rt0u"))
+for i in range(26):
+    print(chr(ord('a')+i))
