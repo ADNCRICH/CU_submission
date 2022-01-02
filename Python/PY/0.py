@@ -1,4 +1,4 @@
-a = [[0 for i in range(5)] for j in range(8)]
+a = {1, 3, 5, 6, 8, 9}
+b = {1, 3}
 
-a[3][2] = 20
-print(a)
+print(b.issubset(a))
