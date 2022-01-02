@@ -1,6 +1,5 @@
 import numpy as np
 
-a = np.array([1, 5, 98])
-b = np.array([8, -6, -50])
+a = np.arange(36).reshape(6, 6)
 
-print(a/b)
+print(a)
