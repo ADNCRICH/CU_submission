@@ -1,4 +1,6 @@
-a = {1, 3, 5, 6, 8, 9}
-b = {1, 3}
+import numpy as np
 
-print(b.issubset(a))
+a = np.array([1, 5, 98])
+b = np.array([8, -6, -50])
+
+print(a/b)
