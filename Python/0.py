@@ -503,6 +503,7 @@ Steven Rogers
 # tweets = [tw1, tw2, tw3, tw4]
 # show_tweets(tweets)
 
+
 # def f1(x):
 #     c = []
 #     for i in range(len(x)):
@@ -514,6 +515,8 @@ Steven Rogers
 # def f2(x):
 #     return [i for i in range(len(x)) if x[i] in "python"]
 
+
+# print(f2(input()))
 
 # print(f1("sRGzhxjxykxdhxztjxyjdfds"))
 # print(f2("sRGzhxjxykxdhxztjxyjdfds"))
@@ -539,4 +542,21 @@ Steven Rogers
 # print(f1(np.array([2, 3, 6, 5, 4, 6, 2, 6, 5, 7]), 5))
 # print(f1(np.array([2, 3, 6, 5, 4, 6, 2, 6, 5, 7]), 5))
 
-print(int(25.0) == 25.0)
+# print(int(25.0) == 25.0)
+
+# i = 0
+# while i / 9 * 9 == i:
+#     i += 1
+# print(i)
+
+
+# import random
+# ri = "asdfghjkl;/qwer56"
+# ri = [i for i in ri]
+# a = ri[:]
+# for i in range(39):
+#     a.append(random.choice(ri))
+
+# for i in range(30):
+#     random.shuffle(a)
+#     print("".join(a))
