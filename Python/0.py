@@ -560,3 +560,5 @@ Steven Rogers
 # for i in range(30):
 #     random.shuffle(a)
 #     print("".join(a))
+import math
+print(math.factorial(5))
