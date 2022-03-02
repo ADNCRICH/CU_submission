@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <section>
+            <h1 id="app-name">ฝากซื้อด้วย</h1>
+            <h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2>
+            <p class="section-subtitle">(ชื่อคนในกลุ่ม)</p>
+            <ul id="member-list">
+                <li>ภัทรพล</li>
+                <li>นราวิชญ์</li>
+            </ul>
+        </section>
+        <table id = "main-table">
+            <thead>
+                <tr id = "trr">
+                    <th>ของที่ฝากซื้อ</th>
+                    <th>ชื่อผู้ฝากซื้อ</th>
+                    <th>ราคา (บาท)</th>
+                    <th>ดำเนินการ</th>
+                </tr>
+            </thead>
+            <tr id = "trr">
+                <td>เลย์</td>
+                <td>ภัทรพล</td>
+                <td>20</td>
+                <td>
+                    <button class="delete-row" onclick="DeleteRow(this);">ลบ</button>
+                </td>
+            </tr>
+            <tr id = "trr">
+                <td>ข้าวมันไก่</td>
+                <td>นราวิชญ์</td>
+                <td>35</td>
+                <td>
+                    <button class="delete-row" onclick="DeleteRow(this);">ลบ</button>
+                </td>
+            </tr>
+            <tr id = "trr">
+                <td>เปปซี่</td>
+                <td>นราวิชญ์</td>
+                <td>15</td>
+                <td>
+                    <button class="delete-row" onclick="DeleteRow(this);">ลบ</button>
+                </td>
+            </tr>
+            <tr id = "trr">
+                <td>ชาเขียว</td>
+                <td>ภัทรพล</td>
+                <td>20</td>
+                <td>
+                    <button class="delete-row" onclick="DeleteRow(this);">ลบ</button>
+                </td>
+            </tr>
+            <tr id = "trr">
+                <td>ขนมปังกรอบ</td>
+                <td>ภัทรพล</td>
+                <td>20</td>
+                <td>
+                    <button class="delete-row" onclick="DeleteRow(this);">ลบ</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="item-to-add" value=""/>
+                </td>
+                <td>
+                    <select id="name-to-add">
+                        <option value="none">-- เลือกผู้ฝากซื้อ --</option>
+                        <option value="ภัทรพล">ภัทรพล</option>
+                        <option value="นราวิชญ์">นราวิชญ์</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="price-to-add" value=""/>
+                </td>
+                <td>
+                    <button id="add-newrow" onclick="addNewItem();">เพิ่ม</button>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+    <script src="program.js"></script>
+</html>
