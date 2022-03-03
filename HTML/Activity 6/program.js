@@ -13,6 +13,7 @@ function addNewItem(){
     let cell4 = row.insertCell(3);
     cell4.innerHTML = '<button class="delete-row" onclick="DeleteRow(this);">ลบ</button>';
 
+
     // table.
 }
 
@@ -22,5 +23,6 @@ function addNewItem(){
 function DeleteRow(row){
     var d = row.parentNode.parentNode.rowIndex;
     document.getElementById("main-table").deleteRow(d);
+
 
 }
