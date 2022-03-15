@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Firestore demo</title>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <section>
+            <div>
+                <label>ID To Update</label>
+                <input id='docId' type='text'/>
+            </div>
+        </section>
+        <section>
+            <div>
+                <label>Title</label>
+                <input id='title' type='text'/>
+                <label>Author</label>
+                <input id='author' type='text'/>
+                <label>ISBN</label>
+                <input id='isbn' type='text'/>
+            </div>
+        </section>
+        <section>
+            <div>
+                <header><h1>Firestore Database</h1></header>
+                <button onclick="getItems()">List Books</button>
+                <button onclick="addItem()">Create</button>
+                <button id='updateButton'>Update</button>
+                <button id='deleteButton'>Delete</button>
+            </div>
+            <div><pre id='firestore-holder'></pre></div>
+        </section>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
