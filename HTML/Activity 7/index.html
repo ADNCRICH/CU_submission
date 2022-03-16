@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ฝากซื้อด้วย</title>
+    <link href="style.css" rel="stylesheet" type="text/css" <link type="text/css" rel="stylesheet"
+        href="css/style.css" />
+</head>
+
+<body>
+
+    <section id="app-header">
+        <h1>ฝากซื้อด้วย</h1>
+    </section>
+
+    <section id="app-member">
+        <h3 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h3>
+        <p class="section-subtitle">(ชื่อคนในกลุ่มที่มาร่วมวันนี้)</p>
+        <ul id="member-list">
+            <li>Sirapat Jariyanantakul
+                <ul>
+                    <li id="member1"></li>
+                </ul>
+            </li>
+            <li>Akkharawat Burachokviwat<ul>
+                    <li id="member2"></li>
+                </ul>
+            </li>
+            <li>Naravit Namson<ul>
+                    <li id="member3"></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="section-title">รายการฝากซื้อ</h3>
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <th>ของที่ฝากซื้อ</th>
+                    <th>ชื่อผู้ที่ฝากซื้อ</th>
+                    <th>ราคา (บาท)</th>
+                    <th>ดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody id="main-table-body">
+                <tr>
+                    <td><input id="name" /></td>
+                    <td id="add-newrow:hover">
+                        <select name="buyer" id="buyer">
+                            <option value="" disabled selected>--เลือกผู้ฝากซื้อ--</option>
+                            <option value="Sirapat Jariyanantakul">Sirapat Jariyanantakul</option>
+                            <option value="Akkharawat Burachokviwat">Akkharawat Burachokviwat</option>
+                            <option value="Naravit Namson">Naravit Namson</option>
+                        </select>
+                    </td>
+                    <td><input id="price" /></td>
+                    <td><button type="button" id="add-newrow">เพิ่ม</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
