@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Part C</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="app-name">ฝากซื้อด้วย</h1>
+    <h2 class="section-title">รายการชื่อผู้มีสิทธิฝากซื้อ</h2>
+    <p class="section-subtitle">(ชื่อคนในกลุ่มที่มาร่วมทำวันนี้)</p>
+    <ul id="member-list">
+      <li>Akkharawat Burachokviwat</li>
+      <li>Sirapat Jariyanantakul</li>
+      <li>Naravit Namson</li>
+    </ul>
+    <h2 class="section-title">รายการฝากซื้อ</h2>
+    <table id="main-table">
+      <thead>
+        <tr>
+          <th>ของที่ฝากซื้อ</th>
+          <th>ชื่อผู้ฝากซื้อ</th>
+          <th>ราคา (บาท)</th>
+          <th>ดำเนินการ</th>
+        </tr>
+      </thead>
+      <tbody id="main-table-body">
+      <tfoot>
+        <tr>
+            <td><input id="item-to-add"/></td>
+            <td>
+              <select id="name-to-add">
+                <option value="-- เลือกผู้ฝากซื้อ --">-- เลือกผู้ฝากซื้อ --</option>
+                <option value="Akkharawat Burachokviwat">Akkharawat Burachokviwat</option>
+                <option value="Sirapat Jariyanantakul">Sirapat Jariyanantakul</option>
+                <option value="Naravit Namson">Naravit Namson</option>
+              </select>
+            </td>
+            <td><input id="price-to-add" /></td>
+            <td><button id="add-newrow">เพิ่ม</button></td>
+          </tr>
+      </tfoot>
+    </table>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>
