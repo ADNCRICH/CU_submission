@@ -5,12 +5,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBiEpQ6nJ4vGy6_Ga3Cn6LkhN-IYGwFHqA",
-  authDomain: "starter-project-c6f5e.firebaseapp.com",
-  projectId: "starter-project-c6f5e",
-  storageBucket: "starter-project-c6f5e.appspot.com",
-  messagingSenderId: "744982118303",
-  appId: "1:744982118303:web:a30a0d0a920883342f07aa"
+  apiKey: "AIzaSyDRspzYP6bF_gh1ONfN0Zh9xYgRoiqysUk",
+  authDomain: "cee7-95587.firebaseapp.com",
+  projectId: "cee7-95587",
+  storageBucket: "cee7-95587.appspot.com",
+  messagingSenderId: "1095889059247",
+  appId: "1:1095889059247:web:69d99bcf3e85181b20435a",
 };
 
 // Initialize Firebase
@@ -42,8 +42,9 @@ async function showItemsInTable() {
 	          <td>${item.data().product}</td>
             <td>${item.data().buyer}</td>
             <td>${item.data().price}</td>
-            <td><button class="delete-row" onclick="deleteItem('${item.id
-      }')">ลบ</button></td>
+            <td><button class="delete-row" onclick="deleteItem('${
+              item.id
+            }')">ลบ</button></td>
         </tr>
         `;
   });
