@@ -7,5 +7,6 @@ int main() {
     cin.tie(0);
     int n, m;
     cin >> n >> m;
-    while (n--) cin >>
+    while (n--)
+        ;
 }
