@@ -1,4 +1,8 @@
-5
-0 1 2 3 4
-5
-50 51 52 53 54
+3 3 6
+16 2 18 7 14 14
+dclass
+passwo
+hambwc
+nattee
+cproom
+ryuuio
