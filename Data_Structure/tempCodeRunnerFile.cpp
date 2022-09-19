@@ -1,8 +1,6 @@
-3 3 6
-16 2 18 7 14 14
-dclass
-passwo
-hambwc
-nattee
-cproom
-ryuuio
+2 3 4
+1 1
+B 1 1 10
+B 2 1 100
+B 1 2 99
+B 2 2 100
