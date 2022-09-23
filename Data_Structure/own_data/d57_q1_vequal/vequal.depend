@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1424527994 source:d:\ad\cu_submission\data_structure\own_data\d57_q1_vequal\main.cpp
+	<stdexcept>
+	<iostream>
+	"vector.h"
+	"student.h"
+
+1425051986 d:\ad\cu_submission\data_structure\own_data\d57_q1_vequal\vector.h
+	<stdexcept>
+	<iostream>
+
+1663949794 d:\ad\cu_submission\data_structure\own_data\d57_q1_vequal\student.h
+

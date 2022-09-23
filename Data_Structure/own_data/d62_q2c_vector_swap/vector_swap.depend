@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1663951523 source:d:\ad\cu_submission\data_structure\own_data\d62_q2c_vector_swap\main.cpp
+	<iostream>
+	<stdexcept>
+	"vector.h"
+	"student.h"
+	<vector>
+
+1663951782 d:\ad\cu_submission\data_structure\own_data\d62_q2c_vector_swap\vector.h
+	<stdexcept>
+	<iostream>
+
+1663951760 d:\ad\cu_submission\data_structure\own_data\d62_q2c_vector_swap\student.h
+	<algorithm>
+
