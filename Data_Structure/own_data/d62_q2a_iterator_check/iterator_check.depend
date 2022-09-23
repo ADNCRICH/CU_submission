@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1569943026 source:d:\ad\cu_submission\data_structure\own_data\d62_q2a_iterator_check\main.cpp
+	<stdexcept>
+	<iostream>
+	"vector.h"
+	"student.h"
+	<vector>
+
+1663942949 d:\ad\cu_submission\data_structure\own_data\d62_q2a_iterator_check\vector.h
+	<stdexcept>
+	<iostream>
+
+1663943033 d:\ad\cu_submission\data_structure\own_data\d62_q2a_iterator_check\student.h
+

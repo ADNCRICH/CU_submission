@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1663947621 source:d:\ad\cu_submission\data_structure\own_data\d58_q1_erase_many\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	"vector.h"
+	"student2.h"
+
+1456244981 d:\ad\cu_submission\data_structure\own_data\d58_q1_erase_many\vector.h
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1663947399 d:\ad\cu_submission\data_structure\own_data\d58_q1_erase_many\student.h
+
+1663948000 d:\ad\cu_submission\data_structure\own_data\d58_q1_erase_many\student2.h
+
