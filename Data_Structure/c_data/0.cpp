@@ -10,7 +10,8 @@ using namespace std;
 // }
 
 int main() {
-    string s = "abc";
-    s[0]++;
-    cout << s;
+    // string s = "abc";
+    // s[0]++;
+    // cout << s;
+    cout << (-13) % 8;
 }
