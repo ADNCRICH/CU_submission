@@ -4,6 +4,10 @@
 template <typename T>
 void CP::stack<T>::multi_pop(size_t K) {
     // write your code here
+    // mSize -= K;
+    // mSize = (size_t)(((int)mSize < 0) ? 0 : (int)mSize);
+    // mSize = std::max(mSize, size_t(0));
+    // std::cout << "   " << mSize << "\n";
     mSize -= std::min(mSize, K);
 }
 
