@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "student.h"
 using namespace std;
 void test1() {
@@ -49,8 +50,7 @@ void test4() {
     Q1.print();
 }
 
-int main()
-{
+int main() {
     test1();
     test2();
     test3();
