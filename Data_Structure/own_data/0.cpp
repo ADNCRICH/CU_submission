@@ -19,6 +19,10 @@ int main() {
     // a.second = "ggg";
     // cout << b.first << " " << b.second;
 
-    CP::vector<string> v;
-    cout << v.size();
+    int n = 5;
+    size_t m = 5;
+    int a[5];
+    for (int i = 0; i < n; i++)
+        a[i] = i;
+    cout << a[n - 3] << " " << a[m - 3];
 }

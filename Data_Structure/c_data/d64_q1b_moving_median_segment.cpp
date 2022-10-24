@@ -1,70 +1,54 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAXX 1000017
-int a[MAXX * 4 + 7];
-vector<int> v;
-void upd(int l, int r, int now, int val, int idx) {
+#define N 16  // 1000017
+int a[N * 4 + 50];
+vector<int> v(1000100);
+void upd(int l, int r, int k, int idx, int val) {
+    if (r < k || k < l) return;
     if (l == r) {
-        a[now] += val;
+        a[idx] += val;
         return;
     }
     int mid = (l + r) / 2;
-    if (idx <= mid)
-        upd(l, mid, now * 2, val, idx);
-    else
-        upd(mid + 1, r, now * 2 + 1, val, idx);
-    a[now] = a[now * 2] + a[now * 2 + 1];
+    upd(l, mid, k, idx * 2, val);
+    upd(mid + 1, r, k, idx * 2 + 1, val);
+    a[idx] = a[idx * 2] + a[idx * 2 + 1];
 }
-int query(int l, int r, int ll, int rr, int now) {
-    if (l > rr || r < ll)
-        return 0;
-    if (l >= ll && rr >= r)
-        return a[now];
+int qr(int l, int r, int ll, int rr, int idx) {
+    if (r < ll || l > rr) return 0;
+    if (l >= ll && r <= rr) return a[idx];
+    if (l == r) return a[idx];
     int mid = (l + r) / 2;
-    return query(l, mid, ll, rr, now * 2) + query(mid + 1, r, ll, rr, now * 2 + 1);
+    return qr(l, mid, ll, rr, idx * 2) + qr(mid + 1, r, ll, rr, idx * 2 + 1);
 }
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    int n, w, i, k;
+    int n, w, m, i;
     cin >> n >> w;
     for (i = 0; i < w; i++) {
-        cin >> k;
-        v.push_back(k);
-        upd(0, MAXX, 1, 1, k);
+        cin >> v[i];
+        upd(1, N, v[i], 1, 1);
+        for (int j = 1; j < 32; j++)
+            cout << a[j] << " ";
+        cout << "\n";
     }
     for (i = w; i < n; i++) {
-        cin >> k;
-        v.push_back(k);
-        upd(0, MAXX, 1, 1, k);
-        int l = 0, r = MAXX, mid;
+        cin >> v[i];
+        upd(1, N, v[i], 1, 1);
+        int l = 1, r = N, mid;
         while (l != r) {
-            mid = (l + r) / 2;
-            // cout << "qq " << query(0, MAXX, 0, mid, 1) << " mid " << mid << "\n";
-            if (query(0, MAXX, 0, mid, 1) >= w / 2 + 1)
-                r = mid;
+            mid = (l + r + 1) / 2;
+            if (qr(1, N, 1, mid, 1) <= (w / 2 + 1))
+                l = mid;
             else
-                l = mid + 1;
+                r = mid - 1;
         }
-        cout << l << " ";
-
-        // for (int j = 1, l = 1; j < 32; j++) {
-        //     cout << a[j] << " ";
-        //     if (j == l) {
-        //         cout << "\n";
-        //         l += l + 1;
-        //     }
-        // }
-        // cout << "\n";
-        upd(0, MAXX, 1, -1, v[i - w]);
-        // cout << v[i - w] << "\n";
-        // for (int j = 1, l = 1; j < 32; j++) {
-        //     cout << a[j] << " ";
-        //     if (j == l) {
-        //         cout << "\n";
-        //         l += l + 1;
-        //     }
-        // }
-        // cout << "\n";
+        cout << l << "\n";
+        upd(1, N, v[i - w], 1, -1);
+        for (int j = 1; j < 32; j++)
+            cout << a[j] << " ";
+        cout << "\n";
     }
+    for (int j = 1; j < 32; j++)
+        cout << a[j] << " ";
+    cout << "\n";
 }
