@@ -1,0 +1,24 @@
+use demo
+SELECT *
+from information_schema.tables
+
+-- Get a list of tables and views in the current database
+SELECT table_catalog [database], table_schema [schema], table_name name, table_type type
+FROM INFORMATION_SCHEMA.TABLES
+where type in ('BASE TABLE', 'VIEW')
+GO
+
+-- List columns in all tables whose name is like 'TableName'
+SELECT
+    TableName = tbl.TABLE_SCHEMA + '.' + tbl.TABLE_NAME,
+    ColumnName = col.COLUMN_NAME,
+    ColumnDataType = col.DATA_TYPE
+FROM INFORMATION_SCHEMA.TABLES tbl
+    INNER JOIN INFORMATION_SCHEMA.COLUMNS col
+    ON col.TABLE_NAME = tbl.TABLE_NAME
+        AND col.TABLE_SCHEMA = tbl.TABLE_SCHEMA
+
+WHERE tbl.TABLE_TYPE = 'BASE TABLE'
+GO
+
+CREATE DATABASE database_test
