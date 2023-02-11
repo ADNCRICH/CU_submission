@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-vector<int> play() {
-    return {1, 2, 3};
-}
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> mi;
 int main() {
-    vector<int> a = play();
-    for (int i = 0; i < a.size(); i++)
-        cout << a[i] << " ";
+    mi.push({-1, 5});
+    mi.push({-2, 4});
+    cout << mi.top().first << " " << mi.top().second;
 }
