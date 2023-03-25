@@ -15,6 +15,7 @@ object Parenthesis {
   }
 
   def main(args: Array[String]): Unit = {
+    println("(if(zero?x) max(/1 x))".toList)
     println(balance("(if(zero?x) max(/1 x))".toList))
     println(balance("I told him (that it’s not (yet) done). (But he wasn't listening)".toList))
     println(balance(":-)".toList))

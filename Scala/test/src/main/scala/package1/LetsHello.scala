@@ -22,15 +22,23 @@ object LetsHello {
 
 //        println(area(5,10))
 //        println(biggerVolumn(5,6,7))
+//
+//        object Math{
+//            def addM(array: Array[Int],array2: Array[Int]): Int = array[0]*array2[0]
+//        }
+//        println(Math.addM((1,2,3),(3,5,8)))
 
-        object Math{
-            //def addM(array: Array[Int] = new Array[Int](3),array2: Array[Int] = new Array[Int](3)): Int = array[0]*array2[0]
-        }
-        var func1 = (a:Int,b:Int)=> (a+1)*b
-        print(func1(6,6))
+//        var func1 = (a:Int,b:Int)=> (a+1)*b
+//        print(func1(6,6))
+
+//        def func(a:Int = 2,b:Int = 3):Int = a*b
+//        println(func(5))
+//        var x = func(_:Int,8)
+//        println(x(7))
+        println("abcdef".tail)
     }
 
-
+    
     def area(w: Int, h: Int): Int = w * h
     def biggerVolumn(width:Double,depth:Double,hight:Double):Double={
         return width
