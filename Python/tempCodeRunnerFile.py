@@ -1,4 +1,4 @@
-Ovaltine
-L
-coconut
-3
+x = "abcdef"
+# y = x
+# y = "555"
+# print(y)

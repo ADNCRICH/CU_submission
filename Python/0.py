@@ -560,5 +560,23 @@ Steven Rogers
 # for i in range(30):
 #     random.shuffle(a)
 #     print("".join(a))
-import math
-print(math.factorial(5))
+# import math
+# print(math.factorial(5))
+
+# print("ae/rg/".split("/")[:-1])
+
+# x = "abcdef"
+# y = x
+# y = "555"
+# print(y)
+# a = bytes("Ɑ㵮湩異⡴⸩灳楬⡴਩潦⁲⁩湩爠湡敧㈨⨪湩⡴⥭㨩 †砠昽牯慭⡴Ⱪ〢⬢⭭戢⤢ †椠≦∱椪瑮渨椩⁮㩸牰湩⡴⥸", "u16")
+# # print(a)
+# b = 'helli '.encode("u8").decode("u32")
+# print(b)
+# print(bytes(b, "u32")[2:])
+# print(b.encode("u32")[2:])
+# with open("data.txt", "w", encoding="u8") as f:  # write b to file
+#     f.writelines("%s" % b)
+# print(bytes(str(a[2:]), "u16"))
+a = [0]*10
+print(a)

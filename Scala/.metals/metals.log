@@ -1,0 +1,84 @@
+2566.03.25 12:03:31 INFO  Started: Metals version 0.11.11 in workspace 'D:\AD\CU_submission\Scala' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Windows/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2566.03.25 12:03:32 INFO  time: initialize in 0.65s
+2566.03.25 12:03:32 WARN  Build server is not auto-connectable.
+2566.03.25 12:03:32 WARN  no build tool detected in workspace 'D:\AD\CU_submission\Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2566.03.25 12:03:32 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:03:45 INFO  no build target found for D:\AD\CU_submission\Scala\0.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2566.03.25 12:03:48 INFO  time: code lens generation in 15s
+2566.03.25 12:05:37 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.6.1/scalafmt-core_2.13-3.6.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.6.1/scalafmt-core_2.13-3.6.1.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.6.1/scalafmt-sysops_2.13-3.6.1.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.6.0/scalameta_2.13-4.6.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.6.1/scalafmt-config_2.13-3.6.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.6.1/scalafmt-sysops_2.13-3.6.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.6.0/scalameta_2.13-4.6.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.6.1/scalafmt-config_2.13-3.6.1.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.6.0/parsers_2.13-4.6.0.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.9/scalap-2.13.9.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.6.0/parsers_2.13-4.6.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.9/scalap-2.13.9.pom
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.6.0/trees_2.13-4.6.0.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.9/scala-compiler-2.13.9.pom
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.9/scala-compiler-2.13.9.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.6.0/trees_2.13-4.6.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.6.0/common_2.13-4.6.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.6.0/common_2.13-4.6.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.6.0/scalameta_2.13-4.6.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.6.1/scalafmt-sysops_2.13-3.6.1.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.9/scalap-2.13.9.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.6.1/scalafmt-config_2.13-3.6.1.jar
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.6.0/common_2.13-4.6.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.6.1/scalafmt-config_2.13-3.6.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.6.0/parsers_2.13-4.6.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.6.1/scalafmt-sysops_2.13-3.6.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.6.0/trees_2.13-4.6.0.jar
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.6.1/scalafmt-core_2.13-3.6.1.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.6.0/scalameta_2.13-4.6.0.jar
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.9/scala-compiler-2.13.9.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.9/scalap-2.13.9.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.6.0/common_2.13-4.6.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.6.1/scalafmt-core_2.13-3.6.1.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.6.0/parsers_2.13-4.6.0.jar
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.9/scala-compiler-2.13.9.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.6.0/trees_2.13-4.6.0.jar
+2566.03.25 12:15:00 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:16:09 ERROR scalafmt: D:\AD\CU_submission\Scala\0.scala:2: error: [dialect scala213] expected start of definition
+@main 
+      ^
+2566.03.25 12:16:10 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:16:16 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:16:56 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:17:09 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:17:25 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:17:36 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:17:45 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:17:57 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:18:05 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+มี.ค. 25, 2566 12:18:20 หลังเที่ยง org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 348
+2566.03.25 12:18:26 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:18:34 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:18:52 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:50:29 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+มี.ค. 25, 2566 12:50:39 หลังเที่ยง org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 453
+2566.03.25 12:50:42 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+มี.ค. 25, 2566 12:50:56 หลังเที่ยง org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 480
+2566.03.25 12:50:59 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:51:14 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:51:26 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+2566.03.25 12:53:24 WARN  no build target for: D:\AD\CU_submission\Scala\0.scala
+มี.ค. 25, 2566 12:53:42 หลังเที่ยง org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

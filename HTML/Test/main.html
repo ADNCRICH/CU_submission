@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Redeclaring a Variable Using let</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      // let  x;
+      // // Here x is 10
+
+      // {
+      //   x = 5;
+      //   let y = 5;
+      //   //var x = 2;
+      //   // Here x is 2
+      // }
+      // //document.getElementById("demo").innerHTML = y;
+      // // Here x is 10
+      // document.getElementById("demo").innerHTML = x;
+      const grade = "A";
+      console.log("My CEE grade ", grade);
+      var teacher = "eiei";
+      console.log(teacher);
+      var teacher = "xx";
+      console.log(teacher);
+      //grade = "c";
+
+      function func(n) {
+        if (n == "79") {
+          let y = "A";
+        }
+        return y;
+      }
+      var point = 79;
+      let value = func(point);
+    </script>
+  </body>
+</html>

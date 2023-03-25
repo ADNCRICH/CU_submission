@@ -1,0 +1,4 @@
+pid=ABCD
+created_date=12062564
+factory_id=CBR3
+scan_data=-,-,-,-,-,-,-,-,-,-,-,-,-,+,+,-,-,-,-,-,-,-,-,-,-,-,-
