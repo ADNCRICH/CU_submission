@@ -38,23 +38,31 @@ object LetsHello {
 
         //        println("abcdef".tail)
 
-//        println(sum(1, 5, _ * 3))
-//        println(sum(1, 5, (x) => x * x))
-//        println(sumOpp(1,5,x=>x*x))
+        //        println(sum(1, 5, _ * 3))
+        //        println(sum(1, 5, (x) => x * x))
+        //        println(sumOpp(1,5,x=>x*x))
 
-
+        println(general(x=>x,_+_,0)(1,5))
+        println(general(x=>x*x,(x,y)=>x*y,1)(1,5))
     }
-    def general()
+
+    def general(f1: Int => Int, f2: (Int, Int) => Int,startVal:Int)(l: Int, r: Int): Int = {
+        if(l>r) return startVal
+        return f2(f1(l),general(f1, f2, startVal)(l+1,r))
+    }
+
     def sum(l: Int, r: Int, f: (Int) => Int): Int = {
         if (l > r) return 0
         return f(l) + sum(l + 1, r, f)
     }
+
     def sumOpp(l: Int, r: Int, f: (Int) => Int): Int = {
-        def summ(i:Int,re:Int):Int={
-            if(i>r) return re
-            return summ(i+1,re+f(i))
+        def summ(i: Int, re: Int): Int = {
+            if (i > r) return re
+            return summ(i + 1, re + f(i))
         }
-        return summ(l,0)
+
+        return summ(l, 0)
     }
 
     def area(w: Int, h: Int): Int = w * h
