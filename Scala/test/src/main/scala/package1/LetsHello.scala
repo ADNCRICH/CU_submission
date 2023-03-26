@@ -45,10 +45,10 @@ object LetsHello {
 		//        println(general(x=>x,_+_,0)(1,5))
 		//        println(general(x=>x*x,(x,y)=>x*y,1)(1,5))
 		//		println(1 :: 3 :: List(5, 7, 9))
-		var x = List(5, 8, 10, 12, 13, 4, 6, 6, 8, 10)
-		var y = divide(x, x.length)
-		println(y)
-		println(sort(y._1, y._2))
+		//		var x = List(5, 8, 10, 12, 13, 4, 6, 6, 8, 10)
+		//		var y = divide(x, x.length)
+		//		println(y)
+		//		println(sort(y._1, y._2))
 	}
 
 	def general(f1: Int => Int, f2: (Int, Int) => Int, startVal: Int)(l: Int, r: Int): Int = {
