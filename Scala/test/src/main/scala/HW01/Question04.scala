@@ -4,7 +4,7 @@ object Question04 {
 	def mergesort(list: List[Int]): List[Int] = {
 		def merge(l: List[Int]): List[Int] = {
 			if (l.length > 1) {
-				var x = divide(list, 0)
+				var x = divide(l, l.length)
 				return sort(merge(x._1), merge(x._2))
 			}
 			return l
@@ -29,7 +29,9 @@ object Question04 {
 			}
 			else if (!l1.isEmpty)
 				return l1.head :: sort(l1.tail, l2)
-			return l2.head :: sort(l1, l2.tail)
+			else if (!l2.isEmpty)
+				return l2.head :: sort(l1, l2.tail)
+			return Nil
 		}
 
 		return merge(list)

@@ -45,7 +45,10 @@ object LetsHello {
 		//        println(general(x=>x,_+_,0)(1,5))
 		//        println(general(x=>x*x,(x,y)=>x*y,1)(1,5))
 		//		println(1 :: 3 :: List(5, 7, 9))
-		println((1, 3)._2)
+		var x = List(5, 8, 10, 12, 13, 4, 6, 6, 8, 10)
+		var y = divide(x, x.length)
+		println(y)
+		println(sort(y._1, y._2))
 	}
 
 	def general(f1: Int => Int, f2: (Int, Int) => Int, startVal: Int)(l: Int, r: Int): Int = {
@@ -82,5 +85,18 @@ object LetsHello {
 				return (l.head :: x._1, x._2)
 			return (x._1, l.head :: x._2)
 		}
+	}
+
+	def sort(l1: List[Int], l2: List[Int]): List[Int] = {
+		if (!l1.isEmpty && !l2.isEmpty) {
+			if (l1.head <= l2.head)
+				return l1.head :: sort(l1.tail, l2)
+			return l2.head :: sort(l1, l2.tail)
+		}
+		else if (!l1.isEmpty)
+			return l1.head :: sort(l1.tail, l2)
+		else if (!l2.isEmpty)
+			return l2.head :: sort(l1, l2.tail)
+		return Nil
 	}
 }
