@@ -22,6 +22,8 @@
         "functional": "cpp",
         "regex": "cpp",
         "tuple": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp",
+        "iosfwd": "cpp"
     }
 }

@@ -1,2 +1,2 @@
-
-    for (i = 1; i <= m; i++)
+ < n; i++)
+        cout << ans[grp[i]] << " ";
