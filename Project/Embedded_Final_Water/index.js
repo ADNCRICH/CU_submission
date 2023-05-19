@@ -22,7 +22,10 @@ appE.get("/api/getFIRE", async (req, res) => {
     try {
         const waterCol = collection(db, "Water History");
         const waterSnap = await getDocs(waterCol);
-        const waterList = waterSnap.docs.map((doc) => [doc.id, doc.data()]);
+        const waterList = waterSnap.docs.map((doc) => ({
+            ID: doc.id,
+            Data: doc.data(),
+        }));
         return res.status(200).json({
             RespCode: 200,
             RespMessage: "Found, Nice my buddy.",
@@ -68,6 +71,7 @@ appE.get("/api/getRTOS", async (req, res) => {
         get(ref(dbRTOS))
             .then(async (snap) => {
                 if (snap.exists()) {
+                    console.log(typeof snap.val());
                     console.log(snap.val());
                     try {
                         await fetch("http://127.0.0.1:3000/api/createFIRE", {
