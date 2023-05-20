@@ -78,22 +78,6 @@ appE.get("/api/getRTOS", async (req, res) => {
                 if (snap.exists()) {
                     console.log(typeof snap.val());
                     console.log(snap.val());
-                    // try {
-                    //     await fetch("http://127.0.0.1:3000/api/createFIRE", {
-                    //         method: "POST",
-                    //         headers: {
-                    //             "Content-Type": "application/json",
-                    //         },
-                    //         body: JSON.stringify(snap.val()),
-                    //     });
-                    //     console.log("GET from RTOS and Added to FireBase");
-                    // } catch (err) {
-                    //     console.log(err);
-                    //     return res.status(500).json({
-                    //         RespCode: 500,
-                    //         RespMessage: err.message + " in getRTOS -> create's catch ",
-                    //     });
-                    // }
                     return res.status(200).json({
                         RespCode: 200,
                         RespMessage: "Found, Nice my buddy.(Maybe Posting)",
@@ -131,4 +115,24 @@ appE.get("/api/getRTOS", async (req, res) => {
 // }
 // getTest().then((x) => console.log(x.Result));
 
-//NestJS next time
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// try NestJS next time
+
+// >>>> this is how to call api and don't forget to add Header!!! <<<<
+// try {
+//     await fetch("http://127.0.0.1:3000/api/createFIRE", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(snap.val()),
+//     });
+//     console.log("GET from RTOS and Added to FireBase");
+// } catch (err) {
+//     console.log(err);
+//     return res.status(500).json({
+//         RespCode: 500,
+//         RespMessage: err.message + " in getRTOS -> create's catch ",
+//     });
+// }
