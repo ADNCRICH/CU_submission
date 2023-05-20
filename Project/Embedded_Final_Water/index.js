@@ -17,7 +17,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const dbRTOS = getDatabase(app);
 
-//get firestore
+//get All firestore Document
 appE.get("/api/getFIRE", async (req, res) => {
     try {
         const waterCol = collection(db, "Water History");
@@ -40,16 +40,21 @@ appE.get("/api/getFIRE", async (req, res) => {
     }
 });
 
+// push sensor value with input Location to FireBase
 appE.post("/api/createFIRE", async (req, res) => {
     var DissolvedO2 = req.body.DissolvedO2_Value;
     var TDS = req.body.TDS_Value;
     var Thermo = req.body.Thermo_Value;
+    var Location = req.body.Location;
+    var Time = Date(Date.now()).toString();
     console.log(DissolvedO2, TDS, Thermo);
     try {
         await addDoc(collection(db, "Water History"), {
             DissolvedO2_Value: DissolvedO2,
             TDS_Value: TDS,
             Thermo_Value: Thermo,
+            Location: Location,
+            Time: Time,
         });
 
         return res.status(200).json({
@@ -65,7 +70,7 @@ appE.post("/api/createFIRE", async (req, res) => {
     }
 });
 
-//get RTOS and push to FireStore
+//get sensor value from RTOS
 appE.get("/api/getRTOS", async (req, res) => {
     try {
         get(ref(dbRTOS))
@@ -73,22 +78,22 @@ appE.get("/api/getRTOS", async (req, res) => {
                 if (snap.exists()) {
                     console.log(typeof snap.val());
                     console.log(snap.val());
-                    try {
-                        await fetch("http://127.0.0.1:3000/api/createFIRE", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify(snap.val()),
-                        });
-                        console.log("GET from RTOS and Added to FireBase");
-                    } catch (err) {
-                        console.log(err);
-                        return res.status(500).json({
-                            RespCode: 500,
-                            RespMessage: err.message + " in getRTOS -> create's catch ",
-                        });
-                    }
+                    // try {
+                    //     await fetch("http://127.0.0.1:3000/api/createFIRE", {
+                    //         method: "POST",
+                    //         headers: {
+                    //             "Content-Type": "application/json",
+                    //         },
+                    //         body: JSON.stringify(snap.val()),
+                    //     });
+                    //     console.log("GET from RTOS and Added to FireBase");
+                    // } catch (err) {
+                    //     console.log(err);
+                    //     return res.status(500).json({
+                    //         RespCode: 500,
+                    //         RespMessage: err.message + " in getRTOS -> create's catch ",
+                    //     });
+                    // }
                     return res.status(200).json({
                         RespCode: 200,
                         RespMessage: "Found, Nice my buddy.(Maybe Posting)",
@@ -125,3 +130,5 @@ appE.get("/api/getRTOS", async (req, res) => {
 //     return data;
 // }
 // getTest().then((x) => console.log(x.Result));
+
+//NestJS next time
