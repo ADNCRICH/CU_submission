@@ -79,11 +79,6 @@ appE.get("/api/getRTOS", async (req, res) => {
                             headers: {
                                 "Content-Type": "application/json",
                             },
-                            // body: JSON.stringify({
-                            //     DissolvedO2_Value: snap.val().DissolvedO2_Value,
-                            //     TDS_Value: snap.val().TDS_Value,
-                            //     Thermo_Value: snap.val().Thermo_Value,
-                            // }),
                             body: JSON.stringify(snap.val()),
                         });
                         console.log("GET from RTOS and Added to FireBase");
