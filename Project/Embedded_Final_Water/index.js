@@ -46,15 +46,28 @@ appE.post("/api/createFIRE", async (req, res) => {
     var TDS = req.body.TDS_Value;
     var Thermo = req.body.Thermo_Value;
     var Location = req.body.Location;
-    var Time = Date(Date.now()).toString();
-    console.log(DissolvedO2, TDS, Thermo);
+    var Time = new Date();
+    var TimeString =
+        (Time.getDate() < 10 ? "0" : "") +
+        Time.getDate() +
+        (Time.getMonth() < 9 ? "/0" : "/") +
+        (Time.getMonth() + 1) +
+        "/" +
+        Time.getFullYear() +
+        (Time.getHours() < 10 ? " 0" : " ") +
+        Time.getHours() +
+        (Time.getMinutes() < 10 ? ":0" : ":") +
+        Time.getMinutes() +
+        (Time.getSeconds() < 10 ? ":0" : ":") +
+        Time.getSeconds();
     try {
+        console.log(DissolvedO2, TDS, Thermo, Location, TimeString);
         await addDoc(collection(db, "Water History"), {
             DissolvedO2_Value: DissolvedO2,
             TDS_Value: TDS,
             Thermo_Value: Thermo,
             Location: Location,
-            Time: Time,
+            Time: TimeString,
         });
 
         return res.status(200).json({
