@@ -1,5 +1,4 @@
 {
-    "DissolvedO2_Value": 54,
     "TDS_Value": 3625,
     "Thermo_Value": 59,
     "Location" : "Inthania pool"

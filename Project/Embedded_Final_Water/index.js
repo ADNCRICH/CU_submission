@@ -42,7 +42,7 @@ appE.get("/api/getFIRE", async (req, res) => {
 
 // push sensor value with input Location to FireBase
 appE.post("/api/createFIRE", async (req, res) => {
-    var DissolvedO2 = req.body.DissolvedO2_Value;
+    //var DissolvedO2 = req.body.DissolvedO2_Value;
     var TDS = req.body.TDS_Value;
     var Thermo = req.body.Thermo_Value;
     var Location = req.body.Location;
@@ -61,9 +61,9 @@ appE.post("/api/createFIRE", async (req, res) => {
         (Time.getSeconds() < 10 ? ":0" : ":") +
         Time.getSeconds();
     try {
-        console.log(DissolvedO2, TDS, Thermo, Location, TimeString);
+        console.log(TDS, Thermo, Location, TimeString);
         await addDoc(collection(db, "Water History"), {
-            DissolvedO2_Value: DissolvedO2,
+            //DissolvedO2_Value: DissolvedO2,
             TDS_Value: TDS,
             Thermo_Value: Thermo,
             Location: Location,
