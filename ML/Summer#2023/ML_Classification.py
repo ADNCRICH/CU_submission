@@ -17,20 +17,28 @@ for i in [2, 9, 46, 47, 54, 81, 87, 97]:
 #     print(d.shape)
 
 ma = 0
-for i in d:
-    ma = max(ma, i['embedding'].shape[0])
+lens = np.array([i['embedding'].shape[0] for i in d])
+ma = np.max(lens)
+print(ma)
 
+print("padding data...")
 X = np.array([np.pad(i['embedding'], ((0, ma-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0) for i in d])
+print(X.shape)
 y = np.array([1, 0, 1, 0, 1, 0, 0, 1])
 
 # flatten X last 2 dimensions
+print("Flattening data...")
 X = X.reshape(X.shape[0], -1)
 
+print(X.shape, y.shape)
 # split data
+print("Splitting data...")
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # train model
+print("Training...")
 clf = LogisticRegression(random_state=0).fit(X_train, y_train)
 
 # test model
+print("Testing...")
 print(clf.score(X_test, y_test))

@@ -1,0 +1,9 @@
+"adressfname","age","gender","educ","dx","mmse"
+"madrs-smpl1",78,"W",8,"Control",28
+"madrs-smpl2",69,"W",8,"Control",29
+"madrs-smpl3",73,"M",8,"Control",27
+"madrs-smpl4",66,"M",14,"Control",29
+"madrs-smpl5",66,"W",6,"ProbableAD",28
+"madrs-smpl6",72,"M",8,"ProbableAD",22
+"madrs-smpl7",80,"W",8,"ProbableAD",26
+"madrs-smpl8",78,"M",0,"ProbableAD",17
