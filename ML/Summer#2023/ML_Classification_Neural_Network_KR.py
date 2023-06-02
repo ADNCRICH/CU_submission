@@ -1,9 +1,10 @@
+from matplotlib import pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from keras.models import Sequential
+from sklearn.model_selection import train_test_split
 import os
 import numpy as np
 import csv
-from cuml
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from matplotlib import pyplot as plt
 
 d = []
 dir = r"D:\AD\CU_submission\ML\Summer#2023\output\trainSet_out"
@@ -41,7 +42,7 @@ print("Flattening data...")
 X = X.reshape(X.shape[0], -1)
 
 N = 5
-model = MLPClassifier(solver='sgd', random_state=1,)
+model = MLPClassifier()
 for i in range(N):
     print("round", i+1)
 

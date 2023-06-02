@@ -1,10 +1,10 @@
+from matplotlib import pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import train_test_split
 import os
 import numpy as np
 import csv
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from matplotlib import pyplot as plt
 
 d = []
 dir = r"D:\AD\CU_submission\ML\Summer#2023\output\trainSet_out"
@@ -19,17 +19,13 @@ ma = np.max(lens)
 mi = np.min(lens)
 mean = int(np.mean(lens))
 
-# print("Resizing data to mean...")
-# x = []
-# for i in d:
-#     if i['embedding'].shape[0] < mean:
-#         x.append(np.pad(i['embedding'], ((0, mean-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0))
-#     else:
-#         x.append(i['embedding'][:mean])
-# X = np.array(x)
-
-print("padding data...")
-x = [np.pad(i['embedding'], ((0, ma-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0) for i in d]
+print("Resizing data to mean...")
+x = []
+for i in d:
+    if i['embedding'].shape[0] < mean:
+        x.append(np.pad(i['embedding'], ((0, mean-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0))
+    else:
+        x.append(i['embedding'][:mean])
 X = np.array(x)
 
 print("Loading labels...")
@@ -45,8 +41,8 @@ print(X.shape, y.shape)
 print("Flattening data...")
 X = X.reshape(X.shape[0], -1)
 
-N = 3
-model = LogisticRegression(random_state=0, max_iter=50000)
+N = 5
+model = MLPClassifier()
 for i in range(N):
     print("round", i+1)
 
