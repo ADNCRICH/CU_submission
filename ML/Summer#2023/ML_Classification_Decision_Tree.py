@@ -8,7 +8,6 @@ from matplotlib import pyplot as plt
 
 d = []
 dir = r"D:\AD\CU_submission\ML\Summer#2023\output\trainSet_out"
-
 dir = dir.replace("\\", "\\\\")
 for i in os.listdir(dir):
     d.append(np.load(os.path.join(dir, i)))

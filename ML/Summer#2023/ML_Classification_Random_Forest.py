@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 import multiprocessing as mp
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
+import Data_Formatter
 
 d = []
 dir = r"D:\AD\CU_submission\ML\Summer#2023\output\trainSet_out"
@@ -14,25 +15,8 @@ dir = dir.replace("\\", "\\\\")
 for i in os.listdir(dir):
     d.append(np.load(os.path.join(dir, i)))
 
-print("Preparing data...")
-lens = np.array([i['embedding'].shape[0] for i in d])
-ma = np.max(lens)
-mi = np.min(lens)
-mean = int(np.mean(lens))
-
-# print("Resizing data to mean...")
-# x = []
-# for i in d:
-#     if i['embedding'].shape[0] < mean:
-#         x.append(np.pad(i['embedding'], ((0, mean-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0))
-#     else:
-#         x.append(i['embedding'][:mean])
-# X = np.array(x)
-
-
 print("padding data...")
-x = [np.pad(i['embedding'], ((0, ma-i['embedding'].shape[0]), (0, 0)), 'constant', constant_values=0) for i in d]
-X = np.array(x)
+X = Data_Formatter.pad_Data(d)
 
 print("Loading labels...")
 y = []
