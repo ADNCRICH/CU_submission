@@ -32,9 +32,9 @@ print("Flattening data...")
 X = X.reshape(X.shape[0], -1)
 
 N = 5
-model = [GaussianNB(), MultinomialNB(), BernoulliNB()]
-name = ["GaussianNB", "MultinomialNB", "BernoulliNB"]
-for k in range(len(model[2:])):
+model = [GaussianNB(), BernoulliNB()]
+name = ["GaussianNB", "BernoulliNB"]
+for k in range(len(model)):
     for i in range(N):
         print("round", i+1)
 
