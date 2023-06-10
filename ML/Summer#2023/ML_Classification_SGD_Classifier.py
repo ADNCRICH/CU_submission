@@ -1,8 +1,9 @@
 import os
 import numpy as np
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
+import multiprocessing as mp
 import Data_Formatter
 
 d = []
@@ -24,7 +25,7 @@ X_train = X_train.reshape(X_train.shape[0], -1)
 X_test = X_test.reshape(X_test.shape[0], -1)
 
 N = 1
-model = LogisticRegression(random_state=0, max_iter=10000, verbose=1, class_weight='balanced', n_jobs=-1)
+model = SGDClassifier(n_jobs=mp.cpu_count(), random_state=0, max_iter=10000, loss='hinge', verbose=1, alpha=0.0001, class_weight='balanced')
 for i in range(N):
     print("round", i+1)
 
@@ -41,7 +42,7 @@ for i in range(N):
     disp = ConfusionMatrixDisplay(CM, display_labels=clf.classes_)
     disp.plot()
     disp.ax_.set_title("round %d" % (i+1))
-    dir = r"D:\AD\CU_submission\ML\Summer#2023\output\Confusion_Matrix\Logistic"
+    dir = r"D:\AD\CU_submission\ML\Summer#2023\output\Confusion_Matrix\SGD"
     dir = dir.replace("\\", "\\\\")
-    plt.savefig(os.path.join(dir, "Logit_Figure_%d.png" % (i+1)))
+    plt.savefig(os.path.join(dir, "SGD_Figure_%d_2.png" % (i+1)))
 plt.show()

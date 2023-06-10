@@ -18,29 +18,20 @@ for i in os.listdir(dir):
 print("padding data...")
 X = Data_Formatter.pad_Data(d)
 
-print("Loading labels...")
-y = []
-with open("training-groundtruth.csv", "r") as f:
-    r = csv.reader(f)
-    next(r)
-    for i in r:
-        y.append(1 if i[4] == "Control" else 0)
-y = np.array(y)
-print(X.shape, y.shape)
-# flatten X last 2 dimensions
-print("Flattening data...")
-X = X.reshape(X.shape[0], -1)
+print("Splitting data...")
+X_train, X_test, y_train, y_test = Data_Formatter.my_Split(X, "training-groundtruth2.csv")
+print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 
-N = 5
+print("Flattening data...")
+X_train = X_train.reshape(X_train.shape[0], -1)
+X_test = X_test.reshape(X_test.shape[0], -1)
+
+N = 1
 model = [GaussianNB(), BernoulliNB()]
 name = ["GaussianNB", "BernoulliNB"]
 for k in range(len(model)):
     for i in range(N):
         print("round", i+1)
-
-        # split data
-        print("Splitting data...")
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
         # train model
         print("Training...")
@@ -54,8 +45,8 @@ for k in range(len(model)):
         CM = confusion_matrix(y_test, y_pred, labels=clf.classes_)
         disp = ConfusionMatrixDisplay(CM, display_labels=clf.classes_)
         disp.plot()
-        disp.ax_.set_title("round %d" % (i+1))
+        disp.ax_.set_title("%s round %d" % (name[k], i+1))
         dir = r"D:\AD\CU_submission\ML\Summer#2023\output\Confusion_Matrix\Naive_Bayes"
         dir = dir.replace("\\", "\\\\")
         plt.savefig(os.path.join(dir, "%s_Figure_%d.png" % (name[k], i+1)))
-    plt.show()
+plt.show()
