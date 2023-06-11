@@ -31,7 +31,7 @@ for i in range(N):
 
     # train model
     print("Training...")
-    clf = model.fit(X_train, y_train)
+    clf = model.partial_fit(X_train, y_train, classes=np.unique(y_train))
 
     # test model
     print("Testing...")

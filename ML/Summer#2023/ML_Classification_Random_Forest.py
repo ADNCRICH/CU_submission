@@ -15,30 +15,24 @@ dir = dir.replace("\\", "\\\\")
 for i in os.listdir(dir):
     d.append(np.load(os.path.join(dir, i)))
 
-print("padding data...")
-X = Data_Formatter.pad_Data(d)
+# print("padding data...")
+# X = Data_Formatter.pad_Data(d)
 
-print("Loading labels...")
-y = []
-with open("training-groundtruth.csv", "r") as f:
-    r = csv.reader(f)
-    next(r)
-    for i in r:
-        y.append(1 if i[4] == "Control" else 0)
-y = np.array(y)
-print(X.shape, y.shape)
-# flatten X last 2 dimensions
+print("clipping data...")
+X = Data_Formatter.clip_Data(d)
+
+print("Splitting data...")
+X_train, X_test, y_train, y_test = Data_Formatter.my_Split(X, "training-groundtruth2.csv")
+print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
+
 print("Flattening data...")
-X = X.reshape(X.shape[0], -1)
+X_train = X_train.reshape(X_train.shape[0], -1)
+X_test = X_test.reshape(X_test.shape[0], -1)
 
 N = 5
 model = RandomForestClassifier(n_jobs=mp.cpu_count())
 for i in range(N):
     print("round", i+1)
-
-    # split data
-    print("Splitting data...")
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
     # train model
     print("Training...")

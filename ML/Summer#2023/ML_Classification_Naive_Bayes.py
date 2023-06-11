@@ -15,8 +15,14 @@ for i in os.listdir(dir):
     d.append(np.load(os.path.join(dir, i)))
 
 
-print("padding data...")
-X = Data_Formatter.pad_Data(d)
+# print("padding data...")
+# X = Data_Formatter.pad_Data(d)
+
+print("clipping data...")
+X = Data_Formatter.clip_Data(d)
+
+# print("resizing data...")
+# X = Data_Formatter.resize_Data(d)
 
 print("Splitting data...")
 X_train, X_test, y_train, y_test = Data_Formatter.my_Split(X, "training-groundtruth2.csv")
@@ -48,5 +54,5 @@ for k in range(len(model)):
         disp.ax_.set_title("%s round %d" % (name[k], i+1))
         dir = r"D:\AD\CU_submission\ML\Summer#2023\output\Confusion_Matrix\Naive_Bayes"
         dir = dir.replace("\\", "\\\\")
-        plt.savefig(os.path.join(dir, "%s_Figure_%d.png" % (name[k], i+1)))
+        plt.savefig(os.path.join(dir, "%s_Figure_%d_new.png" % (name[k], i+1)))
 plt.show()

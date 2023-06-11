@@ -2,6 +2,7 @@ import os
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import multiprocessing as mp
 from matplotlib import pyplot as plt
 import Data_Formatter
 
@@ -20,17 +21,17 @@ X_train, X_test, y_train, y_test = Data_Formatter.my_Split(X, "training-groundtr
 print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 
 print("Flattening data...")
-X_train = X_train.reshape(X_train.shape[0], -1)
+X_train = X_train.reshape(X_train.shape[0], -1)  # [3*2*5*8] -> (6) -> (6,40)
 X_test = X_test.reshape(X_test.shape[0], -1)
 
 N = 1
-model = LogisticRegression(random_state=0, max_iter=10000, verbose=1, class_weight='balanced', n_jobs=-1)
+model = LogisticRegression(random_state=0, max_iter=10000, class_weight='balanced', n_jobs=mp.cpu_count(), C=0.1)
 for i in range(N):
     print("round", i+1)
 
     # train model
     print("Training...")
-    clf = model.fit(X_train, y_train)
+    clf = model.fit(X_train, y_train)  # partial fit
 
     # test model
     print("Testing...")
