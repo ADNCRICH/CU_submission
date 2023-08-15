@@ -7,6 +7,7 @@ import multiprocessing as mp
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
 import Data_Formatter
+import joblib
 
 d = []
 dir = r"D:\AD\CU_submission\ML\Summer#2023\output\trainSet_out"
@@ -29,8 +30,8 @@ print("Flattening data...")
 X_train = X_train.reshape(X_train.shape[0], -1)
 X_test = X_test.reshape(X_test.shape[0], -1)
 
-N = 5
-model = RandomForestClassifier(n_jobs=mp.cpu_count())
+N = 20
+model = RandomForestClassifier(n_jobs=mp.cpu_count()-1, max_depth=3, criterion='gini')
 for i in range(N):
     print("round", i+1)
 
@@ -47,4 +48,9 @@ for i in range(N):
     disp = ConfusionMatrixDisplay(CM, display_labels=clf.classes_)
     disp.plot()
     disp.ax_.set_title("round %d" % (i+1))
-plt.show()
+    dir = r"D:\AD\CU_submission\ML\Summer#2023\output\Confusion_Matrix\Random_Forest"
+    dir = dir.replace("\\", "\\\\")
+    plt.savefig(os.path.join(dir, "Logit_Figure_%d.png" % (i+1)))
+    dir = r"D:\AD\CU_submission\ML\Summer#2023\output\model\Random_Forest"
+    dir = dir.replace("\\", "\\\\")
+    joblib.dump(clf, os.path.join(dir, "Random_Forest_%d.npz" % (i+1)))

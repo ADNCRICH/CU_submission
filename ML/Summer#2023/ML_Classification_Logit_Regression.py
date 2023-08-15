@@ -13,8 +13,11 @@ dir = dir.replace("\\", "\\\\")
 for i in os.listdir(dir):
     d.append(np.load(os.path.join(dir, i)))
 
-print("padding data...")
-X = Data_Formatter.pad_Data(d)
+# print("padding data...")
+# X = Data_Formatter.pad_Data(d)
+
+print("clipping data...")
+X = Data_Formatter.clip_Data(d)
 
 print("Splitting data...")
 X_train, X_test, y_train, y_test = Data_Formatter.my_Split(X, "training-groundtruth2.csv")
@@ -25,7 +28,7 @@ X_train = X_train.reshape(X_train.shape[0], -1)  # [3*2*5*8] -> (6) -> (6,40)
 X_test = X_test.reshape(X_test.shape[0], -1)
 
 N = 1
-model = LogisticRegression(random_state=0, max_iter=10000, class_weight='balanced', n_jobs=mp.cpu_count(), C=0.1)
+model = LogisticRegression(random_state=0, max_iter=10000, class_weight='balanced', n_jobs=mp.cpu_count(), C=0.01, verbose=1)
 for i in range(N):
     print("round", i+1)
 
