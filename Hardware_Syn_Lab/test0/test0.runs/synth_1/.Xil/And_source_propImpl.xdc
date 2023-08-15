@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/AD/CU_submission/Hardware_Syn_Lab/test0/test0.srcs/constrs_1/new/And_const.xdc rfile:../../../test0.srcs/constrs_1/new/And_const.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R2 [get_ports X]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T1 [get_ports Y]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L1 [get_ports Z]
