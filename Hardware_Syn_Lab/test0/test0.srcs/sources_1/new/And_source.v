@@ -22,7 +22,12 @@
 
 module And_source(
     input wire X,Y,
-    output wire Z
+    output wire Z,
+    output reg seg
     );
-    assign Z = X & Y;
+assign Z = X & Y;
+always@(X)
+begin
+    seg = X;
+end
 endmodule

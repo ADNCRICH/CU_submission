@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-<<<<<<< HEAD
-    <Process Command=".planAhead." Owner="Windows" Host="ANDEW-DESKTOP" Pid="20496">
-=======
-    <Process Command=".planAhead." Owner="Windows" Host="DESKTOP-7O22A40" Pid="18952">
->>>>>>> refs/remotes/origin/master
-    </Process>
-</ProcessHandle>
