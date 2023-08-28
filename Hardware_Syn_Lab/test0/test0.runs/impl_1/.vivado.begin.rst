@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Windows" Host="ANDEW-DESKTOP" Pid="18832" HostCore="24" HostMemory="034116149248">
+    <Process Command="vivado.bat" Owner="Windows" Host="DESKTOP-7O22A40" Pid="8780" HostCore="12" HostMemory="017022160896">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>

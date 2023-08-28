@@ -12,9 +12,15 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
+<<<<<<< HEAD
   PATH=E:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.1/bin
 else
   PATH=E:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.1/bin:$PATH
+=======
+  PATH=D:/Xilinx/Vitis/2023.1/bin;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin
+else
+  PATH=D:/Xilinx/Vitis/2023.1/bin;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin:$PATH
+>>>>>>> refs/remotes/origin/master
 fi
 export PATH
 
