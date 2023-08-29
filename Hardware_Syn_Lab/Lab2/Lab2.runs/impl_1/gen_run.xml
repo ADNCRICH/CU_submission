@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693243721">
-  <File Type="OPT-HWDEF" Name="HexToSeven.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="HexToSeven_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="HexToSeven.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693293379">
   <File Type="ROUTE-PWR" Name="HexToSeven_power_routed.rpt"/>
   <File Type="PA-TCL" Name="HexToSeven.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="HexToSeven_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="HexToSeven_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="HexToSeven_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="HexToSeven.mmi"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="HexToSeven_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="HexToSeven_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="HexToSeven_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="HexToSeven_rqa_opted.pb"/>
-  <File Type="REPORTS-TCL" Name="HexToSeven_reports.tcl"/>
   <File Type="OPT-TIMING" Name="HexToSeven_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="HexToSeven_opt.dcp"/>
   <File Type="OPT-DRC" Name="HexToSeven_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="HexToSeven.hwdef"/>
   <File Type="PWROPT-DCP" Name="HexToSeven_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="HexToSeven_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="HexToSeven_timing_summary_pwropted.rpt"/>
@@ -52,20 +51,20 @@
   <File Type="ROUTE-TIMING-RPX" Name="HexToSeven_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="HexToSeven_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="HexToSeven_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="HexToSeven_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="HexToSeven_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="HexToSeven_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="HexToSeven_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HexToSeven_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HexToSeven_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HexToSeven_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HexToSeven_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HexToSeven_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Encoder_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Encoder_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Encoder_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Encoder_bus_skew_postroute_physopted.rpt"/>
   <File Type="BG-BIT" Name="HexToSeven.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HexToSeven_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HexToSeven_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Encoder_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Encoder_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="HexToSeven.nky"/>
   <File Type="BITSTR-BMM" Name="HexToSeven_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="HexToSeven.mmi"/>
   <File Type="PDI-FILE" Name="HexToSeven.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="HexToSeven_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="HexToSeven_pld.pdi"/>
@@ -87,6 +86,13 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Encoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/HexToSeven.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>

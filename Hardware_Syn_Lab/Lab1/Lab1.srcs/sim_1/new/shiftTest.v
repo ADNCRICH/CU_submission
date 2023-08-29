@@ -22,8 +22,10 @@
 
 module shiftTest;
 reg clock, d;
-wire [1:0] q;
-shiftB SB(q, clock, d);
+wire [1:0] qA;
+wire [1:0] qB;
+shiftA SA(qA, clock, d);
+shiftB SB(qB, clock, d);
 always
     #10 clock=~clock;
 initial

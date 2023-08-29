@@ -28,3 +28,6 @@ set_property PACKAGE_PIN R2 [get_ports {S1[3]}]
 set_property PACKAGE_PIN T1 [get_ports {S1[2]}]
 set_property PACKAGE_PIN U1 [get_ports {S1[1]}]
 set_property PACKAGE_PIN W2 [get_ports {S1[0]}]
+
+set_property PACKAGE_PIN W5 [get_ports clock]
+set_property IOSTANDARD LVCMOS33 [get_ports clock]

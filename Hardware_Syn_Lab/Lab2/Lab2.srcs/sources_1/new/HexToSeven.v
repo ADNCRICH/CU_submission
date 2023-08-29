@@ -22,31 +22,47 @@
 
 module HexToSeven(
     input wire [3:0] S1,
-    output reg [0:6] out7, 
+    input wire clock,
+    output wire [0:6] out7, 
     output reg [3:0] cad
     );
-    
-    always @(S1)
+    reg [3:0] cou;
+    reg [3:0] cou3;
+    reg [3:0] cou2;
+    reg [3:0] cou1;
+    reg [3:0] cou0;
+    reg [23:0] couu;
+    Encoder e(cou,out7);
+    always @(posedge clock)
     begin
-      case (S1)
-          4'b0001 : out7 = 7'b1111001;   // 1
-          4'b0010 : out7 = 7'b0100100;   // 2
-          4'b0011 : out7 = 7'b0110000;   // 3
-          4'b0100 : out7 = 7'b0011001;   // 4
-          4'b0101 : out7 = 7'b0010010;   // 5
-          4'b0110 : out7 = 7'b0000010;   // 6
-          4'b0111 : out7 = 7'b1111000;   // 7
-          4'b1000 : out7 = 7'b0000000;   // 8
-          4'b1001 : out7 = 7'b0010000;   // 9
-          4'b1010 : out7 = 7'b0001000;   // A
-          4'b1011 : out7 = 7'b0000011;   // b
-          4'b1100 : out7 = 7'b1000110;   // C
-          4'b1101 : out7 = 7'b0100001;   // d
-          4'b1110 : out7 = 7'b0000110;   // E
-          4'b1111 : out7 = 7'b0001110;   // F
-          default : out7 = 7'b1000000;   // 0
-      endcase
-      cad = 4'b0111;
+      couu = couu + 1;
+      
+      case(couu)
+          23'b00111111111111111111111 : begin
+              cou3 = (S1[3] == 1)? cou3 + 1 : cou3;
+              cad = 4'b0111;
+              cou = cou3;
+          end
+          
+          23'b01111111111111111111111 : begin
+              cou2 = (S1[2] == 1)? cou2 + 1 : cou2;
+              cad = 4'b1011;
+              cou = cou2;
+          end
+          
+          23'b10111111111111111111111 : begin
+              cou1 = (S1[1] == 1)? cou1 + 1 : cou1;
+              cad = 4'b1101;
+              cou = cou1;
+          end
+          
+          23'b11111111111111111111111 : begin
+              cou0 = (S1[0] == 1)? cou0 + 1 : cou0;
+              cad = 4'b1110;
+              cou = cou0;
+          end
+          
+      endcase      
      
    end
 endmodule

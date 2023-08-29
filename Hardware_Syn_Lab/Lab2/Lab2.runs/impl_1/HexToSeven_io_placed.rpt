@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date                      : Tue Aug 29 00:29:04 2023
-| Host                      : Andew-Desktop running 64-bit major release  (build 9200)
+| Date                      : Tue Aug 29 14:17:41 2023
+| Host                      : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
 | Command                   : report_io -file HexToSeven_io_placed.rpt
 | Design                    : HexToSeven
 | Device                    : xc7a35t
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            15 |
+|            16 |
 +---------------+
 
 
@@ -258,7 +258,7 @@ Table of Contents
 | W2         | S1[0]       | High Range | IO_L5N_T0_34                 | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W3         |             | High Range | IO_L6N_T0_VREF_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W4         | cad[3]      | High Range | IO_L12N_T1_MRCC_34           | OUTPUT        | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| W5         |             | High Range | IO_L12P_T1_MRCC_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| W5         | clock       | High Range | IO_L12P_T1_MRCC_34           | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W6         | out7[5]     | High Range | IO_L13N_T2_MRCC_34           | OUTPUT        | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W7         | out7[6]     | High Range | IO_L13P_T2_MRCC_34           | OUTPUT        | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W8         |             | Dedicated  | TDO_0                        | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
