@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Aug 29 14:16:22 2023
-# Process ID: 22612
+# Start of session at: Mon Sep  4 19:57:12 2023
+# Process ID: 3232
 # Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.runs/synth_1
 # Command line: vivado.exe -log HexToSeven.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HexToSeven.tcl
 # Log file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.runs/synth_1/HexToSeven.vds
 # Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.runs/synth_1\vivado.jou
-# Running On: DESKTOP-7O22A40, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17022 MB
+# Running On: Andew-Desktop, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 16, Host memory: 34116 MB
 #-----------------------------------------------------------
 source HexToSeven.tcl -notrace

@@ -31,7 +31,7 @@ module HexToSeven(
     reg [3:0] cou2;
     reg [3:0] cou1;
     reg [3:0] cou0;
-    reg [23:0] couu;
+    reg [22:0] couu;
     Encoder e(cou,out7);
     always @(posedge clock)
     begin
@@ -40,29 +40,39 @@ module HexToSeven(
       case(couu)
           23'b00111111111111111111111 : begin
               cou3 = (S1[3] == 1)? cou3 + 1 : cou3;
-              cad = 4'b0111;
-              cou = cou3;
           end
           
           23'b01111111111111111111111 : begin
               cou2 = (S1[2] == 1)? cou2 + 1 : cou2;
-              cad = 4'b1011;
-              cou = cou2;
           end
           
           23'b10111111111111111111111 : begin
               cou1 = (S1[1] == 1)? cou1 + 1 : cou1;
-              cad = 4'b1101;
-              cou = cou1;
           end
           
           23'b11111111111111111111111 : begin
               cou0 = (S1[0] == 1)? cou0 + 1 : cou0;
+          end
+      endcase      
+      
+      case(couu[19:18])
+          2'b00 : begin
+              cad = 4'b0111;
+              cou = cou3;
+          end
+          2'b01 : begin
+              cad = 4'b1011;
+              cou = cou2;
+          end
+          2'b10 : begin
+              cad = 4'b1101;
+              cou = cou1;
+          end
+          2'b11 : begin
               cad = 4'b1110;
               cou = cou0;
           end
-          
-      endcase      
-     
+       endcase
+   
    end
 endmodule
