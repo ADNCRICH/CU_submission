@@ -13,5 +13,6 @@ int main() {
     // string s = "abc";
     // s[0]++;
     // cout << s;
-    cout << (-13) % 8;
+    vector<int> a = {1, 2, 3};
+    cout << a.size();
 }
