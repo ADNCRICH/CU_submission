@@ -25,11 +25,12 @@ module problem1(
     output reg [3:0] out,
     output reg cout, bout
     );
-    
 always@(posedge clock)begin
     out = ((up && !down)? out + 1 : (!up && down)? out - 1 : out);
     out = (out == 10)? 0:out;
     out = (out == 15)? 9:out;
     out = ((set0 && !set9)? 0:(!set0 && set9)? 9 : out);
+    cout <= ((out == 9 && up && !down)? ((bout == 0)? 1:0) : (out == 0 && down && !up)? 0 : cout);
+    bout <= ((out == 0 && down && !up)? ((cout == 0)? 1:0) : (out == 9 && up && !down)? 0 : bout);
 end
 endmodule
