@@ -29,7 +29,7 @@ module ClockDiv(
     always@(posedge clock)
     begin
         cou <= cou + 1;
-        clk = cou[21];
+        clk = cou[19];
     end
     
     

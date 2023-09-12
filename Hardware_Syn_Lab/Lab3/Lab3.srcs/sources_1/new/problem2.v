@@ -22,11 +22,13 @@
 
 module problem2(
     input wire in,clock,
-    output reg out
+    output wire outt
     );
     //reg [2:0] state;
-    reg state;
+    reg [2:0] state;
+    reg out;
     initial state = 0;
+    assign outt = out;
     always@(posedge clock)begin
         /*state = ((state >=1 && state < 4)? state + 1 : state);
         case(state)
@@ -35,6 +37,7 @@ module problem2(
         case(state)
             0 : {state, out} = ((in)? 3 : 0);
             1 : {state, out} = ((in)? 2 : 0);
+            //2 : {state, out} = ((in)? 4 : 0);
         endcase
     end
 endmodule
