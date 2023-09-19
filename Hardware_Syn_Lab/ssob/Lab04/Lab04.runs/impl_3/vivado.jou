@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep 19 15:25:02 2023
+# Process ID: 5204
+# Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.runs/impl_3
+# Command line: vivado.exe -log CalculatorDisplayer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CalculatorDisplayer.tcl -notrace
+# Log file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.runs/impl_3/CalculatorDisplayer.vdi
+# Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.runs/impl_3\vivado.jou
+# Running On: DESKTOP-7O22A40, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17022 MB
+#-----------------------------------------------------------
+source CalculatorDisplayer.tcl -notrace

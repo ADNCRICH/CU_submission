@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695107049">
+  <File Type="ROUTE-PWR" Name="CalculatorDisplayer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Binary2BCDDisplayer.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="CalculatorDisplayer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Binary2BCDDisplayer_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Binary2BCDDisplayer.msk"/>
+  <File Type="ROUTE-CLK" Name="CalculatorDisplayer_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Binary2BCDDisplayer.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Binary2BCDDisplayer.bit"/>
+  <File Type="BG-DRC" Name="Binary2BCDDisplayer.drc"/>
+  <File Type="BG-BGN" Name="Binary2BCDDisplayer.bgn"/>
+  <File Type="BG-BIN" Name="Binary2BCDDisplayer.bin"/>
+  <File Type="BITSTR-RBT" Name="Binary2BCDDisplayer.rbt"/>
+  <File Type="BITSTR-NKY" Name="Binary2BCDDisplayer.nky"/>
+  <File Type="BITSTR-BMM" Name="Binary2BCDDisplayer_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Binary2BCDDisplayer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CalculatorDisplayer_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="Binary2BCDDisplayer.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Binary2BCDDisplayer.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="CalculatorDisplayer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Binary2BCDDisplayer.hwdef"/>
+  <File Type="PLACE-IO" Name="CalculatorDisplayer_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CalculatorDisplayer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CalculatorDisplayer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CalculatorDisplayer_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Binary2BCDDisplayer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="CalculatorDisplayer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CalculatorDisplayer_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CalculatorDisplayer_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CalculatorDisplayer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CalculatorDisplayer_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Binary2BCDDisplayer_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Binary2BCDDisplayer_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Binary2BCDDisplayer_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CalculatorDisplayer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Binary2BCDDisplayer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CalculatorDisplayer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Binary2BCDDisplayer_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Binary2BCDDisplayer_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Binary2BCDDisplayer_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Binary2BCDDisplayer_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Binary2BCDDisplayer_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Binary2BCDDisplayer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Binary2BCDDisplayer_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CalculatorDisplayer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CalculatorDisplayer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="CalculatorDisplayer_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CalculatorDisplayer_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="Binary2BCDDisplayer.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Binary2BCDDisplayer_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Binary2BCDDisplayer_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Binary2BCDDisplayer.rcfi"/>
+  <File Type="CFI_FILE" Name="Binary2BCDDisplayer.cfi"/>
+  <File Type="RNPI_FILE" Name="Binary2BCDDisplayer.rnpi"/>
+  <File Type="NPI_FILE" Name="Binary2BCDDisplayer.npi"/>
+  <File Type="RBD_FILE" Name="Binary2BCDDisplayer.rbd"/>
+  <File Type="ROUTE-RQS" Name="Binary2BCDDisplayer_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Binary2BCDDisplayer_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Lab02/Lab02.srcs/sources_1/new/ClockDivider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab02/Lab02.srcs/sources_1/new/HEXtoSevenSegmentEncoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROMM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Binary2BCDDisplayer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab03/Lab03.srcs/sources_1/new/DFlipFlop.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab03/Lab03.srcs/sources_1/new/Debouncer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DistributedRAM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab03/Lab03.srcs/sources_1/new/SinglePulser.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Stack.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/StackDisplayer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SpecialHEXtoSevenSegmentEncoder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CalculatorDisplayer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/initROM.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calROM.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Binary2BCDDisplayer"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/SevenSegmentTDM.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep 19 14:56:58 2023
+# Process ID: 13156
+# Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/Lab4/Lab4.runs/impl_1
+# Command line: vivado.exe -log StackDisp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source StackDisp.tcl -notrace
+# Log file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab4/Lab4.runs/impl_1/StackDisp.vdi
+# Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab4/Lab4.runs/impl_1\vivado.jou
+# Running On: DESKTOP-7O22A40, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17022 MB
+#-----------------------------------------------------------
+source StackDisp.tcl -notrace

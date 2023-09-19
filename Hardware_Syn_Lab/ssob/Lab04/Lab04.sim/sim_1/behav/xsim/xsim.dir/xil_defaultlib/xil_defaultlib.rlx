@@ -1,0 +1,13 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/Code/CU/HW_Syn_Lab/Lab02/Lab02.srcs/sources_1/new/ClockDivider.v,1693891179,verilog,,D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/DFlipFlop.v,,ClockDivider,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab02/Lab02.srcs/sources_1/new/HEXtoSevenSegmentEncoder.v,1692889277,verilog,,D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/SinglePulser.v,,HEXtoSevenSegmentEncoder,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab02/Lab02.srcs/sources_1/new/SevenSegmentTDM.v,1694762841,verilog,,,,SevenSegmentTDM,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/DFlipFlop.v,1694445954,verilog,,D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/Debouncer.v,,DFlipFlop,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/Debouncer.v,1694019400,verilog,,D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/SinglePulser.v,,Debouncer,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab03/Lab03.srcs/sources_1/new/SinglePulser.v,1694447021,verilog,,D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/Stack.v,,SinglePulser,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sim_1/new/StackTester.v,1694766226,verilog,,,,StackTester,,,,,,,,
+D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/Stack.v,1694766665,verilog,,D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sim_1/new/StackTester.v,,Stack,,,,,,,,
