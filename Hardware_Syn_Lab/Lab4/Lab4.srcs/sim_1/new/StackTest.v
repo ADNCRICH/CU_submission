@@ -43,12 +43,24 @@ module StackTest();
         sw = 0;
         #10
         sw[0] = 1;
-        #30;
+        #20;
         push = 1;
-        #50;
+        #20
         push = 0;
-        #10
+        #20
+        sw[2] = 1;
+        #20 
+        push = 1;
+        #20;
+        push = 0;
+        #20
         pop = 1;
+        #20
+        pop = 0;
+        #20
+        pop = 1;
+        #20
+        pop = 0;
         #50;
         $finish;
     end

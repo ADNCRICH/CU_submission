@@ -24,7 +24,10 @@ module StackDisp(
     output [0:6] seg7,
     output reg [3:0] anode,
     input [7:0] sw,
-    input BTNU, BTNC, BTND, clock 
+    input BTNU,
+    input BTNC,
+    input BTND,
+    input clock 
 );
 reg [21:0] cou;
 wire [15:0] num;
@@ -32,7 +35,7 @@ reg [3:0] num7;
 wire clk;
 
 Encoder en(num7, seg7);
-Stack st(num, sw, BTNU, BNTC, BTND, clock);
+Stack st(num, sw, BTNU, BTNC, BTND, clock);
 ClockDiv cd(clock, clk);
 
 always@(posedge clock)begin

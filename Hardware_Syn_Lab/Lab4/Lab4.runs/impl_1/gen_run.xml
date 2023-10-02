@@ -1,113 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695110724">
-  <File Type="ROUTE-PWR" Name="StackDisp_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="StackDisp.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="StackDisp_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="StackDisp_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="StackDisp_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="StackDisp.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="StackDisp_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="StackDisp_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="StackDisp_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="StackDisp_opt.dcp"/>
-  <File Type="OPT-DRC" Name="StackDisp_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="StackDisp.hwdef"/>
-  <File Type="PWROPT-DCP" Name="StackDisp_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="StackDisp_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="StackDisp_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="StackDisp_placed.dcp"/>
-  <File Type="PLACE-IO" Name="StackDisp_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="StackDisp_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="StackDisp_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="StackDisp_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="StackDisp_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="StackDisp_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="StackDisp_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="StackDisp.bin"/>
-  <File Type="PLACE-TIMING" Name="StackDisp_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="StackDisp_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="StackDisp_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="StackDisp_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="StackDisp.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="StackDisp_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="StackDisp_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="StackDisp_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="StackDisp.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="StackDisp_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="StackDisp_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="StackDisp_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="StackDisp_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="StackDisp_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="StackDisp_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="StackDisp_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="StackDisp_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="StackDisp_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="StackDisp_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="StackDisp_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="StackDisp_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="StackDisp_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="StackDisp_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="StackDisp_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="StackDisp_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="StackDisp_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="StackDisp_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="StackDisp_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="StackDisp_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="StackDisp_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="StackDisp_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="StackDisp_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="problem2_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="problem2_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="problem2_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="problem2_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="StackDisp.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="problem2_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="problem2_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="StackDisp.nky"/>
-  <File Type="BITSTR-BMM" Name="StackDisp_bd.bmm"/>
-  <File Type="PDI-FILE" Name="StackDisp.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="StackDisp_soc.pdi"/>
-  <File Type="PL-PDI-FILE" Name="StackDisp_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="StackDisp.rcfi"/>
-  <File Type="CFI_FILE" Name="StackDisp.cfi"/>
-  <File Type="RNPI_FILE" Name="StackDisp.rnpi"/>
-  <File Type="NPI_FILE" Name="StackDisp.npi"/>
-  <File Type="RBD_FILE" Name="StackDisp.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695404385">
+  <File Type="ROUTE-PWR" Name="plusMinusMulDiv_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="plusMinusMulDiv.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="plusMinusMulDiv_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="plusMinusMulDiv_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="plusMinusMulDiv_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="plusMinusMulDiv.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="plusMinusMulDiv_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="plusMinusMulDiv_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="plusMinusMulDiv_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="plusMinusMulDiv_opt.dcp"/>
+  <File Type="OPT-DRC" Name="plusMinusMulDiv_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="plusMinusMulDiv.hwdef"/>
+  <File Type="PWROPT-DCP" Name="plusMinusMulDiv_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="plusMinusMulDiv_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="plusMinusMulDiv_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="plusMinusMulDiv_placed.dcp"/>
+  <File Type="PLACE-IO" Name="plusMinusMulDiv_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="plusMinusMulDiv_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="plusMinusMulDiv_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="plusMinusMulDiv_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="plusMinusMulDiv_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="plusMinusMulDiv_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="plusMinusMulDiv_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="plusMinusMulDiv.bin"/>
+  <File Type="PLACE-TIMING" Name="plusMinusMulDiv_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="plusMinusMulDiv_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="plusMinusMulDiv_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="plusMinusMulDiv_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="plusMinusMulDiv.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="plusMinusMulDiv_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="plusMinusMulDiv_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="plusMinusMulDiv_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="plusMinusMulDiv.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="plusMinusMulDiv_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="plusMinusMulDiv_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="plusMinusMulDiv_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="plusMinusMulDiv_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="plusMinusMulDiv_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="plusMinusMulDiv_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="plusMinusMulDiv_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="plusMinusMulDiv_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="plusMinusMulDiv_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="plusMinusMulDiv_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="plusMinusMulDiv_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="plusMinusMulDiv_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="plusMinusMulDiv_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="plusMinusMulDiv_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="plusMinusMulDiv_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="plusMinusMulDiv_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="plusMinusMulDiv_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="plusMinusMulDiv_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="plusMinusMulDiv_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="plusMinusMulDiv_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="plusMinusMulDiv_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="plusMinusMulDiv_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="plusMinusMulDiv_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="plusMinusMulDiv_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="plusMinusMulDiv_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="plusMinusMulDiv_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="plusMinusMulDiv_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="plusMinusMulDiv.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="plusMinusMulDiv_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="plusMinusMulDiv_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="plusMinusMulDiv.nky"/>
+  <File Type="BITSTR-BMM" Name="plusMinusMulDiv_bd.bmm"/>
+  <File Type="PDI-FILE" Name="plusMinusMulDiv.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="plusMinusMulDiv_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="plusMinusMulDiv_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="plusMinusMulDiv.rcfi"/>
+  <File Type="CFI_FILE" Name="plusMinusMulDiv.cfi"/>
+  <File Type="RNPI_FILE" Name="plusMinusMulDiv.rnpi"/>
+  <File Type="NPI_FILE" Name="plusMinusMulDiv.npi"/>
+  <File Type="RBD_FILE" Name="plusMinusMulDiv.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="StackDisp.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="StackDisp.sysdef"/>
-  <File Type="BG-BGN" Name="StackDisp.bgn"/>
-  <File Type="BG-DRC" Name="StackDisp.drc"/>
-  <File Type="RDI-RDI" Name="StackDisp.vdi"/>
+  <File Type="BITSTR-LTX" Name="plusMinusMulDiv.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="plusMinusMulDiv.sysdef"/>
+  <File Type="BG-BGN" Name="plusMinusMulDiv.bgn"/>
+  <File Type="BG-DRC" Name="plusMinusMulDiv.drc"/>
+  <File Type="RDI-RDI" Name="plusMinusMulDiv.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="StackDisp_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="StackDisp_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="plusMinusMulDiv_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="plusMinusMulDiv_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/ClockDiv.v">
+    <File Path="$PSRCDIR/sources_1/new/BlockRom.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/DistributedRam.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/Encoder.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Stack.v">
+    <File Path="$PSRCDIR/sources_1/new/minusEncoder.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -121,14 +107,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/StackDisp.v">
+    <File Path="$PSRCDIR/sources_1/new/plusMinusMulDiv.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/BlockRom.v">
+    <File Path="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/Encoder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -136,10 +122,61 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/BCDwMEM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/ClockDiv.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DistributedRam.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Stack.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/StackDisp.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tensToBinary.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fourModeToBin.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="StackDisp"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="plusMinusMulDiv"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

@@ -1,0 +1,16 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/Windows/Downloads/verilog/adder.v,1696258417,verilog,,C:/Users/Windows/Downloads/verilog/alu.v,,adder,,,,,,,,
+C:/Users/Windows/Downloads/verilog/alu.v,1696261224,verilog,,D:/AD/CU_submission/Hardware_Syn_Lab/Lab5/Lab5.srcs/sim_1/new/alu_test.v,,alu,,,,,,,,
+C:/Users/Windows/Downloads/verilog/control.v,1696258444,verilog,,C:/Users/Windows/Downloads/verilog/extender.v,,control,,,,,,,,
+C:/Users/Windows/Downloads/verilog/extender.v,1696258464,verilog,,C:/Users/Windows/Downloads/verilog/memory.v,,extender,,,,,,,,
+C:/Users/Windows/Downloads/verilog/memory.v,1696258497,verilog,,C:/Users/Windows/Downloads/verilog/mux2_1.v,,memory,,,,,,,,
+C:/Users/Windows/Downloads/verilog/mux2_1.v,1696258475,verilog,,C:/Users/Windows/Downloads/verilog/nanocpu.v,,mux2_1,,,,,,,,
+C:/Users/Windows/Downloads/verilog/nano_sc_system.v,1696258166,verilog,,,,nano_sc_system,,,,,,,,
+C:/Users/Windows/Downloads/verilog/nanocpu.v,1696258330,verilog,,C:/Users/Windows/Downloads/verilog/regfile.v,,nanocpu,,,,,,,,
+C:/Users/Windows/Downloads/verilog/regfile.v,1696258965,verilog,,C:/Users/Windows/Downloads/verilog/rom.v,,regfile,,,,,,,,
+C:/Users/Windows/Downloads/verilog/rom.v,1696258581,verilog,,C:/Users/Windows/Downloads/verilog/nano_sc_system.v,,rom,,,,,,,,
+D:/AD/CU_submission/Hardware_Syn_Lab/Lab5/Lab5.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/AD/CU_submission/Hardware_Syn_Lab/Lab5/Lab5.srcs/sim_1/new/alu_test.v,1696260778,verilog,,,,alu_test,,,,,,,,
