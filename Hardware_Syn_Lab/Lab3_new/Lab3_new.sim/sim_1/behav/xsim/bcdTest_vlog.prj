@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab3_new.srcs/sources_1/new/BCDcounter.v" \
+"../../../../Lab3_new.srcs/sim_1/new/bcdTest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

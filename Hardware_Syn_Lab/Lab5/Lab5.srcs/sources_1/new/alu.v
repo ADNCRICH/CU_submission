@@ -13,15 +13,20 @@ output reg Cout;
 input [31:0] A;
 input [31:0] B;
 input Cin;
-input [1:0] alu_ops;
+input [2:0] alu_ops;
 
 assign z=~|S;
 
-always @(A or B or alu_ops)
+always @(A, B, alu_ops, Cin)
 begin
 	case (alu_ops)
-	2'b01: begin S=A|B; Cout=0; end
-	2'b10: {Cout,S}=A-B;
+	1: {Cout,S}=A-B;
+	2: begin S=A|B; Cout=0; end
+	3: begin S=A&B; Cout=0; end
+	4: begin S=A^B; Cout=0; end
+	5: begin S=-A; Cout=0; end
+	6: begin S=~A; Cout=0; end
+	7: begin S=~B; Cout=0; end
 	default: {Cout,S}=A+B+Cin;	
 	endcase
 end

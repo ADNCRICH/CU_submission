@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Oct  9 00:17:22 2023
+# Process ID: 3424
+# Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.runs/impl_1
+# Command line: vivado.exe -log fourCounter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fourCounter.tcl -notrace
+# Log file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.runs/impl_1/fourCounter.vdi
+# Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.runs/impl_1\vivado.jou
+# Running On: Andew-Desktop, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 16, Host memory: 34116 MB
+#-----------------------------------------------------------
+source fourCounter.tcl -notrace

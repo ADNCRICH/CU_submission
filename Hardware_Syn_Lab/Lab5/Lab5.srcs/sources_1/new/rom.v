@@ -9,7 +9,6 @@
 module rom(data,address);
 parameter DATA_WIDTH=32;
 parameter ADDR_WIDTH=27;
-
 output	[DATA_WIDTH-1:0]	data;
 input	[ADDR_WIDTH-1:0]	address;
 

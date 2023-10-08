@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 6
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -90,6 +89,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.srcs/sources_1/new/Encoder.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.srcs/sources_1/new/clkDiv.v
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab2/Lab2.srcs/sources_1/new/HexToSeven.v
 }
 OPTRACE "Adding files" END { }

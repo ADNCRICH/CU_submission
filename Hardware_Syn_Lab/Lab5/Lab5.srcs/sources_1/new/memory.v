@@ -24,7 +24,7 @@ assign data=(wr==0) ? data_out:32'bz;
 integer i;
 initial
 begin
-	$readmemb("data.list",mem);
+	$readmemb("data.mem",mem);
 end
 
 always @(address)
