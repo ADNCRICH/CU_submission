@@ -89,6 +89,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.srcs/sources_1/new/BCDcounter.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.srcs/sources_1/imports/new/Debounce.v
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.srcs/sources_1/imports/new/clkDiv.v
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.srcs/sources_1/new/encoder.v
   D:/AD/CU_submission/Hardware_Syn_Lab/Lab3_new/Lab3_new.srcs/sources_1/new/singlePulser.v
