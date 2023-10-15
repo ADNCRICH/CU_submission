@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Oct  9 23:18:02 2023
-| Host             : Andew-Desktop running 64-bit major release  (build 9200)
+| Date             : Tue Oct 10 12:11:48 2023
+| Host             : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
 | Command          : report_power -file fourCounter_power_routed.rpt -pb fourCounter_power_summary_routed.pb -rpx fourCounter_power_routed.rpx
 | Design           : fourCounter
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.096        |
+| Total On-Chip Power (W)  | 0.093        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.025        |
+| Dynamic (W)              | 0.022        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      228 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       63 |     20800 |            0.30 |
-|   Register     |    <0.001 |       90 |     41600 |            0.22 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      254 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       73 |     20800 |            0.35 |
+|   Register     |    <0.001 |      110 |     41600 |            0.26 |
 |   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
-|   Others       |     0.000 |       44 |       --- |             --- |
-| Signals        |    <0.001 |      136 |       --- |             --- |
-| I/O            |     0.023 |       22 |       106 |           20.75 |
+|   Others       |     0.000 |       48 |       --- |             --- |
+| Signals        |    <0.001 |      156 |       --- |             --- |
+| I/O            |     0.020 |       22 |       106 |           20.75 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.096 |          |           |                 |
+| Total          |     0.093 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| fourCounter |     0.025 |
+| fourCounter |     0.022 |
 +-------------+-----------+
 
 

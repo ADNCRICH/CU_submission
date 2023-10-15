@@ -33,7 +33,7 @@ module SevenSegmentTDM(
     reg [1:0] counter;
     wire [15:0] inp;
 
-    FourDigitCounter(inp,sw,set9,set0,clk);
+    FourDigitCounter(inp,sw,set9,set0,clock);
     HEXtoSevenSegmentEncoder ss(LED,HEX);
     ClockDivider cd(clk, clock);
     

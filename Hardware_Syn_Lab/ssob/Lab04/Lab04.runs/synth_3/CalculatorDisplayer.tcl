@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.runs/synth_3/CalculatorDisplayer.tcl"
+  variable script "D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.runs/synth_3/CalculatorDisplayer.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,34 +71,35 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_3" START { ROLLUP_AUTO }
 set_param general.maxThreads 8
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.cache/wt [current_project]
-set_property parent.project_path D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.xpr [current_project]
+set_property webtalk.parent_dir D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.cache/wt [current_project]
+set_property parent.project_path D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths d:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new [current_project]
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property ip_repo_paths d:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new [current_project]
 update_ip_catalog
-set_property ip_output_repo d:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.cache/ip [current_project]
+set_property ip_output_repo d:/Code/CU/HW_Syn_Lab/Lab04/Lab04.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new/initROM.mem
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new/calROM.mem
+  D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/initROM.mem
+  D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/calROM.mem
 }
 read_verilog -library xil_defaultlib {
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab02/Lab02.srcs/sources_1/new/ClockDivider.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new/ROMM.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new/SpecialHEXtoSevenSegmentEncoder.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/sources_1/new/CalculatorDisplayer.v
+  D:/Code/CU/HW_Syn_Lab/Lab02/Lab02.srcs/sources_1/new/ClockDivider.v
+  D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/ROMM.v
+  D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/SpecialHEXtoSevenSegmentEncoder.v
+  D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/sources_1/new/CalculatorDisplayer.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -109,12 +110,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc]
+read_xdc D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/utils_1/imports/synth_3/CalculatorDisplayer.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

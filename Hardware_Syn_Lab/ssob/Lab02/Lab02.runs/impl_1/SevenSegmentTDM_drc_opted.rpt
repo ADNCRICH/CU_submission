@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Sep  5 12:39:30 2023
+| Date         : Tue Oct 10 12:11:11 2023
 | Host         : PHUMIPAT-C running 64-bit major release  (build 9200)
 | Command      : report_drc -file SevenSegmentTDM_drc_opted.rpt -pb SevenSegmentTDM_drc_opted.pb -rpx SevenSegmentTDM_drc_opted.rpx
 | Design       : SevenSegmentTDM

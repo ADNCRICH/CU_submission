@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.1/bin
+  PATH=D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin
 else
-  PATH=E:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.1/bin:$PATH
+  PATH=D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin:$PATH
 fi
 export PATH
 
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log Main.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
 
 

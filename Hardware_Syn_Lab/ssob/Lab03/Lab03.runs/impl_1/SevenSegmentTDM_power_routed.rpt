@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Sep 11 23:09:15 2023
+| Date             : Tue Oct 10 12:24:30 2023
 | Host             : PHUMIPAT-C running 64-bit major release  (build 9200)
 | Command          : report_power -file SevenSegmentTDM_power_routed.rpt -pb SevenSegmentTDM_power_summary_routed.pb -rpx SevenSegmentTDM_power_routed.rpx
 | Design           : SevenSegmentTDM
@@ -52,15 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      278 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       79 |     20800 |            0.38 |
-|   Register     |    <0.001 |      108 |     41600 |            0.26 |
-|   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       71 |       --- |             --- |
-| Signals        |    <0.001 |      178 |       --- |             --- |
-| I/O            |     0.028 |       22 |       106 |           20.75 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      318 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       74 |     20800 |            0.36 |
+|   Register     |    <0.001 |      138 |     41600 |            0.33 |
+|   CARRY4       |    <0.001 |       10 |      8150 |            0.12 |
+|   Others       |     0.000 |       82 |       --- |             --- |
+| Signals        |    <0.001 |      215 |       --- |             --- |
+| I/O            |     0.027 |       22 |       106 |           20.75 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.102 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -72,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -95,7 +94,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -138,10 +137,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------+-----------+
-| Name            | Power (W) |
-+-----------------+-----------+
-| SevenSegmentTDM |     0.030 |
-+-----------------+-----------+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| SevenSegmentTDM  |     0.030 |
+|   nolabel_line36 |     0.001 |
++------------------+-----------+
 
 

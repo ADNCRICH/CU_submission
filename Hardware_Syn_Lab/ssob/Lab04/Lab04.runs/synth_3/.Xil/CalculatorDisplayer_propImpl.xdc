@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc rfile:../../../Lab04.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Code/CU/HW_Syn_Lab/Lab04/Lab04.srcs/constrs_1/new/constraints.xdc rfile:../../../Lab04.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clock]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

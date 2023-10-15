@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696868223">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696914589">
   <File Type="ROUTE-PWR" Name="fourCounter_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fourCounter.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="fourCounter_power_summary_routed.pb"/>

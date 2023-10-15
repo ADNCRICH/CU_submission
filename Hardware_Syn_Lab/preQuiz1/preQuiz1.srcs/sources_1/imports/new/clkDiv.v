@@ -25,13 +25,18 @@ module clkDiv(
     output wire out
     );
     reg clk;
-    reg [16:0] cou;
+    reg [30:0] cou;
     
     assign out = clk;
     
+    initial clk = 0;
+    
     always@(posedge clock) begin
-        clk = cou[16];
         cou = cou + 1;
+        if(cou == 25000000) begin
+            clk = 1 - clk;
+            cou = 0;
+        end
     end
         
 endmodule
