@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
+<<<<<<<< HEAD:Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/.jobs/vrs_config_76.xml
 	<Run Id="impl_2" LaunchDir="D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+========
+	<Run Id="impl_1" LaunchDir="D:/Code/CU/HW_Syn_Lab/Lab02/Lab02.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream"/>
+>>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6:Hardware_Syn_Lab/ssob/Lab02/Lab02.runs/.jobs/vrs_config_22.xml
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>

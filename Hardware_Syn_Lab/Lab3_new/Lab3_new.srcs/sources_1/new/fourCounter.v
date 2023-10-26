@@ -57,10 +57,10 @@ module fourCounter(
     singlePulser s8(set9, btnu, clock);
     singlePulser s9(set0, btnc, clock);
     clkDiv cd(clock, clk);
-    BCDcounter c0(a[0], cout[0], bout[0], upp[0], downn[0], btnu, btnc, clock);
-    BCDcounter c1(a[1], cout[1], bout[1], upp[1], downn[1], btnu, btnc, clock);
-    BCDcounter c2(a[2], cout[2], bout[2], upp[2], downn[2], btnu, btnc, clock);
-    BCDcounter c3(a[3], cout[3], bout[3], upp[3], downn[3], btnu, btnc, clock);
+    BCDcounter c0(a[0], cout[0], bout[0], upp[0], downn[0], set9, set0, clock);
+    BCDcounter c1(a[1], cout[1], bout[1], upp[1], downn[1], set9, set0, clock);
+    BCDcounter c2(a[2], cout[2], bout[2], upp[2], downn[2], set9, set0, clock);
+    BCDcounter c3(a[3], cout[3], bout[3], upp[3], downn[3], set9, set0, clock);
     
     always@(posedge clock) begin
         upp = up;

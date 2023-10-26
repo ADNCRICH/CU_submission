@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 set_property SRC_FILE_INFO {cfile:D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc rfile:../../../Lab05.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+=======
+set_property SRC_FILE_INFO {cfile:D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc rfile:../../../Lab05.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
@@ -45,3 +49,8 @@ set_property src_info {type:XDC file:1 line:94 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]
+<<<<<<< HEAD
+=======
+set_property src_info {type:XDC file:1 line:116 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports clock]
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6

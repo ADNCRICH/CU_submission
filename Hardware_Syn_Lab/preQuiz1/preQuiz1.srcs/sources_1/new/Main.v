@@ -21,39 +21,60 @@
 
 
 module Main(
-    output wire [0:6] out,
-    output reg [3:0] anode,
-    output reg dot,
+    output reg [3:0] led,
+    output reg l7,
     input clock
     );
-    reg [28:0] count;
-    reg [18:0] cou;
-    reg [3:0] num;
-    Encoder(num, out);
-    reg [15:0] d [0:1];
-    reg state;
-    reg [1:0] dd [0:1];
+    reg [3:0] d0;
+    reg [3:0] d1;
+    reg [3:0] d2;
+    reg [3:0] d3;
+    reg [3:0] d4;
+    reg [3:0] d5;
+    reg [3:0] d6;
+    reg [3:0] d7;
+    reg [3:0] d8;
+    reg [3:0] d9;
+    reg [3:0] state;
     initial begin
-        d[0] = 16'b0000000100100101;
-        dd[0] = 2'b00;
-        d[1] = 16'b0010000000000011;
-        dd[1] = 2'b10;
+        d0 = 4'b0000;
+        d1 = 4'b0001;
+        d2 = 4'b0010;
+        d3 = 4'b0011;
+        d4 = 4'b0100;
+        d5 = 4'b1011;
+        d6 = 4'b1100;
+        d7 = 4'b1101;
+        d8 = 4'b1110;
+        d9 = 4'b1111;
     end
-    
-    always@(posedge clock) begin
-        count <= count + 1;
-        cou <= cou + 1;
-        if(count == 100000000) begin
-            count = 0;
-            state = state + 1;
-        end
-        case(cou[18:17])
-            0: begin num = d[state][15:12]; anode = 4'b0111; dot = 1; end
-            1: begin num = d[state][11:8]; anode = 4'b1011; dot = dd[state][1]; end
-            2: begin num = d[state][7:4]; anode = 4'b1101; dot = 1; end
-            3: begin num = d[state][3:0]; anode = 4'b1110; dot = dd[state][0]; end
-        endcase
-        
+    wire clk;
+    clkDiv cd(clock, clk);
+    always@(posedge clk) begin
+        if(state == 0)
+            led = d0;
+            if(state == 1)
+            led = d1;
+            if(state == 2)
+            led = d2;
+            if(state == 3)
+            led = d3;
+            if(state == 4)
+            led = d4;
+            if(state == 5)
+            led = d5;
+            if(state == 6)
+            led = d6;
+            if(state == 7)
+            led = d7;
+            if(state == 8)
+            led = d8;
+            if(state == 9)
+            led = d9;
+        l7 = 1 - l7;
+        state = state + 1;
+        if(state == 10)
+            state = 0;
     end
     
 endmodule

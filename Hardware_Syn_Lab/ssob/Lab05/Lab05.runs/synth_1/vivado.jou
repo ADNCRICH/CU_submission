@@ -3,6 +3,7 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+<<<<<<< HEAD
 # Start of session at: Mon Oct  2 20:39:51 2023
 # Process ID: 29724
 # Current directory: D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1
@@ -10,5 +11,14 @@
 # Log file: D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1/nano_sc_system.vds
 # Journal file: D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1\vivado.jou
 # Running On: PHUMIPAT-C, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16487 MB
+=======
+# Start of session at: Tue Oct 10 15:16:43 2023
+# Process ID: 7476
+# Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1
+# Command line: vivado.exe -log nano_sc_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nano_sc_system.tcl
+# Log file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1/nano_sc_system.vds
+# Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1\vivado.jou
+# Running On: DESKTOP-7O22A40, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17022 MB
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 #-----------------------------------------------------------
 source nano_sc_system.tcl -notrace

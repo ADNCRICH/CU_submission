@@ -1,0 +1,773 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 17668
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 26 21:12:17 ICT 2023
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 24
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	E:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	E:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Windows
+User home directory: C:/Users/Windows
+User working directory: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2023.1
+RDI_DATADIR: E:/Xilinx/Vivado/2023.1/data
+RDI_BINDIR: E:/Xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/Windows/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/Windows/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/Windows/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/vivado.log
+Vivado journal file: 	D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/vivado.jou
+Engine tmp dir: 	D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/.Xil/Vivado-17668-Andew-Desktop
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: E:/Xilinx/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent10472 "D:\AD\CU_submission\Hardware_Syn_Lab\ssob\Lab06\Lab06.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: E:/Xilinx/Vivado
+RDI_BINDIR: E:/Xilinx/Vivado/2023.1/bin
+RDI_BINROOT: E:/Xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: E:/Xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: E:/Xilinx
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: E:/Xilinx/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: E:/Xilinx/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: E:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: E:/Xilinx/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: E:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;E:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: E:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: E:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3;E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\bin;E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib;E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: E:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: D:\AD\CU_submission\Hardware_Syn_Lab\ssob\Lab06:ANDEW-DESKTOP-Thu10-26-2023_21-12-02.72
+RDI_SHARED_DATA: E:/Xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: E:/Xilinx/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: E:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2023.1
+XILINX_VIVADO: E:/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2023.1
+_RDI_BINROOT: E:\Xilinx\Vivado\2023.1\bin
+_RDI_CWD: D:\AD\CU_submission\Hardware_Syn_Lab\ssob\Lab06
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 896 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\AD\CU_submission\Hardware_Syn_Lab\ssob\Lab06\Lab06.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 955 MB. GUI used memory: 68 MB. Current time: 10/26/23, 9:12:18 PM ICT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 131 MB (+135082kb) [00:00:12]
+// [Engine Memory]: 1,113 MB (+1015970kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1114 ms.
+// Tcl Message: open_project D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Code/CU/HW_Syn_Lab/Lab06' since last save. INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.1/data/ip'. 
+// [Engine Memory]: 1,188 MB (+20216kb) [00:00:12]
+// Project name: Lab06; location: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.195 ; gain = 484.020 
+dismissDialog("Open Project"); // bq
+// [GUI Memory]: 145 MB (+7134kb) [00:00:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false, false, false, false, false, true); // E - Double Click
+// [GUI Memory]: 157 MB (+5387kb) [00:01:08]
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 173 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "samplingGenerator.v", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_tx.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart.v", 2); // o
+// Elapsed time: 295 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), receiver : uart_rx (uart_rx.v)]", 7, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), receiver : uart_rx (uart_rx.v)]", 7, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 6, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4); // E
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), receiver : uart_rx (uart_rx.v)]", 7, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), receiver : uart_rx (uart_rx.v)]", 7, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("uart_rx.v", 320, 382); // ad
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_tx.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rx.v", 5); // o
+// Elapsed time: 79 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_tx.v", 4); // o
+// Elapsed time: 33 seconds
+selectCodeEditor("uart_tx.v", 279, 413); // ad
+selectCodeEditor("uart_tx.v", 305, 403); // ad
+selectCodeEditor("uart_tx.v", 250, 423); // ad
+selectCodeEditor("uart_tx.v", 182, 431); // ad
+selectCodeEditor("uart_tx.v", 257, 431); // ad
+selectCodeEditor("uart_tx.v", 293, 422); // ad
+selectCodeEditor("uart_tx.v", 327, 404); // ad
+selectCodeEditor("uart_tx.v", 304, 389); // ad
+selectCodeEditor("uart_tx.v", 292, 370); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "samplingGenerator.v", 3); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 1,213 MB. GUI used memory: 79 MB. Current time: 10/26/23, 9:27:14 PM ICT
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_tx.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "samplingGenerator.v", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart.v", 2); // o
+// Elapsed time: 468 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 5, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // E - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,216 MB. GUI used memory: 80 MB. Current time: 10/26/23, 9:57:17 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,219 MB. GUI used memory: 63 MB. Current time: 10/26/23, 10:27:18 PM ICT
+// Elapsed time: 3684 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 4, true, false, false, false, false, true); // E - Double Click - Node
+// [Engine Memory]: 1,249 MB (+1445kb) [01:26:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,249 MB. GUI used memory: 61 MB. Current time: 10/26/23, 10:38:18 PM ICT
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+selectButton(PAResourceQtoS.StaleRunDialog_MORE_INFO, "more info"); // g
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // j
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a
+dismissDialog("Synthesis is Out-of-date"); // bF
+// Tcl Message: open_run synth_2 -name synth_2 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,408 MB. GUI used memory: 62 MB. Current time: 10/26/23, 10:38:38 PM ICT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,702 MB. GUI used memory: 62 MB. Current time: 10/26/23, 10:38:40 PM ICT
+// [Engine Memory]: 1,702 MB (+408798kb) [01:26:31]
+// [Engine Memory]: 1,801 MB (+15181kb) [01:26:31]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1956.078 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: Finished Parsing XDC File [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2076.434 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2223.191 ; gain = 568.102 
+// Elapsed Time for: 'o.a': 21s
+// 'dA' command handler elapsed time: 21 seconds
+dismissDialog("Open Synthesized Design"); // bq
+// [Engine Memory]: 1,900 MB (+9530kb) [01:26:33]
+dismissDialog("Critical Messages"); // F
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+// RouteApi::initDelayMediator elapsed time: 4.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectMenuItem(PAResourceCommand.PACommandNames_PORTS_WINDOW, "I/O Ports"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+// Run Command: PAResourceCommand.PACommandNames_PORTS_WINDOW
+// [GUI Memory]: 166 MB (+1187kb) [01:26:37]
+// [Engine Memory]: 2,298 MB (+317757kb) [01:26:37]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sw (12) ; IN ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 2); // p.a
+// [GUI Memory]: 175 MB (+376kb) [01:26:41]
+// Elapsed time: 39 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rgb (12) ; OUT ;  ;  ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 1); // p.a
+// Elapsed time: 426 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("vga_sync.v", 103, 249); // ad
+selectCodeEditor("vga_sync.v", 97, 256); // ad
+// Elapsed time: 46 seconds
+selectCodeEditor("vga_sync.v", 214, 228); // ad
+selectCodeEditor("vga_sync.v", 214, 228, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("vga_sync.v", 302, 226); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("vga_sync.v", 287, 336); // ad
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3, true, false, false, false, false, true); // E - Double Click - Node
+// Elapsed time: 77 seconds
+selectCodeEditor("vga_gradient.v", 333, 330); // ad
+selectCodeEditor("vga_gradient.v", 333, 330, false, false, false, false, true); // ad - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 2, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 2, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("vga_sync.v", 185, 93); // ad
+selectCodeEditor("vga_sync.v", 185, 93, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("vga_sync.v", 183, 95); // ad
+selectCodeEditor("vga_sync.v", 183, 95, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("vga_sync.v", 185, 94); // ad
+selectCodeEditor("vga_sync.v", 185, 94, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("vga_sync.v", 185, 94); // ad
+selectCodeEditor("vga_sync.v", 187, 94, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("vga_sync.v", 187, 94); // ad
+selectCodeEditor("vga_sync.v", 217, 94); // ad
+selectCodeEditor("vga_sync.v", 203, 92); // ad
+selectCodeEditor("vga_sync.v", 203, 92, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("vga_sync.v", 204, 92); // ad
+selectCodeEditor("vga_sync.v", 212, 93); // ad
+selectCodeEditor("vga_sync.v", 210, 93, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_gradient.v", 8); // o
+selectCodeEditor("vga_gradient.v", 690, 271); // ad
+// Elapsed time: 38 seconds
+selectCodeEditor("vga_gradient.v", 600, 260); // ad
+selectCodeEditor("vga_gradient.v", 588, 238); // ad
+selectCodeEditor("vga_gradient.v", 605, 226); // ad
+selectCodeEditor("vga_gradient.v", 603, 248); // ad
+selectCodeEditor("vga_gradient.v", 601, 256); // ad
+selectCodeEditor("vga_gradient.v", 590, 247); // ad
+selectCodeEditor("vga_gradient.v", 608, 227); // ad
+selectCodeEditor("vga_gradient.v", 589, 252); // ad
+selectCodeEditor("vga_gradient.v", 585, 261); // ad
+selectCodeEditor("vga_gradient.v", 585, 249); // ad
+selectCodeEditor("vga_gradient.v", 597, 232); // ad
+// Elapsed time: 319 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_sync_unit : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 6, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 6, true, false, false, false, false, true); // E - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 6); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 8, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), transmitter : uart_tx (uart_tx.v)]", 8, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 7, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v), sampler : samplingGenerator (samplingGenerator.v)]", 7, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 6, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 6, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("uart.v", 300, 340); // ad
+selectCodeEditor("uart.v", 305, 339); // ad
+selectCodeEditor("uart.v", 268, 389); // ad
+selectCodeEditor("uart.v", 317, 425); // ad
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 33, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/utils_1/imports/synth_2/vga_test.dcp with file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/vga_test.dcp 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Launch Runs"); // cw
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 34, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+// HMemoryUtils.trashcanNow. Engine heap size: 2,325 MB. GUI used memory: 100 MB. Current time: 10/26/23, 11:00:09 PM ICT
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output: ECHO is off. ECHO is off.  ****** Xilinx hw_server v2023.1   **** Build date : May  7 2023 at 15:26:57     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: ECHO is off. ECHO is off.   ******** Xilinx cs_server v2023.1.0   ****** Build date   : Apr 10 2023-22:59:24     **** Build number : 2023.1.1681142364       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B824EEA 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // r
+// Elapsed time: 47 seconds
+dismissFileChooser();
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // r
+// Elapsed time: 22 seconds
+dismissFileChooser();
+// 'D' command handler elapsed time: 72 seconds
+dismissDialog("Program Device"); // aP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 31, true); // f - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,376 MB. GUI used memory: 100 MB. Current time: 10/26/23, 11:01:34 PM ICT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 14, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_SHOW_NETLIST_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:54 ICT 2023 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v), vga_gradient_unit : vga_gradient (vga_gradient.v)]", 3); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_test (vga_test.v)]", 1); // E
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:54 ICT 2023 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+// [GUI Memory]: 184 MB (+1110kb) [01:49:52]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:54 ICT 2023 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+selectButton(PAResourceEtoH.ExploreAheadView_LAUNCH_SELECTED_RUNS, "Design Runs_launch_runs"); // B
+dismissDialog("Launch Runs"); // f
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:54 ICT 2023 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 24 
+// Tcl Message: [Thu Oct 26 23:02:26 2023] Launched synth_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/runme.log [Thu Oct 26 23:02:26 2023] Launched impl_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2/runme.log 
+// 'a' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 23:02:33 ICT 2023 ; 00:00:02 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; Queued... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 3, "impl_2", 0, false); // ao
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; Queued... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 3, "impl_2", 0, false); // ao
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+// [Engine Memory]: 2,415 MB (+1798kb) [01:50:43]
+selectLabel((HResource) null, "synth_1"); // i.a
+selectButton(PAResourceEtoH.ExpRunPropPanels_SELECT_PART_FOR_THIS_RUN, (String) null); // r
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Select Device"); // b
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 2242 ; 67 ; 0.0 ; 0 ; 12 ; Thu Oct 26 23:02:33 ICT 2023 ; 00:00:29 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+// TclEventType: RUN_STEP_COMPLETED
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 2242 ; 67 ; 0.0 ; 0 ; 12 ; Thu Oct 26 23:02:33 ICT 2023 ; 00:00:29 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 79 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "Choose Location...", 1); // d
+// HMemoryUtils.trashcanNow. Engine heap size: 2,424 MB. GUI used memory: 118 MB. Current time: 10/26/23, 11:05:09 PM ICT
+// Elapsed time: 14 seconds
+dismissFolderChooser();
+// 'ct' command handler elapsed time: 23 seconds
+dismissDialog("Launch Runs"); // cw
+// [GUI Memory]: 197 MB (+3105kb) [01:53:09]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 31, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 120 MB. Current time: 10/26/23, 11:05:24 PM ICT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'ct' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // cw
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 24 
+// Tcl Message: [Thu Oct 26 23:05:30 2023] Launched impl_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 54 seconds
+dismissDialog("Bitstream Generation Completed"); // Q.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Elapsed time: 34 seconds
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // aP
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2/vga_test.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 36 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 2, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart (uart.v)]", 2, true, false, false, false, true, false); // E - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top uart [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 01h:54m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:55m:00s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:54 ICT 2023 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+// Elapsed Time for: 'L.f': 01h:55m:02s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 6.248065948486328 ; 0.0 ; 0.27440595626831055 ; 0.0 ;  ; 0.0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 14:09:44 ICT 2023 ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+// Elapsed Time for: 'L.f': 01h:55m:04s
+selectButton(PAResourceEtoH.ExploreAheadView_LAUNCH_SELECTED_RUNS, "Design Runs_launch_runs"); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/utils_1/imports/synth_1/vga_test.dcp with file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_1/uart.dcp 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 impl_1 -jobs 24 
+// Tcl Message: [Thu Oct 26 23:07:32 2023] Launched synth_1... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_1/runme.log [Thu Oct 26 23:07:32 2023] Launched synth_1, impl_1... Run output will be captured here: synth_1: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_1/runme.log impl_1: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 208 MB (+1764kb) [01:55:29]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// Tcl Message: INFO: [Project 1-1161] Replacing file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/utils_1/imports/synth_2/vga_test.dcp with file D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/vga_test.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 24 
+// Tcl Message: [Thu Oct 26 23:07:41 2023] Launched synth_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/runme.log [Thu Oct 26 23:07:41 2023] Launched impl_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false, false, false, false, true, false); // ao - Popup Trigger
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2023) ; Vivado Implementation Default Reports (Vivado Implementation 2023) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ao
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Oct 26 23:07:39 ICT 2023 ; 00:00:17 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ao - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 220 MB (+1367kb) [01:55:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 135 MB. Current time: 10/26/23, 11:08:04 PM ICT
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // j
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 26 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 51 ; 77 ; 0.0 ; 0 ; 0 ; Thu Oct 26 23:07:48 ICT 2023 ; 00:00:18 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true); // ao - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 51 ; 77 ; 0.0 ; 0 ; 0 ; Thu Oct 26 23:07:48 ICT 2023 ; 00:00:18 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true, false, false, false, true, false); // ao - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 51 ; 77 ; 0.0 ; 0 ; 0 ; Thu Oct 26 23:07:39 ICT 2023 ; 00:00:18 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ao - Popup Trigger - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_2 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 51 ; 77 ; 0.0 ; 0 ; 0 ; Thu Oct 26 23:07:48 ICT 2023 ; 00:00:18 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 2, "synth_2", 0, true, false, false, false, true, false); // ao - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 51 ; 77 ; 0.0 ; 0 ; 0 ; Thu Oct 26 23:07:39 ICT 2023 ; 00:00:18 ; Vivado Synthesis Defaults (Vivado Synthesis 2023) ; Vivado Synthesis Default Reports (Vivado Synthesis 2023) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ao - Popup Trigger - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cw
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 24 
+// Tcl Message: [Thu Oct 26 23:08:46 2023] Launched impl_2... Run output will be captured here: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE

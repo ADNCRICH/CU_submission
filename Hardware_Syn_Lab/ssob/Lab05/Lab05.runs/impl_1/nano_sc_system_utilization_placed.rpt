@@ -1,8 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+<<<<<<< HEAD
 | Date         : Mon Oct  2 20:47:01 2023
 | Host         : PHUMIPAT-C running 64-bit major release  (build 9200)
+=======
+| Date         : Tue Oct 10 15:19:16 2023
+| Host         : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 | Command      : report_utilization -file nano_sc_system_utilization_placed.rpt -pb nano_sc_system_utilization_placed.pb
 | Design       : nano_sc_system
 | Device       : xc7a35tcpg236-1

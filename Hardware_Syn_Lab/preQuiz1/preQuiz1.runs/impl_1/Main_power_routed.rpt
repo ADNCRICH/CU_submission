@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Oct  9 22:01:53 2023
-| Host             : Andew-Desktop running 64-bit major release  (build 9200)
+| Date             : Tue Oct 10 12:35:23 2023
+| Host             : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
 | Command          : report_power -file Main_power_routed.rpt -pb Main_power_summary_routed.pb -rpx Main_power_routed.rpx
 | Design           : Main
 | Device           : xc7a35tcpg236-1
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       95 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       16 |     20800 |            0.08 |
-|   CARRY4       |    <0.001 |       13 |      8150 |            0.16 |
+| Slice Logic    |    <0.001 |      110 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       21 |     20800 |            0.10 |
+|   CARRY4       |    <0.001 |       25 |      8150 |            0.31 |
 |   Register     |    <0.001 |       57 |     41600 |            0.14 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       81 |       --- |             --- |
+| Signals        |    <0.001 |      123 |       --- |             --- |
 | I/O            |     0.009 |       13 |       106 |           12.26 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.082 |          |           |                 |

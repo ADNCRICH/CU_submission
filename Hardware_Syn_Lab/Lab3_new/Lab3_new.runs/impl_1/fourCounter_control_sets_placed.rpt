@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Oct  9 23:17:50 2023
-| Host         : Andew-Desktop running 64-bit major release  (build 9200)
+| Date         : Tue Oct 10 12:11:21 2023
+| Host         : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file fourCounter_control_sets_placed.rpt
 | Design       : fourCounter
 | Device       : xc7a35t
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     3 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     6 |
+| Unused register locations in slices containing registers |    10 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              82 |           22 |
+| No           | No                    | No                     |             102 |           29 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               8 |            4 |
+| No           | Yes                   | No                     |               8 |            5 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -73,9 +73,9 @@ Table of Contents
 +------------------+---------------+------------------+------------------+----------------+--------------+
 |   Clock Signal   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------+---------------+------------------+------------------+----------------+--------------+
-|  clock_IBUF_BUFG |               | btnu_IBUF        |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG |               | s8/set9          |                5 |              8 |         1.60 |
 |  cd/CLK          |               |                  |                3 |             10 |         3.33 |
-|  clock_IBUF_BUFG |               |                  |               19 |             72 |         3.79 |
+|  clock_IBUF_BUFG |               |                  |               26 |             92 |         3.54 |
 +------------------+---------------+------------------+------------------+----------------+--------------+
 
 

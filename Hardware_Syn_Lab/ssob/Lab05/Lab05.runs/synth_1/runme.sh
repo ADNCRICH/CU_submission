@@ -12,9 +12,15 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
+<<<<<<< HEAD
   PATH=D:/Programs/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Programs/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Programs/Xilinx/Vivado/2023.1/bin
 else
   PATH=D:/Programs/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Programs/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Programs/Xilinx/Vivado/2023.1/bin:$PATH
+=======
+  PATH=D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin
+else
+  PATH=D:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.1/bin:$PATH
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 fi
 export PATH
 
@@ -25,7 +31,11 @@ else
 fi
 export LD_LIBRARY_PATH
 
+<<<<<<< HEAD
 HD_PWD='D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1'
+=======
+HD_PWD='D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1'
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 cd "$HD_PWD"
 
 HD_LOG=runme.log

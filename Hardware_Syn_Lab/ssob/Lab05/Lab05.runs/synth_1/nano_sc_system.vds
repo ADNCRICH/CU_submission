@@ -3,6 +3,7 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+<<<<<<< HEAD
 # Start of session at: Mon Oct  2 20:39:51 2023
 # Process ID: 29724
 # Current directory: D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1
@@ -16,6 +17,21 @@ source nano_sc_system.tcl -notrace
 create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 464.203 ; gain = 188.066
 Command: read_checkpoint -auto_incremental -incremental D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp for incremental synthesis
+=======
+# Start of session at: Tue Oct 10 15:16:43 2023
+# Process ID: 7476
+# Current directory: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1
+# Command line: vivado.exe -log nano_sc_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nano_sc_system.tcl
+# Log file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1/nano_sc_system.vds
+# Journal file: D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1\vivado.jou
+# Running On: DESKTOP-7O22A40, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17022 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source nano_sc_system.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 467.254 ; gain = 200.391
+Command: read_checkpoint -auto_incremental -incremental D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp for incremental synthesis
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top nano_sc_system -part xc7a35tcpg236-1
 Starting synth_design
@@ -26,6 +42,7 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+<<<<<<< HEAD
 INFO: [Synth 8-7075] Helper process launched with PID 18580
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1280.059 ; gain = 411.242
@@ -76,21 +93,83 @@ INFO: [Synth 8-6155] done synthesizing module 'nano_sc_system' (0#1) [D:/Code/CU
 WARNING: [Synth 8-6014] Unused sequential element z_flag_reg was removed.  [D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/nanocpu.v:116]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1372.566 ; gain = 503.750
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 7212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1281.965 ; gain = 413.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nano_sc_system' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nano_sc_system.v:10]
+INFO: [Synth 8-6157] synthesizing module 'nanocpu' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/adder.v:9]
+	Parameter WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+	Parameter WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extender' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/extender.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'extender' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/extender.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized0' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized0' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/regfile.v:9]
+WARNING: [Synth 8-639] system function call 'time' not supported [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/regfile.v:34]
+INFO: [Synth 8-251] 0 - A(REG[x]) -  xxxxxxxx, B(REG[x]) -  xxxxxxxx
+ [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/regfile.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/regfile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized1' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized1' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/alu.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/alu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/control.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/control.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'nanocpu' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rom' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/rom.v:9]
+INFO: [Synth 8-3876] $readmem data file 'prog.list' is read successfully [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/rom.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegmentMemory' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:9]
+INFO: [Synth 8-3876] $readmem data file 'data.list' is read successfully [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:36]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegmentMainDriver' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMainDriver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HEXtoSevenSegmentEncoder' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab02/Lab02.srcs/sources_1/new/HEXtoSevenSegmentEncoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HEXtoSevenSegmentEncoder' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab02/Lab02.srcs/sources_1/new/HEXtoSevenSegmentEncoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab03/Lab03.srcs/sources_1/new/ClockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab03/Lab03.srcs/sources_1/new/ClockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegmentMainDriver' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMainDriver.v:23]
+WARNING: [Synth 8-639] system function call 'time' not supported [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:41]
+INFO: [Synth 8-251] 0 - mem[xxx] -  xxxxxxxx
+ [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:41]
+WARNING: [Synth 8-567] referenced signal 'sevenSegmentInp' should be on the sensitivity list [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:39]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegmentMemory' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'nano_sc_system' (0#1) [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nano_sc_system.v:10]
+WARNING: [Synth 8-6014] Unused sequential element z_flag_reg was removed.  [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nanocpu.v:116]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1372.664 ; gain = 503.703
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1372.566 ; gain = 503.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1372.566 ; gain = 503.750
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1372.566 ; gain = 0.000
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1372.664 ; gain = 503.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1372.664 ; gain = 503.703
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1372.664 ; gain = 0.000
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+<<<<<<< HEAD
 Parsing XDC File [D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
 Finished Parsing XDC File [D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nano_sc_system_propImpl.xdc].
@@ -106,22 +185,50 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1465.184 ; gain = 596.367
+=======
+Parsing XDC File [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nano_sc_system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nano_sc_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1427.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1427.148 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.148 ; gain = 558.188
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1465.184 ; gain = 596.367
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.148 ; gain = 558.188
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1465.184 ; gain = 596.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1465.184 ; gain = 596.367
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.148 ; gain = 558.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.148 ; gain = 558.188
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -175,7 +282,11 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1465.184 ; gain = 596.367
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.148 ; gain = 558.188
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -197,13 +308,21 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1465.184 ; gain = 596.367
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1427.148 ; gain = 558.188
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1567.199 ; gain = 698.383
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1560.273 ; gain = 691.312
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -224,7 +343,11 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1574.891 ; gain = 706.074
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1567.953 ; gain = 698.992
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -242,37 +365,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -306,6 +453,7 @@ Report Cell Usage:
 |16    |OBUF      |    11|
 +------+----------+------+
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
@@ -313,11 +461,24 @@ Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 .
 Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1580.355 ; gain = 711.539
 INFO: [Project 1-571] Translating synthesized netlist
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1592.367 ; gain = 0.000
+=======
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1573.430 ; gain = 649.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1573.430 ; gain = 704.469
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1585.449 ; gain = 0.000
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 INFO: [Netlist 29-17] Analyzing 395 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1598.246 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1589.324 ; gain = 0.000
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 302 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 32 instances
@@ -329,9 +490,18 @@ Synth Design complete | Checksum: f67135a3
 INFO: [Common 17-83] Releasing license: Synthesis
 55 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
+<<<<<<< HEAD
 synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1598.246 ; gain = 1110.172
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
 INFO: [Common 17-1381] The checkpoint 'D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1/nano_sc_system.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nano_sc_system_utilization_synth.rpt -pb nano_sc_system_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Mon Oct  2 20:40:40 2023...
+=======
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1589.324 ; gain = 1096.941
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1/nano_sc_system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nano_sc_system_utilization_synth.rpt -pb nano_sc_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 10 15:17:41 2023...
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6

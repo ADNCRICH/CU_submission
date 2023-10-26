@@ -24,11 +24,13 @@ module Debounce(
     input wire clock, d,
     output wire out
     );
-reg q1,q2;
-assign out = (d & q1 & q2);
+reg q1,q2,q3,q4;
+assign out = (d & q1 & q2 & q3 & q4);
 always @(posedge clock)
 begin
         q1 <= d;
         q2 <= q1;
+        q3 <= q2;
+        q4 <= q3;
 end
 endmodule

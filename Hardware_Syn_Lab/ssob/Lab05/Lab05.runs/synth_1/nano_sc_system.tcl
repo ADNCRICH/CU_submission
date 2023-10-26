@@ -4,7 +4,11 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
+<<<<<<< HEAD
   variable script "D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.runs/synth_1/nano_sc_system.tcl"
+=======
+  variable script "D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.runs/synth_1/nano_sc_system.tcl"
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
   variable category "vivado_synth"
 }
 
@@ -71,23 +75,35 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.maxThreads 8
+<<<<<<< HEAD
 set_param chipscope.maxJobs 4
+=======
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+<<<<<<< HEAD
 set_property webtalk.parent_dir D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.cache/wt [current_project]
 set_property parent.project_path D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo d:/Code/CU/HW_Syn_Lab/Lab05/Lab05.cache/ip [current_project]
+=======
+set_property webtalk.parent_dir D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.cache/wt [current_project]
+set_property parent.project_path D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.xpr [current_project]
+set_property default_lib xil_defaultlib [current_project]
+set_property target_language Verilog [current_project]
+set_property ip_output_repo d:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.cache/ip [current_project]
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
+<<<<<<< HEAD
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/prog1.list
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/prog3.list
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/data.list
@@ -108,6 +124,28 @@ read_verilog -library xil_defaultlib {
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMainDriver.v
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v
   D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/sources_1/new/nano_sc_system.v
+=======
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/prog1.list
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/prog3.list
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/data.list
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/prog2.list
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/prog.list
+}
+read_verilog -library xil_defaultlib {
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab03/Lab03.srcs/sources_1/new/ClockDivider.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab02/Lab02.srcs/sources_1/new/HEXtoSevenSegmentEncoder.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/adder.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/alu.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/control.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/extender.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/mux2_1.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nanocpu.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/regfile.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/rom.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMainDriver.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/sevenSegmentMemory.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/sources_1/new/nano_sc_system.v
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -118,12 +156,21 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+<<<<<<< HEAD
 read_xdc D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc
 set_property used_in_implementation false [get_files D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/Code/CU/HW_Syn_Lab/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp
+=======
+read_xdc D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/constrs_1/new/constraints.xdc]
+
+set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab05/Lab05.srcs/utils_1/imports/synth_1/nano_sc_system.dcp
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

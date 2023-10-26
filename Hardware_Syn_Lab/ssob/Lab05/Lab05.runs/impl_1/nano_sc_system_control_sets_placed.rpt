@@ -1,8 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+<<<<<<< HEAD
 | Date         : Mon Oct  2 20:47:01 2023
 | Host         : PHUMIPAT-C running 64-bit major release  (build 9200)
+=======
+| Date         : Tue Oct 10 15:19:16 2023
+| Host         : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 | Command      : report_control_sets -verbose -file nano_sc_system_control_sets_placed.rpt
 | Design       : nano_sc_system
 | Device       : xc7a35t
@@ -73,8 +78,13 @@ Table of Contents
 +----------------------+------------------------------------------+------------------+------------------+----------------+--------------+
 |     Clock Signal     |               Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------+------------------------------------------+------------------+------------------+----------------+--------------+
+<<<<<<< HEAD
 |  clock_IBUF_BUFG     | CPU/REGFILE/E[3]                         |                  |                2 |              4 |         2.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/E[1]                         |                  |                2 |              4 |         2.00 |
+=======
+|  clock_IBUF_BUFG     | CPU/REGFILE/E[1]                         |                  |                2 |              4 |         2.00 |
+|  clock_IBUF_BUFG     | CPU/REGFILE/E[3]                         |                  |                2 |              4 |         2.00 |
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 |  clock_IBUF_BUFG     | CPU/REGFILE/E[0]                         |                  |                1 |              4 |         4.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/E[2]                         |                  |                1 |              4 |         4.00 |
 |  DATAMEM/SSMD/cd/CLK |                                          |                  |                4 |             10 |         2.50 |
@@ -85,9 +95,15 @@ Table of Contents
 |  clock_IBUF_BUFG     | CPU/REGFILE/mem_reg_0_255_0_0_i_14_2     |                  |               32 |            128 |         4.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/mem_reg_0_255_0_0_i_14_0     |                  |               32 |            128 |         4.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_10_2 |                  |               32 |            128 |         4.00 |
+<<<<<<< HEAD
 |  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_7_1  |                  |               32 |            128 |         4.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_10_1 |                  |               32 |            128 |         4.00 |
 |  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_10_0 |                  |               32 |            128 |         4.00 |
+=======
+|  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_10_0 |                  |               32 |            128 |         4.00 |
+|  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_10_1 |                  |               32 |            128 |         4.00 |
+|  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_7_1  |                  |               32 |            128 |         4.00 |
+>>>>>>> 3b6bdd4e5df1f64909a943b9b3c5fefc02b726d6
 |  clock_IBUF_BUFG     | CPU/REGFILE/regs_reg_r1_0_31_6_11_i_8_0  |                  |               32 |            128 |         4.00 |
 +----------------------+------------------------------------------+------------------+------------------+----------------+--------------+
 

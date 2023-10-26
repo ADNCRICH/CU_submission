@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696868223" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fourCounter.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696914589" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fourCounter.dcp">
   <File Type="PA-TCL" Name="fourCounter.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="fourCounter_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fourCounter_reports.tcl"/>
