@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695106845">
-  <File Type="ROUTE-PWR" Name="CalculatorDisplayer_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="StackDisplayer_power_routed.rpt"/>
   <File Type="PA-TCL" Name="StackDisplayer.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="CalculatorDisplayer_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="StackDisplayer_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="StackDisplayer_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="StackDisplayer.msk"/>
-  <File Type="ROUTE-CLK" Name="CalculatorDisplayer_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="StackDisplayer.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="StackDisplayer.bit"/>
-  <File Type="BG-DRC" Name="StackDisplayer.drc"/>
-  <File Type="BG-BGN" Name="StackDisplayer.bgn"/>
-  <File Type="BG-BIN" Name="StackDisplayer.bin"/>
-  <File Type="BITSTR-RBT" Name="StackDisplayer.rbt"/>
-  <File Type="BITSTR-NKY" Name="StackDisplayer.nky"/>
-  <File Type="BITSTR-BMM" Name="StackDisplayer_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="StackDisplayer_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="StackDisplayer.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CalculatorDisplayer_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="StackDisplayer.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="StackDisplayer.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="CalculatorDisplayer_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="StackDisplayer.hwdef"/>
-  <File Type="PLACE-IO" Name="CalculatorDisplayer_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="CalculatorDisplayer_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="CalculatorDisplayer_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="CalculatorDisplayer_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="StackDisplayer_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="CalculatorDisplayer_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="CalculatorDisplayer_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="CalculatorDisplayer_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="CalculatorDisplayer_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="CalculatorDisplayer_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="StackDisplayer_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="StackDisplayer_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="StackDisplayer_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="CalculatorDisplayer_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="StackDisplayer_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="CalculatorDisplayer_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_routed.rpx"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="StackDisplayer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="StackDisplayer_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="StackDisplayer_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="StackDisplayer_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="StackDisplayer_placed.dcp"/>
+  <File Type="OPT-DRC" Name="StackDisplayer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="StackDisplayer.hwdef"/>
   <File Type="PWROPT-DCP" Name="StackDisplayer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="StackDisplayer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="StackDisplayer_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="StackDisplayer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="StackDisplayer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="StackDisplayer_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="StackDisplayer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="StackDisplayer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="StackDisplayer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="StackDisplayer_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="StackDisplayer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="StackDisplayer.bin"/>
+  <File Type="PLACE-TIMING" Name="StackDisplayer_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="StackDisplayer_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="StackDisplayer_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="StackDisplayer_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="StackDisplayer.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="StackDisplayer_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="StackDisplayer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="StackDisplayer_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="StackDisplayer.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="StackDisplayer_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="StackDisplayer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="StackDisplayer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="StackDisplayer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="StackDisplayer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="StackDisplayer_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="StackDisplayer_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="StackDisplayer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="StackDisplayer_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="StackDisplayer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="StackDisplayer_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="StackDisplayer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="StackDisplayer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="StackDisplayer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="StackDisplayer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="StackDisplayer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="StackDisplayer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="StackDisplayer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="StackDisplayer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="StackDisplayer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="StackDisplayer_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="StackDisplayer_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="StackDisplayer_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CalculatorDisplayer_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CalculatorDisplayer_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="CalculatorDisplayer_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CalculatorDisplayer_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="StackDisplayer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="StackDisplayer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="StackDisplayer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="StackDisplayer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="StackDisplayer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="StackDisplayer_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="StackDisplayer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="StackDisplayer.nky"/>
+  <File Type="BITSTR-BMM" Name="StackDisplayer_bd.bmm"/>
   <File Type="PDI-FILE" Name="StackDisplayer.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="StackDisplayer_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="StackDisplayer_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="StackDisplayer.rnpi"/>
   <File Type="NPI_FILE" Name="StackDisplayer.npi"/>
   <File Type="RBD_FILE" Name="StackDisplayer.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="StackDisplayer.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="StackDisplayer.sysdef"/>
+  <File Type="BG-BGN" Name="StackDisplayer.bgn"/>
+  <File Type="BG-DRC" Name="StackDisplayer.drc"/>
+  <File Type="RDI-RDI" Name="StackDisplayer.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="StackDisplayer_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="StackDisplayer_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -214,6 +228,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

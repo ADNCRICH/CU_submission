@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693891786" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SevenSegmentTDM.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696914605" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SevenSegmentTDM.dcp">
   <File Type="PA-TCL" Name="SevenSegmentTDM.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="SevenSegmentTDM_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SevenSegmentTDM_reports.tcl"/>

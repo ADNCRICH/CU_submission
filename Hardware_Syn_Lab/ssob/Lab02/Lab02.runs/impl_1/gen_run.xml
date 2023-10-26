@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693892339">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696914605">
   <File Type="ROUTE-PWR" Name="SevenSegmentTDM_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SevenSegmentTDM.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="SevenSegmentTDM_power_summary_routed.pb"/>

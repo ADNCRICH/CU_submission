@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Sep 19 15:25:34 2023
-| Host         : DESKTOP-7O22A40 running 64-bit major release  (build 9200)
+| Date         : Tue Sep 19 14:07:28 2023
+| Host         : PHUMIPAT-C running 64-bit major release  (build 9200)
 | Command      : report_drc -file CalculatorDisplayer_drc_opted.rpt -pb CalculatorDisplayer_drc_opted.pb -rpx CalculatorDisplayer_drc_opted.rpx
 | Design       : CalculatorDisplayer
 | Device       : xc7a35tcpg236-1

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695111846">
+<GenRun Id="impl_3" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695107176">
   <File Type="ROUTE-PWR" Name="CalculatorDisplayer_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CalculatorDisplayer.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="CalculatorDisplayer_power_summary_routed.pb"/>
@@ -217,20 +217,14 @@
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/utils_1/imports/synth_3/CalculatorDisplayer.dcp">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedInSteps" Val="synth_3"/>
-        <Attr Name="AutoDcp" Val="1"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

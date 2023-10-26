@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695107049">
-  <File Type="ROUTE-PWR" Name="CalculatorDisplayer_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="Binary2BCDDisplayer_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Binary2BCDDisplayer.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="CalculatorDisplayer_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="Binary2BCDDisplayer_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Binary2BCDDisplayer_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="Binary2BCDDisplayer.msk"/>
-  <File Type="ROUTE-CLK" Name="CalculatorDisplayer_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="Binary2BCDDisplayer.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Binary2BCDDisplayer.bit"/>
-  <File Type="BG-DRC" Name="Binary2BCDDisplayer.drc"/>
-  <File Type="BG-BGN" Name="Binary2BCDDisplayer.bgn"/>
-  <File Type="BG-BIN" Name="Binary2BCDDisplayer.bin"/>
-  <File Type="BITSTR-RBT" Name="Binary2BCDDisplayer.rbt"/>
-  <File Type="BITSTR-NKY" Name="Binary2BCDDisplayer.nky"/>
-  <File Type="BITSTR-BMM" Name="Binary2BCDDisplayer_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="Binary2BCDDisplayer_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="Binary2BCDDisplayer.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CalculatorDisplayer_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="Binary2BCDDisplayer.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Binary2BCDDisplayer.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="CalculatorDisplayer_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Binary2BCDDisplayer.hwdef"/>
-  <File Type="PLACE-IO" Name="CalculatorDisplayer_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="CalculatorDisplayer_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="CalculatorDisplayer_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="CalculatorDisplayer_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Binary2BCDDisplayer_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="CalculatorDisplayer_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="CalculatorDisplayer_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="CalculatorDisplayer_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="CalculatorDisplayer_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="CalculatorDisplayer_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="Binary2BCDDisplayer_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Binary2BCDDisplayer_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Binary2BCDDisplayer_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="CalculatorDisplayer_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="Binary2BCDDisplayer_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="CalculatorDisplayer_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="CalculatorDisplayer_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_routed.rpx"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Binary2BCDDisplayer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Binary2BCDDisplayer_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Binary2BCDDisplayer_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="Binary2BCDDisplayer_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="Binary2BCDDisplayer_placed.dcp"/>
+  <File Type="OPT-DRC" Name="Binary2BCDDisplayer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Binary2BCDDisplayer.hwdef"/>
   <File Type="PWROPT-DCP" Name="Binary2BCDDisplayer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Binary2BCDDisplayer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Binary2BCDDisplayer_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Binary2BCDDisplayer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Binary2BCDDisplayer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Binary2BCDDisplayer_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Binary2BCDDisplayer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Binary2BCDDisplayer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Binary2BCDDisplayer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Binary2BCDDisplayer_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Binary2BCDDisplayer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Binary2BCDDisplayer.bin"/>
+  <File Type="PLACE-TIMING" Name="Binary2BCDDisplayer_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Binary2BCDDisplayer_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Binary2BCDDisplayer_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Binary2BCDDisplayer_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Binary2BCDDisplayer.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Binary2BCDDisplayer_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Binary2BCDDisplayer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Binary2BCDDisplayer_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Binary2BCDDisplayer.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Binary2BCDDisplayer_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Binary2BCDDisplayer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Binary2BCDDisplayer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Binary2BCDDisplayer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Binary2BCDDisplayer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Binary2BCDDisplayer_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Binary2BCDDisplayer_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Binary2BCDDisplayer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Binary2BCDDisplayer_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Binary2BCDDisplayer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Binary2BCDDisplayer_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Binary2BCDDisplayer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Binary2BCDDisplayer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Binary2BCDDisplayer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Binary2BCDDisplayer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Binary2BCDDisplayer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Binary2BCDDisplayer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Binary2BCDDisplayer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Binary2BCDDisplayer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Binary2BCDDisplayer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Binary2BCDDisplayer_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Binary2BCDDisplayer_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Binary2BCDDisplayer_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CalculatorDisplayer_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CalculatorDisplayer_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CalculatorDisplayer_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CalculatorDisplayer_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="CalculatorDisplayer_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CalculatorDisplayer_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Binary2BCDDisplayer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Binary2BCDDisplayer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Binary2BCDDisplayer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Binary2BCDDisplayer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Binary2BCDDisplayer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Binary2BCDDisplayer_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Binary2BCDDisplayer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Binary2BCDDisplayer.nky"/>
+  <File Type="BITSTR-BMM" Name="Binary2BCDDisplayer_bd.bmm"/>
   <File Type="PDI-FILE" Name="Binary2BCDDisplayer.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Binary2BCDDisplayer_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Binary2BCDDisplayer_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="Binary2BCDDisplayer.rnpi"/>
   <File Type="NPI_FILE" Name="Binary2BCDDisplayer.npi"/>
   <File Type="RBD_FILE" Name="Binary2BCDDisplayer.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Binary2BCDDisplayer.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Binary2BCDDisplayer.sysdef"/>
+  <File Type="BG-BGN" Name="Binary2BCDDisplayer.bgn"/>
+  <File Type="BG-DRC" Name="Binary2BCDDisplayer.drc"/>
+  <File Type="RDI-RDI" Name="Binary2BCDDisplayer.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Binary2BCDDisplayer_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Binary2BCDDisplayer_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -208,7 +222,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -218,6 +234,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
