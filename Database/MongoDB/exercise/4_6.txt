@@ -1,0 +1,19 @@
+db.orders_w_lines.aggregate([
+    {$group: {_id: "$customer_id", cou: {$sum: 1}}},
+    {$group: {_id: "$cou", all: {$push: "$_id"}}},
+    {$sort: {_id:-1}},
+    {$limit: 1},
+    {$unwind: "$all"},
+    {$lookup: {
+        from: "customer",
+        localField: "all",
+        foreignField: "customer_id",
+        as: "arr"
+    }},
+    {$unwind:"$arr"},
+    {$project: {
+        _id:0,
+        customer_id: "$_id",
+        customer_name: "$arr.customer_name"
+      }}
+  ])

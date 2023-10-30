@@ -1,0 +1,15 @@
+db.orders_w_lines.aggregate([
+    {$match:{order_date:{$gte:"2020-01-10",$lt:"2020-01-16"}}},
+    {$group:{_id:"$customer_id"}},
+    {$lookup:{
+            from: "customer",
+            localField: "_id",
+            foreignField: "customer_id",
+            as: "customer_detail"
+        }},
+    {$unwind: "$customer_detail"},
+    {$project:{
+            _id : "$customer_detail.customer_id",
+            customer_name: "$customer_detail.customer_name",
+        }}
+    ])

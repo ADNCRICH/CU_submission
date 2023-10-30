@@ -1,0 +1,4 @@
+db.customer.aggregate([
+{$group: {_id: "$customer_zipcode", customer_numbers: {$sum: 1}}},
+{$sort: {customer_numbers: -1}},
+{$match: {customer_numbers: {$gt: 1}}}])

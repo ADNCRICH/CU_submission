@@ -1,0 +1,8 @@
+db.orders_w_lines.aggregate([
+    {$match: {order_date: {$gte: "2020-01-10",$lt: "2020-01-16"}}},
+    {$group: {_id: null, total_order: {$sum: 1}}},
+    {$project: {
+            _id: 0,
+            total_order: "$total_order",
+        }}
+    ])

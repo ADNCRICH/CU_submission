@@ -1,0 +1,8 @@
+db.product.aggregate([
+    {$match: {product_color:"White Ash"}},
+    {$project: {
+            _id : 0,
+            product_id: "$product_id",
+            product_name: "$product_name",
+            product_color: "$product_color"}}
+    ])

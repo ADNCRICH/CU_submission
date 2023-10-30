@@ -1,0 +1,4 @@
+db.orders_w_lines.remove({customer_id: 10001})
+db.customer.remove({customer_id: 10001})
+db.customer.find({})
+db.orders_w_lines.find({})
