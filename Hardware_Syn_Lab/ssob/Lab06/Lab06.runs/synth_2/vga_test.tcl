@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/uart.tcl"
+  variable script "D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.runs/synth_2/vga_test.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_2" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 6
-set_param xicom.use_bs_reader 1
+set_param general.maxThreads 8
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -87,10 +86,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/samplingGenerator.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/uart_rx.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/uart_tx.v
-  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/uart.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/imports/new/DFlipFlop.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/imports/new/Debouncer.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/imports/new/SinglePulser.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/vga_gradient.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/vga_sync.v
+  D:/AD/CU_submission/Hardware_Syn_Lab/ssob/Lab06/Lab06.srcs/sources_1/new/vga_test.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,7 +111,7 @@ read_checkpoint -auto_incremental -incremental D:/AD/CU_submission/Hardware_Syn_
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top uart -part xc7a35tcpg236-1
+synth_design -top vga_test -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -120,10 +121,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef uart.dcp
+write_checkpoint -force -noxdef vga_test.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_2_synth_report_utilization_0" "report_utilization -file uart_utilization_synth.rpt -pb uart_utilization_synth.pb"
+create_report "synth_2_synth_report_utilization_0" "report_utilization -file vga_test_utilization_synth.rpt -pb vga_test_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
