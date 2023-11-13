@@ -38,7 +38,6 @@ module HexToSeven(
     always @(posedge clock)
     begin
       couu = couu + 1;
-      
       case(couu)
           23'b00111111111111111111111 : begin
               cou3 = (S1[3] == 1)? cou3 + 1 : cou3;
@@ -57,25 +56,25 @@ module HexToSeven(
           end
       endcase      
   end
-      always@(posedge clk) begin
-      num = num + 1;
-      case(num)
-          2'b00 : begin
-              cad = 4'b0111;
-              cou = cou3;
-          end
-          2'b01 : begin
-              cad = 4'b1011;
-              cou = cou2;
-          end
-          2'b10 : begin
-              cad = 4'b1101;
-              cou = cou1;
-          end
-          2'b11 : begin
-              cad = 4'b1110;
-              cou = cou0;
-          end
-       endcase
-   end
+    always@(posedge clk) begin
+        num = num + 1;
+        case(num)
+            2'b00 : begin
+                cad = 4'b0111;
+                cou = cou3;
+            end
+            2'b01 : begin
+                cad = 4'b1011;
+                cou = cou2;
+            end
+            2'b10 : begin
+                cad = 4'b1101;
+                cou = cou1;
+            end
+            2'b11 : begin
+                cad = 4'b1110;
+                cou = cou0;
+            end
+        endcase
+    end
 endmodule
