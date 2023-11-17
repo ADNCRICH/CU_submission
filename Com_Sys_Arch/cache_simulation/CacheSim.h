@@ -14,7 +14,7 @@
 /* Please adjust parameters here */
 // #define CACHE_SIZE 1024
 #define INDEX_SIZE 1024
-#define BLOCK_SIZE 4
+#define BLOCK_SIZE 32
 // #define TAGLEN 22
 // #define INDEXLEN 8
 // #define OFFSETLEN 2

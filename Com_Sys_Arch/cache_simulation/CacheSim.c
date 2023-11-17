@@ -86,5 +86,5 @@ int main(int argc, char *argv[]) {
         sscanf(buff, "0x%x", &myaddr);
         access(myaddr);
     }
-    printf("HIT:%7d MISS: %7d %.2lf\n", HIT, MISS, (double)(HIT) / (HIT + MISS));
+    printf("HIT:%7d MISS: %7d %.4lf\n", HIT, MISS, (double)(HIT) / (HIT + MISS));
 }
