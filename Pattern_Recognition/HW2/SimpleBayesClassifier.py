@@ -45,16 +45,7 @@ class SimpleBayesClassifier:
 
         # INSERT CODE HERE
         for j in range(x.shape[1]):
-            a, b =[], []
-            for i in range(x.shape[0]):
-                if y[i] == 1:
-                    a.append(i)
-                else:
-                    b.append(i)
-            aa = np.histogram(a, bins = n_bins)
-            bb = np.histogram(b, bins = n_bins)
-            self.stay_params[j] = (aa[0], aa[1])
-            self.leave_params[j] = (bb[0], bb[1])
+            a = x[y == 0, j]
         
         return self.stay_params, self.leave_params
 
