@@ -81,7 +81,7 @@ class SimpleBayesClassifier:
                 if not np.isnan(x[i, j]):
                     log_p_stay += np.log(self.stay_params[j][0][int(x[i][j]) - 1])
                     log_p_leave += np.log(self.leave_params[j][0][int(x[i][j]) - 1])
-            y_pred.append(1 if log_p_leave > log_p_stay else 0)
+            y_pred.append(1 if log_p_leave - log_p_stay > thresh else 0)
 
         return np.array(y_pred)
     
@@ -138,6 +138,6 @@ class SimpleBayesClassifier:
                 if not np.isnan(x[i, j]):
                     log_p_stay += np.log(stats.norm.pdf(x[i, j], self.gaussian_stay_params[j][0], np.sqrt(self.gaussian_stay_params[j][1])))
                     log_p_leave += np.log(stats.norm.pdf(x[i, j], self.gaussian_leave_params[j][0], np.sqrt(self.gaussian_leave_params[j][1])))
-            y_pred.append(1 if log_p_leave > log_p_stay else 0)
+            y_pred.append(1 if log_p_leave - log_p_stay > thresh else 0)
 
         return np.array(y_pred)
