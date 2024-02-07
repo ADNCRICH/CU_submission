@@ -43,6 +43,10 @@ class SimpleBayesClassifier:
         self.leave_params = [(None, None) for _ in range(x.shape[1])]
 
         # INSERT CODE HERE
+        self.n_pos = np.sum(y == 1)
+        self.n_neg = np.sum(y == 0)
+        self.prior_pos = self.n_pos / (self.n_pos + self.n_neg)
+        self.prior_neg = self.n_neg / (self.n_pos + self.n_neg)
         for j in range(x.shape[1]):
             a = x[y == 0, j]
             b = x[y == 1, j]
@@ -104,6 +108,10 @@ class SimpleBayesClassifier:
         self.gaussian_leave_params = [(0, 0) for _ in range(x.shape[1])]
 
         # INSERT CODE HERE
+        self.n_pos = np.sum(y == 1)
+        self.n_neg = np.sum(y == 0)
+        self.prior_pos = self.n_pos / (self.n_pos + self.n_neg)
+        self.prior_neg = self.n_neg / (self.n_pos + self.n_neg)
         for j in range(x.shape[1]):
             a = x[y == 0, j]
             b = x[y == 1, j]
