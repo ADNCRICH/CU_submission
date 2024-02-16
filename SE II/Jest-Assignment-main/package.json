@@ -1,0 +1,55 @@
+{
+  "name": "jest-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "del-cli --force ./coverage && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2110336-2565-2/Jest-Assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2110336-2565-2/Jest-Assignment/issues"
+  },
+  "homepage": "https://github.com/2110336-2565-2/Jest-Assignment#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.0",
+    "del-cli": "^5.0.0",
+    "ts-jest": "^29.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "./",
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "text",
+      "html"
+    ],
+    "coverageDirectory": "<rootDir>/coverage/",
+    "verbose": true
+  }
+}
