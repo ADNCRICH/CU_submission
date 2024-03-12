@@ -115,7 +115,15 @@ class TwoLayerNet(object):
     # grads['W1'] should store the gradient on W1, and be a matrix of same size #
     # don't forget about the regularization term                                #
     #############################################################################
-
+    dscores = scores
+    dscores[range(N), y] -= 1
+    dscores /= N
+    grads['W2'] = out_layer_1.T @ dscores + reg * W2
+    grads['b2'] = np.sum(dscores, axis=0)
+    dhidden = dscores @ W2.T
+    dhidden[out_layer_1 <= 0] = 0
+    grads['W1'] = X.T @ dhidden + reg * W1
+    grads['b1'] = np.sum(dhidden, axis=0)
     #############################################################################
     #                              END OF TODO#3                                #
     #############################################################################
