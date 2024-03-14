@@ -168,7 +168,9 @@ class TwoLayerNet(object):
       # them in X_batch and y_batch respectively.                             #
       # You might find np.random.choice() helpful.                            #
       #########################################################################
-
+      idx = np.random.choice(num_train, batch_size)
+      X_batch = X[idx]
+      y_batch = y[idx]
       #########################################################################
       #                             END OF YOUR TODO#4                        #
       #########################################################################
@@ -183,7 +185,10 @@ class TwoLayerNet(object):
       # using stochastic gradient descent. You'll need to use the gradients   #
       # stored in the grads dictionary defined above.                         #
       #########################################################################
-
+      self.params['W1'] -= learning_rate * grads['W1']
+      self.params['b1'] -= learning_rate * grads['b1']
+      self.params['W2'] -= learning_rate * grads['W2']
+      self.params['b2'] -= learning_rate * grads['b2']
       #########################################################################
       #                             END OF YOUR TODO#5                        #
       #########################################################################
@@ -203,7 +208,7 @@ class TwoLayerNet(object):
         #######################################################################
         # TODO#6: Decay learning rate (exponentially) after each epoch        #
         #######################################################################
-
+        learning_rate *= learning_rate_decay
         #######################################################################
         #                             END OF YOUR TODO#6                      #
         #######################################################################
@@ -235,7 +240,12 @@ class TwoLayerNet(object):
     ###########################################################################
     # TODO#7: Implement this function; it should be VERY simple!              #
     ###########################################################################
-
+    out_layer_1 = np.maximum(0, X @ self.params['W1'] + self.params['b1'])
+    scores = out_layer_1 @ self.params['W2'] + self.params['b2']
+    scores = np.exp(scores)
+    sum_exp = np.sum(scores, axis=1)
+    scores = scores / sum_exp.reshape(-1, 1)
+    y_pred = np.argmax(scores, axis=1)
     ###########################################################################
     #                              END OF YOUR TODO#7                         #
     ###########################################################################
