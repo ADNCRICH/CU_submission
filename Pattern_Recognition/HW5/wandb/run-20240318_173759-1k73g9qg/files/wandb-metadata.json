@@ -1,0 +1,167 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.35",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-03-18T10:38:01.836948",
+    "startedAt": "2024-03-18T10:37:59.938432",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:ADNCRICH/CU_submission.git",
+        "commit": "bee0be03e3a92edb04df6992d0a87736cc8df176"
+    },
+    "email": "p50629.2013x@gmail.com",
+    "root": "/home/andre/Desktop/CU_submission",
+    "host": "andre-Z790-AORUS-ELITE",
+    "username": "andre",
+    "executable": "/home/andre/anaconda3/envs/ML/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3524.2213333333343,
+        "min": 800.0,
+        "max": 4950.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 5286.581,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 5300.124,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 5299.644,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 5299.98,
+            "min": 800.0,
+            "max": 5400.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4197.448,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4190.395,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4201.124,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4201.6,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4205.032,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4199.384,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3232879638672,
+            "used": 425.2554588317871
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4080",
+            "memory_total": 17171480576
+        }
+    ],
+    "memory": {
+        "total": 78.37373733520508
+    }
+}
