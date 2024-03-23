@@ -3,6 +3,8 @@ Pattern_Recognition/HW5/dataset
 Pattern_Recognition/HW5/wandb
 Pattern_Recognition/HW5/*.tar
 
+chulacv2023/Lab8/*
+
 *.mp4
 *.exe
 
