@@ -1,3 +1,11 @@
+Pattern_Recognition/HW5/data
+Pattern_Recognition/HW5/dataset
+Pattern_Recognition/HW5/wandb
+Pattern_Recognition/HW5/*.tar
+Pattern_Recognition/HW6/*
+
+chulacv2023/Lab8/*
+
 *.mp4
 *.exe
 
@@ -67,6 +75,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
 
 # other
 /ML/Summer#2023/output
