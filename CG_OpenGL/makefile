@@ -13,4 +13,4 @@ all: $(SRC)
 	cd $(dir $(SRC)) && $(CC) $(GLAD_SRC) $(abspath $(SRC)) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) && $(BIN)/main
 
 debug: $(SRC)
-	$(CC) $(GLAD_SRC) $(SRC) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) $(DBG)
+	cd $(dir $(SRC)) && $(CC) $(GLAD_SRC) $(abspath $(SRC)) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) $(DBG)
