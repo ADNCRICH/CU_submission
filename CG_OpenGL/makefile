@@ -1,16 +1,16 @@
 CC = g++
 
-CFLAGS = -std=c++14 -O2
+CFLAGS = -std=c++17 -O2
 LDFLAGS = -lglfw
 DBG = -g
 
-GLAD_SRC ?= ./glad.c
+GLAD_SRC ?= $(abspath ./glad.c)
 SRC ?=
 
-BIN = ./bin
+BIN = $(abspath ./bin)
 
 all: $(SRC)
-	$(CC) $(GLAD_SRC) $(SRC) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) && $(BIN)/main
+	cd $(dir $(SRC)) && $(CC) $(GLAD_SRC) $(abspath $(SRC)) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) && $(BIN)/main
 
 debug: $(SRC)
 	$(CC) $(GLAD_SRC) $(SRC) -o $(BIN)/main $(CFLAGS) $(LDFLAGS) $(DBG)
