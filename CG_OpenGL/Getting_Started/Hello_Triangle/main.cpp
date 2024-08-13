@@ -1,6 +1,7 @@
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include<bits/stdc++.h>
+#include<filesystem>
 using namespace std;
 
 string loadFile(const string& fname);
@@ -33,10 +34,36 @@ int main(){
          0.5f, -0.5f, 0.0f,
          0.0f,  0.5f, 0.0f
     };
+    GLuint vertexShader, fragmentShader, shaderProgram;
+
+    vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    string vertexShaderSource = loadFile("./shader/vertice.vert");
+    const char* vertexShaderSourceCStr = vertexShaderSource.c_str();
+    glShaderSource(vertexShader, 1, &vertexShaderSourceCStr, NULL);
+    glCompileShader(vertexShader);
+
+    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    string fragmentShaderSource = loadFile("./shader/fragment.frag");
+    const char* fragmentShaderSourceCStr = fragmentShaderSource.c_str();
+    glShaderSource(fragmentShader, 1, &fragmentShaderSourceCStr, NULL);
+    glCompileShader(fragmentShader);
+
+    shaderProgram = glCreateProgram();
+    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fragmentShader);
+    glLinkProgram(shaderProgram);
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
+
     GLuint VBO;
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    glUseProgram(shaderProgram);
+
 
     while(!glfwWindowShouldClose(window)){
         processInput(window);
@@ -52,9 +79,11 @@ int main(){
 }
 
 string loadFile(const string& fname){
-    ifstream file(fname.c_str(), ios::binary);
+    // ifstream file(fname.c_str(), ios::binary);
+    string pathh = filesystem::current_path().string() + "/" + filesystem::path(fname).string();
+    ifstream file(pathh.c_str(), ios::binary);
     if (!file || !file.is_open()) {
-        cerr << "File not found: " << fname << endl;
+        cerr << "File not found: " << pathh << endl;
         return "";
     }
     file.seekg(0, ios::end);
