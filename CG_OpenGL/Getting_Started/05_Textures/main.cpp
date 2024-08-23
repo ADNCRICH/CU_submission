@@ -3,8 +3,21 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 
-// Your stb_image.h include path may differ
+
+//  >>>>>> R E A D   M E <<<<<<
+
+
+// 1. Press ESC to change rotation axis (Eucledian rotation which may suffer from gimbal lock)
+
+// 2. Your stb_image.h include path may differ
 #include "/usr/local/include/libstb/stb_image.h"
+
+// 3. choose image as Texture by 1, 2 or 3
+int image_idx = 2;
+
+
+//  >>>>>>>>>>>>>-<<<<<<<<<<<<<
+
 
 #include <shader_s.h>
 
@@ -168,7 +181,7 @@ int main()
     int width, height, nrChannels;
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
     stbi_set_flip_vertically_on_load(true);
-    unsigned char *data = stbi_load((std::filesystem::current_path().string() + "/resource/image_2.png").c_str(), &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load((std::filesystem::current_path().string() + "/resource/image_" + std::to_string(image_idx) + ".png").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
