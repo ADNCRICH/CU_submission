@@ -2,6 +2,8 @@
 #include <GLFW/glfw3.h>
 
 #define STB_IMAGE_IMPLEMENTATION
+
+// Your stb_image.h include path may differ
 #include "/usr/local/include/libstb/stb_image.h"
 
 #include <shader_s.h>
