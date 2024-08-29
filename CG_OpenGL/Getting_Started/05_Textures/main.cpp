@@ -19,7 +19,7 @@ int image_idx = 2;
 //  >>>>>>>>>>>>>-<<<<<<<<<<<<<
 
 
-#include <shader_s.h>
+#include <../../shader_s.h>
 
 #include <iostream>
 #include <filesystem>
