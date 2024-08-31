@@ -88,6 +88,7 @@
         "latch": "cpp",
         "semaphore": "cpp",
         "syncstream": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "__tree": "cpp"
     }
 }

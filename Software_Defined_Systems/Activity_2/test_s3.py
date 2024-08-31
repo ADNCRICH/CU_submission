@@ -1,6 +1,7 @@
 import argparse
 import os
 import time
+import boto3
 import numpy as np
 import pandas as pd
 
@@ -16,21 +17,18 @@ if not os.path.exists(F):
     print("File does not exist")
     exit(1)
 
-write_path = './out'
-if not os.path.exists(write_path):
-    os.makedirs(write_path)
-
 with open(F, 'r') as f:
     data = f.read()
 
 a = []
 
+s3 = boto3.resource('s3')
 f_name = F.replace('/', ' ').replace('.', ' ').split()[-2]
 
 a.append(time.time_ns())
 for i in range(N):
-    with open(os.path.join(write_path, f'out_{f_name}_{i}.txt'), 'w') as w:
-        w.write(data)
+    s3.Bucket('sds2024-6432085221').put_object(Key=f"out_{f_name}_{i}.txt", Body=data)
+    # print(f"out_{f_name}_{i}.txt")
     a.append(time.time_ns())
 
 a = np.array(a) / 1e9
@@ -40,3 +38,5 @@ df = pd.DataFrame({'iters': np.arange(N+1), 'time': a})
 df.to_csv(f'./data_{f_name}.csv', index=False)
 
 print("Time taken: ", a[-1], "s")
+
+

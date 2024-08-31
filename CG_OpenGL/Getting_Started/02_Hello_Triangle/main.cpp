@@ -41,6 +41,7 @@ int main(){
     //     1, 2, 3
     // };
     float gr = (1 + sqrt(5)) / 2;
+    float sq = sqrt(2);
     float vertices[] = {
         0, 1, gr,   // 0
         0, 1, -gr,  // 1
@@ -54,6 +55,20 @@ int main(){
         gr, 0, -1,  // 9
         -gr, 0, 1,  // 10
         -gr, 0, -1  // 11
+    };
+    float vertices_c[] = {
+        0, sq, 1,
+        0, sq, -1,
+        0, -sq, 1,
+        0, -sq, -1,
+        sq, 1, 0,
+        sq, -1, 0,
+        -sq, 1, 0,
+        -sq, -1, 0,
+        0, sq, 1,
+        0, sq, -1,
+        0, -sq, 1,
+        0, -sq, -1,
     };
     unsigned int N = 60;
     unsigned int indices[] = {
