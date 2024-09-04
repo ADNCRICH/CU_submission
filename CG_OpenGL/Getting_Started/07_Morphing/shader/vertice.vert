@@ -8,7 +8,8 @@ layout (location = 3) in vec2 aTexCoord2;
 uniform vec3 rot;
 uniform float tim;
 
-out vec2 TexCoord;
+out vec2 TexCoords;
+out float Time;
 
 void main(){
     float z_x = rot.x, z_y = rot.y, z_z = rot.z;
@@ -25,8 +26,9 @@ void main(){
                             0.0f, 0.0f, 1.0f, 0.0f,
                             0.0f, 0.0f, 0.0f, 1.0f);
     // gl_Position = vec4(aPos, 5.0);
-    gl_Position = view_z * view_y * view_x * vec4(aPos2, 5.0);
-    // gl_Position = view_z * view_y * view_x * vec4(mix(aPos, aPos2, smoothstep(0.3f, 0.7f, sin(tim)/2 + 0.5f)), 5.0);
-    TexCoord = aTexCoord2;
-    // TexCoord = mix(aTexCoord, aTexCoord2, smoothstep(0.3f, 0.7f, sin(tim)/2 + 0.5f));
+    // gl_Position = view_z * view_y * view_x * vec4(aPos, 5.0);
+    // TexCoord = aTexCoord;
+    gl_Position = view_z * view_y * view_x * vec4(mix(aPos, aPos2, smoothstep(0.3f, 0.7f, sin(tim)/2 + 0.5f)), 3.0);
+    TexCoords = mix(aTexCoord, aTexCoord2, smoothstep(0.3f, 0.7f, sin(tim)/2 + 0.5f));
+    Time = tim;
 }
