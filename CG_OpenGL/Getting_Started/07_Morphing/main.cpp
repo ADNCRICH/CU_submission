@@ -2,7 +2,7 @@
 #include<GLFW/glfw3.h>
 #include<bits/stdc++.h>
 #include<filesystem>
-#include <../../shader_s.h>
+#include <../../Library/shader_s.h>
 #define STB_IMAGE_IMPLEMENTATION
 #include "/usr/local/include/libstb/stb_image.h"
 using namespace std;

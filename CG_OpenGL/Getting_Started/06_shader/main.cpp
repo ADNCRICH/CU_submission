@@ -3,7 +3,7 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 
-#include <../../shader_s.h>
+#include <../../Library/shader_s.h>
 
 #include <iostream>
 #include <filesystem>
