@@ -62,6 +62,9 @@ private:
         // retrieve the directory path of the filepath
         directory = path.substr(0, path.find_last_of('/'));
 
+        cout << "Number of meshes: " << scene->mNumMeshes << "\n";
+
+
         // process ASSIMP's root node recursively
         processNode(scene->mRootNode, scene);
     }
@@ -75,6 +78,8 @@ private:
             // the node object only contains indices to index the actual objects in the scene. 
             // the scene contains all the data, node is just to keep stuff organized (like relations between nodes).
             aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
+            // cout << "Mesh " << i << " vertices: " << mesh->mNumVertices << "\n";
+            // cout << "Mesh " << i << " Faces: " << mesh->mNumFaces << "\n";
             meshes.push_back(processMesh(mesh, scene));
         }
         // after we've processed all of the meshes (if any) we then recursively process each of the children nodes

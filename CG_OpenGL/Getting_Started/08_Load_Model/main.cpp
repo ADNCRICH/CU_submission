@@ -30,6 +30,10 @@ bool firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+// U/H: +-C, I/J +-X, O/K +-Y, P/L +-Z, Y/G +-D
+float X=1.0f, Y, Z, C, D = 0.01f;
+float speed = 0.001f;
+
 int main()
 {
     // glfw: initialize and configure
@@ -45,7 +49,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Mesh Cross Section", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -82,7 +86,8 @@ int main()
     // load models
     // -----------
     // Model ourModel(FileSystem::getPath("resources/objects/backpack/backpack.obj"));
-    Model ourModel("./resource/backpack/backpack.obj");
+    // Model ourModel("./resource/backpack/backpack.obj");
+    Model ourModel("./resource/bun_zipper.obj");
 
     
     // draw in wireframe
@@ -110,6 +115,13 @@ int main()
 
         // don't forget to enable shader before setting uniforms
         ourShader.use();
+
+        ourShader.setFloat("X", X);
+        ourShader.setFloat("Y", Y);
+        ourShader.setFloat("Z", Z);
+        ourShader.setFloat("C", C);
+        ourShader.setFloat("D", D);
+
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
@@ -152,6 +164,26 @@ void processInput(GLFWwindow *window)
         camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_U) == GLFW_PRESS)
+        C += speed/4;
+    if (glfwGetKey(window, GLFW_KEY_H) == GLFW_PRESS)
+        C -= speed/4;
+    if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
+        X += speed;
+    if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
+        X -= speed;
+    if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
+        Y += speed;
+    if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
+        Y -= speed;
+    if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
+        Z += speed;
+    if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
+        Z -= speed;
+    if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS)
+        D += speed/4;
+    if (glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
+        D -= speed/4;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -183,7 +215,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
     lastX = xpos;
     lastY = ypos;
 
-    // camera.ProcessMouseMovement(xoffset, yoffset);
+    camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
