@@ -89,6 +89,7 @@
         "semaphore": "cpp",
         "syncstream": "cpp",
         "filesystem": "cpp",
-        "__tree": "cpp"
+        "__tree": "cpp",
+        "__nullptr": "cpp"
     }
 }
