@@ -1,0 +1,43 @@
+networks:
+  mynet:
+
+volumes:
+  grafana-vol:
+    external: true
+
+services:
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    networks:
+      - mynet
+    ports:
+      - 9100:9100
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    networks:
+      - mynet
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    networks:
+      - mynet
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana-vol:/var/lib/grafana
+  
+  apache-exporter:
+    image: bitnami/apache-exporter
+    container_name: apache-exporter
+    networks:
+      - mynet
+    ports:
+      - 9117:9117
