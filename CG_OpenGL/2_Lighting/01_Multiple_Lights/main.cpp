@@ -1,5 +1,3 @@
-
-
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #define STB_IMAGE_IMPLEMENTATION
@@ -21,8 +19,8 @@ void processInput(GLFWwindow *window);
 unsigned int loadTexture(const char *path);
 
 // settings
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 1920;
+const unsigned int SCR_HEIGHT = 1080;
 
 // camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -37,7 +35,9 @@ float lastFrame = 0.0f;
 // lighting
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
-float ch_R = 1.0f, ch_G = 1.0f, ch_B = 1.0f;
+float ch_R = 1.0f, ch_G = 0.5f, ch_B = 0.0f, ch_Y = 0.5f;
+int toggle = 1;
+int sgn_R = -1, sgn_G = -1, sgn_B = 1, sgn_Y = 1;
 
 int main()
 {
@@ -54,7 +54,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Multi Lights", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -132,6 +132,100 @@ int main()
         -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  0.0f,
         -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f
     };
+    float gr = (1 + sqrt(5)) / 2;
+    float ll = 0.5 - 0.5 / sqrt(3);
+    float rr = 0.5 + 0.5 / sqrt(3);
+    float vertices2[] = {
+        0, 1, gr, 0.3568, 0.0, 0.9342, rr, 0.5, 
+        0, -1, gr, 0.3568, 0.0, 0.9342, ll, 0.5, 
+        gr, 0, 1, 0.3568, 0.0, 0.9342, 0.5, 0, 
+
+        0, 1, gr, -0.3568, 0.0, 0.9342, rr, 0.5, 
+        -gr, 0, 1, -0.3568, 0.0, 0.9342, 0.5, 1, 
+        0, -1, gr, -0.3568, 0.0, 0.9342, ll, 0.5, 
+
+        0, 1, gr, 0.5774, 0.5774, 0.5774, 0.5, 1, 
+        gr, 0, 1, 0.5774, 0.5774, 0.5774, ll, 0.5, 
+        1, gr, 0, 0.5774, 0.5774, 0.5774, rr, 0.5, 
+
+        0, 1, gr, -0.5774, 0.5774, 0.5774, ll, 0.5, 
+        -1, gr, 0, -0.5774, 0.5774, 0.5774, rr, 0.5, 
+        -gr, 0, 1, -0.5774, 0.5774, 0.5774, 0.5, 0, 
+
+        0, 1, gr, 0.0, 0.9342, 0.3568, ll, 0.5, 
+        1, gr, 0, 0.0, 0.9342, 0.3568, 0.5, 1, 
+        -1, gr, 0, 0.0, 0.9342, 0.3568, rr, 0.5, 
+
+        0, -1, gr, 0.5774, -0.5774, 0.5774, 0.5, 0, 
+        1, -gr, 0, 0.5774, -0.5774, 0.5774, rr, 0.5, 
+        gr, 0, 1, 0.5774, -0.5774, 0.5774, ll, 0.5, 
+
+        0, -1, gr, -0.5774, -0.5774, 0.5774, 0.5, 1, 
+        -gr, 0, 1, -0.5774, -0.5774, 0.5774, rr, 0.5, 
+        -1, -gr, 0, -0.5774, -0.5774, 0.5774, ll, 0.5, 
+
+        1, -gr, 0, 0.0, -0.9342, 0.3568, ll, 0.5, 
+        0, -1, gr, 0.0, -0.9342, 0.3568, 0.5, 0, 
+        -1, -gr, 0, 0.0, -0.9342, 0.3568, rr, 0.5, 
+
+        1, gr, 0, 0.0, 0.9342, -0.3568, ll, 0.5, 
+        0, 1, -gr, 0.0, 0.9342, -0.3568, rr, 0.5, 
+        -1, gr, 0, 0.0, 0.9342, -0.3568, 0.5, 0, 
+
+        gr, 0, 1, 0.9342, 0.3568, 0.0, ll, 0.5, 
+        gr, 0, -1, 0.9342, 0.3568, 0.0, 0.5, 0, 
+        1, gr, 0, 0.9342, 0.3568, 0.0, rr, 0.5, 
+
+        gr, 0, 1, 0.9342, -0.3568, 0.0, ll, 0.5, 
+        1, -gr, 0, 0.9342, -0.3568, 0.0, rr, 0.5, 
+        gr, 0, -1, 0.9342, -0.3568, 0.0, 0.5, 1, 
+
+        -gr, 0, 1, -0.9342, 0.3568, 0.0, 0.5, 1, 
+        -1, gr, 0, -0.9342, 0.3568, 0.0, ll, 0.5, 
+        -gr, 0, -1, -0.9342, 0.3568, 0.0, rr, 0.5, 
+
+        -gr, 0, 1, -0.9342, -0.3568, -0.0, rr, 0.5, 
+        -gr, 0, -1, -0.9342, -0.3568, -0.0, 0.5, 0, 
+        -1, -gr, 0, -0.9342, -0.3568, -0.0, ll, 0.5, 
+
+        1, gr, 0, 0.5774, 0.5774, -0.5774, ll, 0.5, 
+        gr, 0, -1, 0.5774, 0.5774, -0.5774, 0.5, 1, 
+        0, 1, -gr, 0.5774, 0.5774, -0.5774, rr, 0.5, 
+
+        1, -gr, 0, 0.5774, -0.5774, -0.5774, 0.5, 1, 
+        0, -1, -gr, 0.5774, -0.5774, -0.5774, ll, 0.5, 
+        gr, 0, -1, 0.5774, -0.5774, -0.5774, rr, 0.5, 
+
+        -1, gr, 0, -0.5774, 0.5774, -0.5774, ll, 0.5, 
+        0, 1, -gr, -0.5774, 0.5774, -0.5774, 0.5, 0, 
+        -gr, 0, -1, -0.5774, 0.5774, -0.5774, rr, 0.5, 
+
+        -1, -gr, 0, -0.5774, -0.5774, -0.5774, 0.5, 0, 
+        -gr, 0, -1, -0.5774, -0.5774, -0.5774, rr, 0.5, 
+        0, -1, -gr, -0.5774, -0.5774, -0.5774, ll, 0.5, 
+
+        0, 1, -gr, 0.3568, 0.0, -0.9342, 0.5, 0, 
+        gr, 0, -1, 0.3568, 0.0, -0.9342, rr, 0.5, 
+        0, -1, -gr, 0.3568, 0.0, -0.9342, ll, 0.5, 
+
+        0, 1, -gr, -0.3568, -0.0, -0.9342, 0.5, 1, 
+        0, -1, -gr, -0.3568, -0.0, -0.9342, ll, 0.5, 
+        -gr, 0, -1, -0.3568, -0.0, -0.9342, rr, 0.5, 
+
+        1, -gr, 0, -0.0, -0.9342, -0.3568, ll, 0.5, 
+        -1, -gr, 0, -0.0, -0.9342, -0.3568, rr, 0.5, 
+        0, -1, -gr, -0.0, -0.9342, -0.3568, 0.5, 1,
+    };
+
+    float sacle = 0.3;
+    for (int i = 0; i < 60; i++) {
+        vertices2[i * 8] *= sacle;
+        vertices2[i * 8 + 1] *= sacle;
+        vertices2[i * 8 + 2] *= sacle;
+    }
+
+
+
     // positions all containers
     glm::vec3 cubePositions[] = {
         glm::vec3( 0.0f,  0.0f,  0.0f),
@@ -149,7 +243,7 @@ int main()
     glm::vec3 pointLightPositions[] = {
         glm::vec3( 0.7f,  0.2f,  2.0f),
         glm::vec3( 2.3f, -3.3f, -4.0f),
-        glm::vec3(-4.0f,  2.0f, -12.0f),
+        glm::vec3( -3.0f,  0.0f,  0.0f),
         glm::vec3( 0.0f,  0.0f, -3.0f)
     };
     // first, configure the cube's VAO (and VBO)
@@ -158,7 +252,7 @@ int main()
     glGenBuffers(1, &VBO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices2), vertices2, GL_STATIC_DRAW);
 
     glBindVertexArray(cubeVAO);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
@@ -180,8 +274,9 @@ int main()
 
     // load textures (we now use a utility function to keep the code more organized)
     // -----------------------------------------------------------------------------
-    unsigned int diffuseMap = loadTexture("./resource/container2.png");
-    unsigned int specularMap = loadTexture("./resource/white.jpg");
+    // unsigned int diffuseMap = loadTexture("./resource/container2.png");
+    unsigned int diffuseMap = loadTexture("./resource/image_1.png");
+    unsigned int specularMap = loadTexture("./resource/white.png");
 
     // shader configuration
     // --------------------
@@ -224,7 +319,11 @@ int main()
         lightingShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
         lightingShader.setVec3("dirLight.ambient", 0.05f, 0.05f, 0.05f);
         lightingShader.setVec3("dirLight.diffuse", 0.4f, 0.4f, 0.4f);
-        lightingShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+        // lightingShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+        // lightingShader.setVec3("dirLight.ambient", 0.f, 0.f, 0.f);
+        // lightingShader.setVec3("dirLight.diffuse", 0.f, 0.f, 0.f);
+        lightingShader.setVec3("dirLight.specular", 0.f, 0.f, 0.f);
+
         // point light 1
         lightingShader.setVec3("pointLights[0].position", pointLightPositions[0]); // R
         lightingShader.setVec3("pointLights[0].ambient", 0.05f*ch_R, 0.0f, 0.0f);
@@ -242,10 +341,10 @@ int main()
         lightingShader.setFloat("pointLights[1].linear", 0.09f);
         lightingShader.setFloat("pointLights[1].quadratic", 0.032f);
         // point light 3
-        lightingShader.setVec3("pointLights[2].position", pointLightPositions[2]); // B
-        lightingShader.setVec3("pointLights[2].ambient", 0.0f, 0.0f, 0.05f*ch_B);
-        lightingShader.setVec3("pointLights[2].diffuse", 0.0f, 0.f, 0.8f*ch_B);
-        lightingShader.setVec3("pointLights[2].specular", 0.0f, 0.0f, 1.0f*ch_B);
+        lightingShader.setVec3("pointLights[2].position", pointLightPositions[2]); // Y
+        lightingShader.setVec3("pointLights[2].ambient", 0.05f*ch_Y, 0.05f*ch_Y, 0.0f);
+        lightingShader.setVec3("pointLights[2].diffuse", 0.8f*ch_Y, 0.8f*ch_Y, 0.0f);
+        lightingShader.setVec3("pointLights[2].specular", 1.0f*ch_Y, 1.0f*ch_Y, 0.0f);
         lightingShader.setFloat("pointLights[2].constant", 1.0f);
         lightingShader.setFloat("pointLights[2].linear", 0.09f);
         lightingShader.setFloat("pointLights[2].quadratic", 0.032f);
@@ -297,7 +396,7 @@ int main()
             model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
             lightingShader.setMat4("model", model);
 
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+            glDrawArrays(GL_TRIANGLES, 0, 60);
         }
 
          // also draw the lamp object(s)
@@ -306,6 +405,14 @@ int main()
          lightCubeShader.setMat4("view", view);
     
          // we now draw as many light bulbs as we have point lights.
+
+        float light_color[4][3] = {
+            {1.0f*ch_R, 0.0f, 0.0f}, // R
+            {0.0f, 1.0f*ch_G, 0.0f}, // G
+            {1.0f*ch_Y, 1.0f*ch_Y, 0.0f}, // Y
+            {0.0f, 0.0f, 1.0f*ch_B}  // B
+        };
+
          glBindVertexArray(lightCubeVAO);
          for (unsigned int i = 0; i < 4; i++)
          {
@@ -313,7 +420,8 @@ int main()
              model = glm::translate(model, pointLightPositions[i]);
              model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
              lightCubeShader.setMat4("model", model);
-             glDrawArrays(GL_TRIANGLES, 0, 36);
+             lightCubeShader.setVec3("lightColor", light_color[i][0], light_color[i][1], light_color[i][2]);
+             glDrawArrays(GL_TRIANGLES, 0, 60);
          }
 
 
@@ -385,6 +493,46 @@ void processInput(GLFWwindow *window)
             if (ch_B < 0.0f)
                 ch_B = 0.0f;
         }
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS){
+        if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS){
+            ch_Y += 0.01f;
+            if (ch_Y > 1.0f)
+                ch_Y = 1.0f;
+        } else if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS){
+            ch_Y -= 0.01f;
+            if (ch_Y < 0.0f)
+                ch_Y = 0.0f;
+        }
+    }
+
+    if (toggle){
+        if (sgn_R == 1 && ch_R >= 1.0f){
+            sgn_R = -1;
+        } else if (sgn_R == -1 && ch_R <= 0.0f){
+            sgn_R = 1;
+        }
+        if (sgn_G == 1 && ch_G >= 1.0f){
+            sgn_G = -1;
+        } else if (sgn_G == -1 && ch_G <= 0.0f){
+            sgn_G = 1;
+        }
+        if (sgn_B == 1 && ch_B >= 1.0f){
+            sgn_B = -1;
+        } else if (sgn_B == -1 && ch_B <= 0.0f){
+            sgn_B = 1;
+        }
+        if (sgn_Y == 1 && ch_Y >= 1.0f){
+            sgn_Y = -1;
+        } else if (sgn_Y == -1 && ch_Y <= 0.0f){
+            sgn_Y = 1;
+        }
+        ch_R += 0.01f * sgn_R;
+        ch_G += 0.01f * sgn_G;
+        ch_B += 0.01f * sgn_B;
+        ch_Y += 0.01f * sgn_Y;
+
     }
 
 }
