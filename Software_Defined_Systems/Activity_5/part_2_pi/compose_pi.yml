@@ -1,0 +1,19 @@
+networks:
+  mynet:
+
+services:
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    networks:
+      - mynet
+    ports:
+      - 9100:9100
+
+  apache-exporter:
+    image: bitnami/apache-exporter
+    container_name: apache-exporter
+    networks:
+      - mynet
+    ports:
+      - 9117:9117
