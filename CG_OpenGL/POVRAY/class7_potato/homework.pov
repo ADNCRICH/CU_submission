@@ -1,8 +1,13 @@
 #include "colors.inc"    
+
+global_settings {
+    assumed_gamma 1.0
+    max_trace_level 20
+}
  
 camera{
- location<0,10,-10>
- look_at<0,2,0>   
+ location<-0.5,10,-9>
+ look_at<0,2.5,0>   
 }
 
 light_source{
@@ -56,14 +61,17 @@ material{
     texture {
       pigment { rgbf <230, 238, 228, 240>/255 }  // High transparency
       finish {
-        phong 0.5
-        reflection 0.01       // Slight reflection
-        specular 0.9         // Shininess
+        phong 0.1
+        reflection {
+        0.0, 1.0
+        fresnel on
+      }
+        specular 0.3         // Shininess
         roughness 0.01      // Very smooth surface 
         conserve_energy 
         diffuse 0.9
       } 
-      normal {bumps 0.2 scale .7}
+      normal {bumps 0.2 scale 0.7}
     }  
     interior {
         ior 1.3              // Index of refraction for glass       
@@ -186,12 +194,34 @@ declare Tea = object{
             cylinder {<0,0.5,0>, <0,LiquidLevel,0>, 1.8}
             torus {1.5, 0.2 translate y*LiquidLevel}
             cylinder {<0,LiquidLevel-0.2,0>,<0,LiquidLevel+0.3,0>,1.5}
-            pigment {Orange*0.8 filter 0.6}
-            finish {phong 0.7 reflection 0.15}
-            normal {bumps 0.05 scale 1}
+            //pigment {Orange*0.8 filter 0.6}
+            texture {
+                pigment { color rgbt 1 }
+                finish {
+                    ambient 0.0
+                    diffuse 0.1
+                    specular 0.5
+                    roughness 0.01
+
+                    reflection {
+                        0.0, 1.0
+                        fresnel on
+                    }
+
+                    conserve_energy
+                }
+            }
+            interior {
+                ior 1.3
+                fade_distance 0.03
+                fade_power 1001
+                fade_color <1.0, 1.0, 1.0>
+            }
         }
-    } 
+    }
 }
+
+
 
 #declare TeaCup = object{   
     union{
