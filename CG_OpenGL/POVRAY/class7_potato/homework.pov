@@ -73,24 +73,24 @@ plane{
 #declare GlassMaterial = 
 material{
     texture {
-      pigment { rgbf <230, 238, 228, 240>/255 }  // High transparency
+      pigment { rgbf <230, 238, 228, 247>/255 }  // High transparency
       finish {
         phong 0.1
         reflection {
         0.0, 1.0
         fresnel on
       }
-        specular 0.5         // Shininess
+        specular 0.9         // Shininess
         roughness 0.01      // Very smooth surface 
         conserve_energy 
-        diffuse 0.6
+        diffuse 0.75
       } 
       normal {bumps 0.2 scale 0.7}
     }  
     interior {
         ior 1.7              // Index of refraction for glass       
         fade_distance 3
-        fade_power 1.2
+        fade_power 3
     }
 }
 
@@ -234,8 +234,8 @@ material {
                 <2.8,5,-0.3>, .2
                 <1.5,4.1,-0.2>, .2 
                 <.7,2.6,-0.1>, .8
-                material{CeramicMaterial2}
                 scale <1,1,2>
+                material{CeramicMaterial2}
             }
             
         }//end union
@@ -258,8 +258,8 @@ declare Tea = object{
             cylinder {<0,0.5,0>, <0,LiquidLevel,0>, 1.79999}
             cylinder {<0,LiquidLevel-0.2,0>,<0,LiquidLevel+0.3,0>,1.7}
             torus {1.7, 0.2 translate y*LiquidLevel}
-            pigment {Orange*0.8 filter 0.6}
-            finish {phong 0.7 reflection 0.15}
+            pigment {Orange*0.8-0.8*Grey filter 0.2}
+            finish {phong 0.7 reflection 0.35}
             normal {bumps 0.05 scale 1}
         }
     }
