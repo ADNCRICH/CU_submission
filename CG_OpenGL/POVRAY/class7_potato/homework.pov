@@ -7,13 +7,27 @@ global_settings {
  
 camera{
  location<-0.5,10,-9>
- look_at<0,2.5,0>   
+ look_at<0,2.7,0>   
 }
 
 light_source{
- <-5,15,-8>
- White
-    
+ <-5,20,-8>
+ White * 0.7
+} 
+
+light_source{
+ <0,15,-8>
+ White * 0.2
+} 
+
+light_source{
+ <5,15,-8>
+ White * 0.1
+} 
+
+light_source{
+ <0,10, 8>
+ White * 0.2
 } 
 
 
@@ -66,17 +80,41 @@ material{
         0.0, 1.0
         fresnel on
       }
-        specular 0.3         // Shininess
+        specular 0.5         // Shininess
         roughness 0.01      // Very smooth surface 
         conserve_energy 
+        diffuse 0.6
+      } 
+      normal {bumps 0.2 scale 0.7}
+    }  
+    interior {
+        ior 1.7              // Index of refraction for glass       
+        fade_distance 3
+        fade_power 1.2
+    }
+}
+
+#declare GlassMaterialTopJar = 
+material{
+    texture {
+      pigment { rgbf <230, 238, 228, 150>/255 }  // High transparency
+      finish {
+        phong 0.2
+        reflection {
+        0.0, 1.0
+        fresnel on
+      }
+        specular 1.0         // Shininess
+        roughness 0.01      // Very smooth surface 
+        //conserve_energy 
         diffuse 0.9
       } 
       normal {bumps 0.2 scale 0.7}
     }  
     interior {
-        ior 1.3              // Index of refraction for glass       
-        fade_distance 10
-        fade_power 2
+        ior 1.1              // Index of refraction for glass       
+        fade_distance 2
+        fade_power 100
     }
 }
 
@@ -106,7 +144,11 @@ material {
 material {
     texture {
         pigment{    
-            color rgb<1, 0.9, 0.8>
+            image_map{
+                png "Teacup.png"  
+                map_type 2
+            }
+            scale 10
         }                     
         finish {  
             phong 0.9       // Slight glossiness for ceramic shine
@@ -152,73 +194,76 @@ material {
     difference{
         union{
             cylinder {
-                <0,0,0>, <0,4.6,0>, 2 
+                <0,0.5,0>, <0,4.6,0>, 2.1
                  material{CeramicMaterial}
             }
-            torus { 
-                    1.9,.1 
-                 material{CeramicYellowMaterial}    
-                 translate<0,4.6,0>
+            intersection{
+                torus{1.1, 1
+                translate<0,0.5,0>
+                }
+                cylinder{<0,0.5,0>, <0,1.5,0>, 2.1}
+                cylinder{<0,0.0,0>, <0,-1.0,0>, 2.1}
+
+                material{CeramicMaterial}
+            }
+            intersection{
+                
+                torus { 
+                        1.9,sqrt(2)/5
+                    material{CeramicYellowMaterial}    
+                    translate<0,4.4,0>
+                }
+                torus { 
+                        2.0,0.1
+                    material{CeramicWhiteMaterial}    
+                    translate<0,4.6,0>
+                }
+                cylinder{
+                    <0,4.6,0>, <0,6,0>, 2.1
+                }
+                
             }
             
             sphere_sweep{
                 b_spline
                 7,
                 <.7,2.2,0> ,.8
-                <1.5,.5,0>, .2
-                <2.5,1.5,0>, .2
-                <4,3.5,0>, .2
-                <2.8,5,0>, .2
-                <1.5,4.1,0>, .2 
-                <.7,2.6,0>, .8
+                <1.5,.5,-0.1>, .2
+                <2.5,1.5,-0.2>, .2
+                <4,3.5,-0.3>, .2
+                <2.8,5,-0.3>, .2
+                <1.5,4.1,-0.2>, .2 
+                <.7,2.6,-0.1>, .8
                 material{CeramicMaterial2}
                 scale <1,1,2>
             }
             
         }//end union
         cylinder{
-            <0,.2,0>, <0,4.9,0>, 1.8
+            <0,.2,0>, <0,4.9,0>, 1.9
             material{CeramicWhiteMaterial}
         } 
-        finish {phong 0.7 reflection 0.3} 
+        //finish {phong 0.7 reflection 0.3} 
     }//end difference    
 }
 
 
 //tea
-#declare LiquidLevel = 3.7;
+#declare LiquidLevel = 3.6;
 declare Tea = object{
+
     union {
         difference {
             // Tea body inside the cup
-            cylinder {<0,0.5,0>, <0,LiquidLevel,0>, 1.8}
-            torus {1.5, 0.2 translate y*LiquidLevel}
-            cylinder {<0,LiquidLevel-0.2,0>,<0,LiquidLevel+0.3,0>,1.5}
-            //pigment {Orange*0.8 filter 0.6}
-            texture {
-                pigment { color rgbt 1 }
-                finish {
-                    ambient 0.0
-                    diffuse 0.1
-                    specular 0.5
-                    roughness 0.01
-
-                    reflection {
-                        0.0, 1.0
-                        fresnel on
-                    }
-
-                    conserve_energy
-                }
-            }
-            interior {
-                ior 1.3
-                fade_distance 0.03
-                fade_power 1001
-                fade_color <1.0, 1.0, 1.0>
-            }
+            cylinder {<0,0.5,0>, <0,LiquidLevel,0>, 1.79999}
+            cylinder {<0,LiquidLevel-0.2,0>,<0,LiquidLevel+0.3,0>,1.7}
+            torus {1.7, 0.2 translate y*LiquidLevel}
+            pigment {Orange*0.8 filter 0.6}
+            finish {phong 0.7 reflection 0.15}
+            normal {bumps 0.05 scale 1}
         }
     }
+
 }
 
 
@@ -232,7 +277,7 @@ declare Tea = object{
  
 
 //Points for glass jar 
-#declare c = .25;
+#declare c = .20;
 #declare jarWidth = 4;
 #declare p1 = <c, c, c>;
 #declare p2 = <jarWidth - c, c, c>;
@@ -359,15 +404,18 @@ declare Tea = object{
         union{
             cylinder{ 
                 <2,4,2>,<2,5,2>,1.7
-                material { GlassMaterial }
+                open
+                material { GlassMaterialTopJar }
             }
             cylinder{ 
                 <2,4.3,2>,<2,4.5,2>,1.8
-                material { GlassMaterial }
+                open
+                material { GlassMaterialTopJar }
             }
             cylinder{ 
                 <2,4.6,2>,<2,4.8,2>,1.8
-                material { GlassMaterial }
+                open
+                material { GlassMaterialTopJar }
             }
             object{HollowBox}
         }
@@ -389,15 +437,15 @@ sphere{
         gradient x
         color_map{   
             [0 color Yellow] 
-            [0.3 color rgb<229, 40, 0>/255]  
+            [0.2 color rgb<229, 40, 0>/255]  
             [1 color Red]
         } 
         scale 2
         translate<-1,0,0>
     }
     finish{
-        ambient .1
-        phong 0.9    
+        ambient .025
+        phong 0.8    
     }  
 
 }
@@ -406,8 +454,8 @@ sphere{
 object {
     union{
         object{Jar}  
-        object { Tomato scale<1.3,1,1> rotate<0,-30,0> translate <3, .5, 1.3>} 
-        object { Tomato scale<1.5,1.2,1> rotate<0,-80,0> translate <1.5, .5, 1.5> } 
+        object { Tomato scale<1.3,1,1> rotate<0,-40,30> translate <3.25, .25, 1.05>} 
+        object { Tomato scale<1.5,1.2,1> rotate<0,-80,0> translate <1.75, .5, 1.55> } 
     }
      
     scale 0.8
@@ -417,7 +465,7 @@ object {
 
 object {
     TeaCup   
-    translate<2,0,0> 
+    translate<2.1,0,0> 
     rotate<0,0,0>
 } 
            
